@@ -4,14 +4,17 @@
 
 #### Steps
   1. Read, clean, and join the IRS, Education, and Zip Code data.
-     - Use tidyverse "verbs"
-    `mutate() adds new variables that are functions of existing variables
-     select() picks variables based on their names.
-     filter() picks cases based on their values.
-     summarise() reduces multiple values down to a single summary.
-     arrange() changes the ordering of the rows.`
-     - Use purrr when applicable
-     ` # map
+     - Use tidyverse "verbs" </br>
+
+     mutate() adds new variables that are functions of existing variables </br>
+     select() picks variables based on their names. </br>
+     filter() picks cases based on their values. </br>
+     summarise() reduces multiple values down to a single summary. </br>
+     arrange() changes the ordering of the rows. </br>
+
+     - Use purrr when applicable </br>
+
+     `#map
        map_chr(c(5, 4, 3, 2, 1), function(x){
          c("one", "two", "three", "four", "five")[x]
          })
