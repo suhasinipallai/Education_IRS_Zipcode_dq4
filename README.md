@@ -3,18 +3,18 @@
 <p>Your assignment is to learn more about whether educational factors are related to income for Tennesseans.</p>
 
 #### Steps
-  1. Read, clean, and join the IRS, Education, and Zip Code data.
-     - Use tidyverse "verbs" </br>
+  1. **Read, clean, and join the IRS, Education, and Zip Code data.**
+     - **Use tidyverse "verbs"** </br>
 
-     mutate() adds new variables that are functions of existing variables </br>
-     select() picks variables based on their names. </br>
-     filter() picks cases based on their values. </br>
-     summarise() reduces multiple values down to a single summary. </br>
-     arrange() changes the ordering of the rows. </br>
+     **mutate()** adds new variables that are functions of existing variables </br>
+     **select()** picks variables based on their names. </br>
+     **filter()** picks cases based on their values. </br>
+     **summarize()** reduces multiple values down to a single summary. </br>
+     **arrange()** changes the ordering of the rows. </br>
 
-     - Use purrr when applicable </br>
+     - **Use purrr when applicable** </br>
 
-     ` #map
+  `#map
        map_chr(c(5, 4, 3, 2, 1), function(x){
          c("one", "two", "three", "four", "five")[x]
          })
@@ -155,9 +155,9 @@
     n_unique(rep(1:5, 1:5))
     [1] 5`
 
-  2. Do some exploratory data analysis.
+  2. **Do some exploratory data analysis.**
     - Use ggplot2 for visualizations
     - Use the cor() function to look for correlations
     - Use comments throughout to articulate the thinking that has informed your choices
 
-  3. Use your exploratory data analysis as the foundation to fit a linear regression model.
+  3. **Use your exploratory data analysis as the foundation to fit a linear regression model.**
