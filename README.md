@@ -14,7 +14,9 @@
 
      - **Use purrr when applicable** </br>
 
-  `#map
+
+
+  ` #map
        map_chr(c(5, 4, 3, 2, 1), function(x){
          c("one", "two", "three", "four", "five")[x]
          })
@@ -153,7 +155,9 @@
      [1] 1 2 2 3 3 3 4 4 4 4 5 5 5 5 5
 
     n_unique(rep(1:5, 1:5))
-    [1] 5`
+    [1] 5
+    `
+
 
   2. **Do some exploratory data analysis.**
     - Use ggplot2 for visualizations
