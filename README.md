@@ -167,3 +167,4 @@
     - Use comments throughout to articulate the thinking that has informed your choices
 
   3. **Use your exploratory data analysis as the foundation to fit a linear regression model.**
+.
