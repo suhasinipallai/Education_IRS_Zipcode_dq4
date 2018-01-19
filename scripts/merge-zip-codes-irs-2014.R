@@ -10,7 +10,6 @@ irs_df <- readRDS('./r-objects/irs_2014_dataset_initial_ds.rds')
 # Merge both irs and zip codes data by zip
 zip_codes_irs_df <- merge(zip_codes_df, irs_df, by = 'zip')
 
-
 # we want each row to represent the county. With that being said, we want to grab the sum and mean
 # of the columns specified. 
 # We also created the income_per_tax_return column which takes the total income tax amount
