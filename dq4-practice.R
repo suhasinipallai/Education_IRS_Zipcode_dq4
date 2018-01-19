@@ -10,7 +10,18 @@ zip_codes
 str(zip_codes)
 zip_codes %>% 
   filter(state == "TN") %>% 
-  group_by(county) %>% 
+  group_by(county)  
+
+
+length_unique_county <- length(unique(zip_codes_dataset_tn$county))
+View(length_unique_county)
+length(unique(achivement_profile$system_name))  
+
+
+
+
+
+  
   distinct(primary_city) %>% 
   select(county,primary_city) %>% 
   View()
@@ -65,26 +76,83 @@ colSums((is.na(irs_2014_dataset)))
 irs_2014_dataset <- irs_2014_dataset %>% 
   drop_na(zip)
 
+colSums((is.na(irs_2014_dataset)))
+
 # Unique zip codes
 unique_zip <- unique(irs_2014_dataset$zip)
+
 
 # For the gross income column, the first row brought back is the "Total" of all gross income categories.
 # Since only the first row has "Total", and the remaining rows only have "NA", we want to 
 # ultimately replace the NA's with "Total" as well.
 na_gross_incomes <- irs_2014_dataset %>% 
   filter(is.na(gross_income))
+colSums((is.na(irs_2014_dataset)))
 
 # Since the very first zip references "Total" as the zip, we want to make sure that value is missing
 # For every other row
 if (nrow(na_gross_incomes) == length(unique_zip) - 1) {
   irs_2014_dataset['gross_income'][is.na(irs_2014_dataset['gross_income'])] <- 'Total'
 }
-
+View(irs_2014_dataset)
 str(irs_2014_dataset)
+colSums((is.na(irs_2014_dataset)))
+
+head(irs_2014_dataset)
+tail(irs_2014_dataset)
 
 
+nrow(na_gross_incomes)
+length(unique_zip)
+sum(is.na(irs_2014_dataset['gross_income']))
 
 
+ncol(zip_codes_group_by_county)
+names(zip_codes_group_by_county)
+
+#creating a new dataset with selected colms from the zip-codes table
+
+zip_codes_select_col <- zip_codes_group_by_county %>% 
+                        select(zip,county,latitude,longitude,irs_estimated_population_2014,total_population)    
+
+zip_codes_select_col
+
+# merging 2 dataset to get the county names of various zipcodes
+
+merged_irs_2014_zip_codes <- merge(irs_2014_dataset,zip_codes_select_col,by="zip")
+View(merged_irs_2014_zip_codes)
 
 
+# reading the  3 dataset
 
+achivement_profile <- read.csv('./data/achievement_profile_data_with_CORE.csv')
+str(achivement_profile)
+
+View(achivement_profile)
+head(achivement_profile)
+tail(achivement_profile)
+
+any(is.na(achivement_profile))
+sum(is.na(achivement_profile))
+colSums((is.na(achivement_profile)))
+
+
+#pairs with 2 colns 
+pairs(merged_irs_2014_zip_codes[ , 5:6])
+
+pairs(merged_irs_2014_zip_codes[ , 3:4])
+
+
+# cannot plot bcos of NA's
+#plot(merged_irs_2014_zip_codes)
+
+#plot(achivement_profile)
+
+
+achievement <- dplyr::filter(achivement_profile, grepl('County',system_name))
+str(achievement)
+
+unique_county <- unique(zip_codes_dataset_tn$county)
+
+zip <- dplyr::filter(unique_county,grepl('County',county))
+str(zip)
