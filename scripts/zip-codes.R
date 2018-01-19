@@ -13,6 +13,7 @@ zip_codes_dataset_tn <- zip_codes_dataset_tn[ -c(2, 3, 5, 6, 7, 9, 11, 12) ]
 zip_codes_group_by_county <- zip_codes_dataset_tn %>%  
   group_by(county) %>% 
   mutate(total_population = sum(irs_estimated_population_2014)) %>% 
+  ungroup() %>% 
   arrange(desc(total_population))
 
 # Print out structure
