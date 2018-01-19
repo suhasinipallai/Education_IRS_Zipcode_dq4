@@ -1,6 +1,9 @@
 library("readxl")
 library("dplyr")
 
+# Read in zip codes and irs dataframes created at both
+# './scripts/irs.R'
+# './scripts/zip-codes.R
 zip_codes_df <- readRDS('./r-objects/zip_codes_group_by_county.rds')
 irs_df <- readRDS('./r-objects/irs_2014_dataset_initial_ds.rds')
 
@@ -15,6 +18,7 @@ zip_codes_irs_df <- merge(zip_codes_df, irs_df, by = 'zip')
 zip_codes_irs_df_by_county <- zip_codes_irs_df %>% 
   group_by( county ) %>% 
   summarise(
+    
     sum_total_population = sum(total_population),
     sum_num_dependents = sum(num_dependents),
     sum_adj_gross_income = sum(adj_gross_income),
@@ -24,13 +28,16 @@ zip_codes_irs_df_by_county <- zip_codes_irs_df %>%
     mean_total_income_amount = mean(total_income_amount),
     sum_taxes_paid_returns = sum(taxes_paid_returns),
     sum_taxes_paid_amount = sum(taxes_paid_amount)
+    
   ) %>% 
   ungroup() %>% 
   mutate( income_per_tax_return = (sum_total_income_amount / sum_total_income_returns) * 1000 ) %>% 
   select(
-    county, sum_total_population, sum_total_income_returns, sum_total_income_amount, income_per_tax_return, 
-    sum_num_dependents, sum_adj_gross_income, mean_adj_gross_income, mean_total_income_amount, 
-    sum_taxes_paid_returns, sum_taxes_paid_amount
+    
+    county, sum_total_population, sum_total_income_returns, sum_total_income_amount, 
+    income_per_tax_return,sum_num_dependents, sum_adj_gross_income, mean_adj_gross_income, 
+    mean_total_income_amount, sum_taxes_paid_returns, sum_taxes_paid_amount
+    
   ) %>% 
   arrange( desc( county ) )
 
