@@ -20,22 +20,19 @@ names(irs_2014_dataset) <- column_names
 irs_2014_dataset <- irs_2014_dataset %>% 
   drop_na(zip)
 
-# Unique zip codes
-unique_zip <- unique(irs_2014_dataset$zip)
-
-# For the gross income column, the first row brought back is the "Total" of all gross income categories.
-# Since only the first row has "Total", and the remaining rows only have "NA", we want to 
-# ultimately replace the NA's with "Total" as well.
-na_gross_incomes <- irs_2014_dataset %>% 
-  filter(is.na(gross_income))
-
-# Since the very first zip references "Total" as the zip, we want to make sure that value is missing
-# For every other row
-if (nrow(na_gross_incomes) == length(unique_zip) - 1) {
-  irs_2014_dataset['gross_income'][is.na(irs_2014_dataset['gross_income'])] <- 'Total'
-}
-
-str(irs_2014_dataset)
+# We know that there is an `na` value in every gross_income subset within the irs dataset
+# representing Total
+irs_2014_dataset['gross_income'][is.na(irs_2014_dataset['gross_income'])] <- 'Total'
 
 saveRDS(irs_2014_dataset, './r-objects/irs_2014_dataset.rds')
 write.csv(irs_2014_dataset, './r-objects/irs_2014_dataset.csv')
+
+irs_2014_dataset_group_by_zip_total_gross_income <- irs_2014_dataset %>% 
+  filter(gross_income == 'Total') %>% 
+  select(-gross_income)
+
+# 'zip', 'gross_income', 'num_dependents', 'adj_gross_income', 'total_income_returns', 'total_income_amount' 'taxes_paid_returns' 'taxes_paid_amount'
+irs_2014_dataset_initial_ds <- irs_2014_dataset_group_by_zip_total_gross_income[c(1:5, 17, 18)]
+
+saveRDS(irs_2014_dataset_initial_ds, './r-objects/irs_2014_dataset_initial_ds.rds')
+write.csv(irs_2014_dataset_initial_ds, './r-objects/irs_2014_dataset_initial_ds.csv')
