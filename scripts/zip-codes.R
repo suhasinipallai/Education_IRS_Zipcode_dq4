@@ -16,9 +16,20 @@ zip_codes_group_by_county <- zip_codes_dataset_tn %>%
   ungroup() %>% 
   arrange(desc(total_population))
 
-# Print out structure
-str(zip_codes_group_by_county)
-
-# Save off objects
+# Save off all rows from zip codes df with total pop column
 saveRDS(zip_codes_group_by_county, './r-objects/zip_codes_group_by_county.rds')
 write.csv(zip_codes_group_by_county, './r-objects/zip_codes_group_by_county.csv')
+
+# Create a summary per county of the total population
+zip_code_total_population <- zip_codes_dataset_tn %>%  
+  group_by(county) %>% 
+  summarize(total_population = sum(irs_estimated_population_2014)) %>% 
+  ungroup() %>% 
+  arrange(desc(total_population))
+
+# Save off the summarized total pop per county
+saveRDS(zip_code_total_population, './r-objects/zip_code_total_population.rds')
+write.csv(zip_code_total_population, './r-objects/zip_code_total_population.csv')
+
+# Print out structure
+str(zip_codes_group_by_county)
