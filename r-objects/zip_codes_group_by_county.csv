@@ -1,796 +1,796 @@
 "","zip","primary_city","county","area_codes","latitude","longitude","irs_estimated_population_2014","total_population"
-"1",37501,"Memphis","shelby county",901,35.1,-90,0,874585
-"2",37544,"Memphis","shelby county",901,35.15,-90.05,0,874585
-"3",38002,"Arlington","shelby county",901,35.28,-89.66,39380,874585
-"4",38014,"Brunswick","shelby county",901,35.28,-89.72,173,874585
-"5",38016,"Cordova","shelby county",901,35.18,-89.76,42200,874585
-"6",38017,"Collierville","shelby county",901,35.05,-89.67,49960,874585
-"7",38018,"Cordova","shelby county",901,35.15,-89.75,33590,874585
-"8",38027,"Collierville","shelby county",901,35.05,-89.67,694,874585
-"9",38029,"Ellendale","shelby county",901,35.24,-89.82,445,874585
-"10",38053,"Millington","shelby county",901,35.33,-89.88,24750,874585
-"11",38054,"Millington","shelby county",901,35.34,-89.87,200,874585
-"12",38055,"Millington","shelby county",901,35.33,-89.88,0,874585
-"13",38083,"Millington","shelby county",901,35.33,-89.88,628,874585
-"14",38088,"Cordova","shelby county",901,35.15,-89.75,1002,874585
-"15",38101,"Memphis","shelby county",901,35.1,-90,847,874585
-"16",38103,"Memphis","shelby county",901,35.15,-90.05,8450,874585
-"17",38104,"Memphis","shelby county",901,35.13,-90,16920,874585
-"18",38105,"Memphis","shelby county",901,35.15,-90.03,4690,874585
-"19",38106,"Memphis","shelby county",901,35.1,-90.09,21560,874585
-"20",38107,"Memphis","shelby county",901,35.17,-90.02,13950,874585
-"21",38108,"Memphis","shelby county",901,35.18,-89.97,16480,874585
-"22",38109,"Memphis","shelby county",901,35.04,-90.16,41370,874585
-"23",38110,"Memphis","shelby county",901,35.05,-89.94,0,874585
-"24",38111,"Memphis","shelby county",901,35.11,-89.94,36430,874585
-"25",38112,"Memphis","shelby county",901,35.15,-89.98,13730,874585
-"26",38113,"Memphis","shelby county",901,35.1,-90,103,874585
-"27",38114,"Memphis","shelby county",901,35.1,-90,22760,874585
-"28",38115,"Memphis","shelby county",901,35.05,-89.86,40890,874585
-"29",38116,"Memphis","shelby county",901,35.03,-90.01,37200,874585
-"30",38117,"Memphis","shelby county",901,35.12,-89.91,25120,874585
-"31",38118,"Memphis","shelby county",901,35.03,-89.93,43750,874585
-"32",38119,"Memphis","shelby county",901,35.08,-89.85,20770,874585
-"33",38120,"Memphis","shelby county",901,35.12,-89.85,13360,874585
-"34",38122,"Memphis","shelby county",901,35.16,-89.92,23930,874585
-"35",38124,"Memphis","shelby county",901,35.1,-90,254,874585
-"36",38125,"Memphis","shelby county",901,35.03,-89.79,39210,874585
-"37",38126,"Memphis","shelby county",901,35.13,-90.04,4850,874585
-"38",38127,"Memphis","shelby county",901,35.24,-90.02,37470,874585
-"39",38128,"Memphis","shelby county",901,35.22,-89.93,38840,874585
-"40",38130,"Memphis","shelby county",901,35.1,-90,681,874585
-"41",38131,"Memphis","shelby county",901,35.07,-89.99,0,874585
-"42",38132,"Memphis","shelby county",901,35.07,-89.99,67,874585
-"43",38133,"Memphis","shelby county",901,35.21,-89.79,21230,874585
-"44",38134,"Memphis","shelby county",901,35.17,-89.86,35700,874585
-"45",38135,"Memphis","shelby county",901,35.24,-89.85,27910,874585
-"46",38136,"Memphis","shelby county",901,35.1,-90,0,874585
-"47",38137,"Memphis","shelby county",901,35.1,-90,42,874585
-"48",38138,"Germantown","shelby county",901,35.08,-89.79,23780,874585
-"49",38139,"Germantown","shelby county",901,35.08,-89.76,16760,874585
-"50",38141,"Memphis","shelby county",901,35.02,-89.86,23890,874585
-"51",38142,"Memphis","shelby county",901,35.14,-90.04,0,874585
-"52",38145,"Memphis","shelby county",901,35.1,-90,0,874585
-"53",38147,"Memphis","shelby county",901,35.1,-90,0,874585
-"54",38148,"Memphis","shelby county",901,35.1,-90,0,874585
-"55",38150,"Memphis","shelby county",901,35.1,-90,0,874585
-"56",38151,"Memphis","shelby county",901,35.1,-90,0,874585
-"57",38152,"Memphis","shelby county",901,35.12,-89.93,140,874585
-"58",38157,"Memphis","shelby county",901,35.1,-90,23,874585
-"59",38159,"Memphis","shelby county",901,35.1,-90,0,874585
-"60",38161,"Memphis","shelby county",901,35.1,-90,0,874585
-"61",38163,"Memphis","shelby county",901,35.1,-90,18,874585
-"62",38165,"Memphis","shelby county",901,35.14,-90.04,0,874585
-"63",38166,"Memphis","shelby county",901,35.1,-90,0,874585
-"64",38167,"Memphis","shelby county",901,35.1,-90,596,874585
-"65",38168,"Memphis","shelby county",901,35.1,-90,614,874585
-"66",38173,"Memphis","shelby county",901,35.1,-90,314,874585
-"67",38174,"Memphis","shelby county",901,35.1,-90,544,874585
-"68",38175,"Memphis","shelby county",901,35.1,-90,1142,874585
-"69",38177,"Memphis","shelby county",901,35.1,-90,284,874585
-"70",38181,"Memphis","shelby county",901,35.1,-90,1033,874585
-"71",38182,"Memphis","shelby county",901,35.1,-90,128,874585
-"72",38183,"Germantown","shelby county",901,35.08,-89.79,910,874585
-"73",38184,"Memphis","shelby county",901,35.1,-90,857,874585
-"74",38186,"Memphis","shelby county",901,35.1,-90,708,874585
-"75",38187,"Memphis","shelby county",901,35.1,-90,556,874585
-"76",38188,"Memphis","shelby county",901,35.1,-90,0,874585
-"77",38190,"Memphis","shelby county",901,35.1,-90,657,874585
-"78",38193,"Memphis","shelby county",901,35.1,-90,0,874585
-"79",38194,"Memphis","shelby county",901,35.1,-90,0,874585
-"80",38197,"Memphis","shelby county",901,35.1,-90,45,874585
-"81",37011,"Antioch","davidson county",615,36.04,-86.64,1107,615632
-"82",37013,"Antioch","davidson county",615,36.04,-86.64,83330,615632
-"83",37070,"Goodlettsville","davidson county",615,36.33,-86.7,794,615632
-"84",37072,"Goodlettsville","davidson county",615,36.33,-86.7,28090,615632
-"85",37076,"Hermitage","davidson county",615,36.13,-86.58,34190,615632
-"86",37080,"Joelton","davidson county",615,36.33,-86.91,6670,615632
-"87",37115,"Madison","davidson county",615,36.25,-86.69,35320,615632
-"88",37116,"Madison","davidson county",615,36.25,-86.69,785,615632
-"89",37138,"Old Hickory","davidson county",615,36.22,-86.61,21240,615632
-"90",37189,"Whites Creek","davidson county",615,36.28,-86.83,3390,615632
-"91",37201,"Nashville","davidson county",615,36.17,-86.78,960,615632
-"92",37202,"Nashville","davidson county",615,36.17,-86.78,567,615632
-"93",37203,"Nashville","davidson county",615,36.15,-86.79,11350,615632
-"94",37204,"Nashville","davidson county",615,36.11,-86.77,11340,615632
-"95",37205,"Nashville","davidson county",615,36.11,-86.87,22280,615632
-"96",37206,"Nashville","davidson county",615,36.18,-86.73,22890,615632
-"97",37207,"Nashville","davidson county",615,36.23,-86.78,34660,615632
-"98",37208,"Nashville","davidson county",615,36.18,-86.81,13250,615632
-"99",37209,"Nashville","davidson county",615,36.19,-86.95,30020,615632
-"100",37210,"Nashville","davidson county",615,36.15,-86.73,13100,615632
-"101",37211,"Nashville","davidson county",615,36.07,-86.72,72980,615632
-"102",37212,"Nashville","davidson county",615,36.13,-86.8,10880,615632
-"103",37213,"Nashville","davidson county",615,36.17,-86.77,116,615632
-"104",37214,"Nashville","davidson county",615,36.16,-86.67,28020,615632
-"105",37215,"Nashville","davidson county",615,36.08,-86.83,20790,615632
-"106",37216,"Nashville","davidson county",615,36.22,-86.73,16060,615632
-"107",37217,"Nashville","davidson county",615,36.11,-86.66,31740,615632
-"108",37218,"Nashville","davidson county",615,36.16,-86.89,12410,615632
-"109",37219,"Nashville","davidson county",615,36.17,-86.78,1320,615632
-"110",37220,"Nashville","davidson county",615,36.07,-86.79,6470,615632
-"111",37221,"Nashville","davidson county",615,36.05,-86.97,36780,615632
-"112",37222,"Nashville","davidson county",615,36.17,-86.78,648,615632
-"113",37224,"Nashville","davidson county",615,36.17,-86.78,320,615632
-"114",37227,"Nashville","davidson county",615,36.17,-86.78,0,615632
-"115",37228,"Nashville","davidson county",615,36.2,-86.8,1040,615632
-"116",37229,"Nashville","davidson county",615,36.17,-86.78,505,615632
-"117",37230,"Nashville","davidson county",615,36.17,-86.78,20,615632
-"118",37232,"Nashville","davidson county",615,36.17,-86.78,0,615632
-"119",37234,"Nashville","davidson county",615,36.17,-86.78,0,615632
-"120",37235,"Nashville","davidson county",615,36.17,-86.78,156,615632
-"121",37236,"Nashville","davidson county",615,36.17,-86.78,0,615632
-"122",37237,"Nashville","davidson county",615,36.16,-86.78,10,615632
-"123",37238,"Nashville","davidson county",615,36.17,-86.78,0,615632
-"124",37240,"Nashville","davidson county",615,36.14,-86.81,0,615632
-"125",37241,"Nashville","davidson county",615,36.17,-86.78,0,615632
-"126",37242,"Nashville","davidson county",615,36.17,-86.78,0,615632
-"127",37243,"Nashville","davidson county",615,36.17,-86.78,34,615632
-"128",37244,"Nashville","davidson county",615,36.17,-86.78,0,615632
-"129",37245,"Nashville","davidson county",615,36.16,-86.78,0,615632
-"130",37246,"Nashville","davidson county",615,36.16,-86.79,0,615632
-"131",37247,"Nashville","davidson county",615,36.16,-86.78,0,615632
-"132",37248,"Nashville","davidson county",615,36.16,-86.78,0,615632
-"133",37249,"Nashville","davidson county",615,36.16,-86.78,0,615632
-"134",37250,"Nashville","davidson county",615,36.17,-86.78,0,615632
-"135",37721,"Corryton","knox county",NA,36.12,-83.8,11630,387397
-"136",37806,"Mascot","knox county",865,36.08,-83.73,2510,387397
-"137",37849,"Powell","knox county",865,36.03,-84.02,24050,387397
-"138",37901,"Knoxville","knox county",865,35.97,-83.94,488,387397
-"139",37902,"Knoxville","knox county",865,35.96,-83.92,1200,387397
-"140",37909,"Knoxville","knox county",865,35.95,-84.02,12600,387397
-"141",37912,"Knoxville","knox county",865,36.01,-83.98,18430,387397
-"142",37914,"Knoxville","knox county",865,35.98,-83.8,17020,387397
-"143",37915,"Knoxville","knox county",865,35.97,-83.9,3550,387397
-"144",37916,"Knoxville","knox county",865,35.95,-83.93,1030,387397
-"145",37917,"Knoxville","knox county",865,36,-83.91,18690,387397
-"146",37918,"Knoxville","knox county",865,36.06,-83.92,37740,387397
-"147",37919,"Knoxville","knox county",865,35.91,-84,24870,387397
-"148",37920,"Knoxville","knox county",865,35.91,-83.87,30120,387397
-"149",37921,"Knoxville","knox county",865,35.97,-83.94,25180,387397
-"150",37922,"Knoxville","knox county",865,35.86,-84.1,34300,387397
-"151",37923,"Knoxville","knox county",865,35.93,-84.08,26180,387397
-"152",37924,"Knoxville","knox county",865,36.03,-83.8,10310,387397
-"153",37927,"Knoxville","knox county",865,35.97,-83.94,612,387397
-"154",37928,"Knoxville","knox county",865,35.97,-83.94,565,387397
-"155",37929,"Knoxville","knox county",865,35.97,-83.94,0,387397
-"156",37930,"Knoxville","knox county",865,35.97,-83.94,906,387397
-"157",37931,"Knoxville","knox county",865,35.98,-84.13,25320,387397
-"158",37932,"Knoxville","knox county",865,35.92,-84.2,15530,387397
-"159",37933,"Knoxville","knox county",865,35.97,-83.94,750,387397
-"160",37934,"Knoxville","knox county",865,35.87,-84.17,24700,387397
-"161",37938,"Knoxville","knox county",865,36.12,-83.94,16470,387397
-"162",37939,"Knoxville","knox county",865,35.97,-83.94,491,387397
-"163",37940,"Knoxville","knox county",865,35.97,-83.94,654,387397
-"164",37950,"Knoxville","knox county",865,35.97,-83.94,1031,387397
-"165",37990,"Knoxville","knox county",865,35.86,-84.12,0,387397
-"166",37995,"Knoxville","knox county",865,35.97,-83.94,36,387397
-"167",37996,"Knoxville","knox county",865,35.97,-83.94,90,387397
-"168",37997,"Knoxville","knox county",865,35.97,-83.94,0,387397
-"169",37998,"Knoxville","knox county",865,35.97,-83.94,344,387397
-"170",37302,"Apison","hamilton county",423,35.01,-85,3720,314435
-"171",37304,"Bakewell","hamilton county",423,35.39,-85.11,0,314435
-"172",37308,"Birchwood","hamilton county",NA,35.36,-84.99,2480,314435
-"173",37315,"Collegedale","hamilton county",423,35.05,-85.05,2155,314435
-"174",37341,"Harrison","hamilton county",423,35.12,-85.14,11660,314435
-"175",37343,"Hixson","hamilton county",423,35.16,-85.2,38480,314435
-"176",37350,"Lookout Mountain","hamilton county",423,34.99,-85.35,1930,314435
-"177",37351,"Lupton City","hamilton county",423,35.1,-85.26,300,314435
-"178",37363,"Ooltewah","hamilton county",423,35.06,-85.09,32620,314435
-"179",37373,"Sale Creek","hamilton county",423,35.38,-85.1,2670,314435
-"180",37377,"Signal Mountain","hamilton county",NA,35.13,-85.34,15470,314435
-"181",37379,"Soddy Daisy","hamilton county",423,35.26,-85.17,23830,314435
-"182",37384,"Soddy Daisy","hamilton county",423,35.26,-85.17,1172,314435
-"183",37401,"Chattanooga","hamilton county",423,35.06,-85.25,510,314435
-"184",37402,"Chattanooga","hamilton county",423,35.04,-85.32,2020,314435
-"185",37403,"Chattanooga","hamilton county",423,35.05,-85.29,1690,314435
-"186",37404,"Chattanooga","hamilton county",423,35.03,-85.27,12270,314435
-"187",37405,"Chattanooga","hamilton county",423,35.12,-85.41,13330,314435
-"188",37406,"Chattanooga","hamilton county",423,35.06,-85.25,10610,314435
-"189",37407,"Chattanooga","hamilton county",423,35,-85.29,8660,314435
-"190",37408,"Chattanooga","hamilton county",423,35.03,-85.31,1570,314435
-"191",37409,"Chattanooga","hamilton county",423,35.01,-85.34,2870,314435
-"192",37410,"Chattanooga","hamilton county",423,35,-85.31,2940,314435
-"193",37411,"Chattanooga","hamilton county",423,35.03,-85.23,15740,314435
-"194",37412,"Chattanooga","hamilton county",423,35,-85.23,20420,314435
-"195",37414,"Chattanooga","hamilton county",423,35.06,-85.25,691,314435
-"196",37415,"Chattanooga","hamilton county",423,35.12,-85.28,20370,314435
-"197",37416,"Chattanooga","hamilton county",423,35.1,-85.18,13160,314435
-"198",37419,"Chattanooga","hamilton county",423,35.04,-85.4,5630,314435
-"199",37421,"Chattanooga","hamilton county",423,35.03,-85.15,44090,314435
-"200",37422,"Chattanooga","hamilton county",423,35.06,-85.25,698,314435
-"201",37424,"Chattanooga","hamilton county",423,35.06,-85.25,657,314435
-"202",37450,"Chattanooga","hamilton county",423,35.06,-85.25,22,314435
-"203",37037,"Christiana","rutherford county",615931,35.7,-86.34,6950,262628
-"204",37060,"Eagleville","rutherford county",615,35.74,-86.65,2340,262628
-"205",37063,"Fosterville","rutherford county",615,35.65,-86.4,0,262628
-"206",37085,"Lascassas","rutherford county",NA,35.94,-86.29,4090,262628
-"207",37086,"La Vergne","rutherford county",615,35.99,-86.57,33360,262628
-"208",37089,"La Vergne","rutherford county",615,35.99,-86.57,0,262628
-"209",37118,"Milton","rutherford county",NA,35.92,-86.17,1240,262628
-"210",37127,"Murfreesboro","rutherford county",615,35.78,-86.33,16170,262628
-"211",37128,"Murfreesboro","rutherford county",615,35.78,-86.49,46880,262628
-"212",37129,"Murfreesboro","rutherford county",615,35.93,-86.44,47710,262628
-"213",37130,"Murfreesboro","rutherford county",615,35.85,-86.39,44910,262628
-"214",37131,"Murfreesboro","rutherford county",615,35.85,-86.39,0,262628
-"215",37132,"Murfreesboro","rutherford county",615,35.85,-86.36,195,262628
-"216",37133,"Murfreesboro","rutherford county",615,35.85,-86.39,1223,262628
-"217",37153,"Rockvale","rutherford county",NA,35.75,-86.55,5340,262628
-"218",37167,"Smyrna","rutherford county",615,35.98,-86.51,52220,262628
-"219",37014,"Arrington","williamson county",615,35.88,-86.63,1850,233495
-"220",37024,"Brentwood","williamson county",615,35.99,-86.78,888,233495
-"221",37027,"Brentwood","williamson county",615,35.99,-86.78,56160,233495
-"222",37046,"College Grove","williamson county",615,35.77,-86.74,3730,233495
-"223",37062,"Fairview","williamson county",615,35.97,-87.12,10560,233495
-"224",37064,"Franklin","williamson county",615,35.88,-86.95,51990,233495
-"225",37065,"Franklin","williamson county",615,35.92,-86.84,625,233495
-"226",37067,"Franklin","williamson county",615,35.92,-86.84,26160,233495
-"227",37068,"Franklin","williamson county",615,35.92,-86.84,922,233495
-"228",37069,"Franklin","williamson county",615,35.99,-86.9,19500,233495
-"229",37135,"Nolensville","williamson county",615,35.94,-86.64,13390,233495
-"230",37174,"Spring Hill","williamson county",615931,35.74,-86.92,34320,233495
-"231",37179,"Thompsons Station","williamson county",615,35.82,-87.01,12380,233495
-"232",38476,"Primm Springs","williamson county",615,35.8,-87.25,1020,233495
-"233",37010,"Adams","montgomery county",615931,36.58,-87.06,5080,169464
-"234",37040,"Clarksville","montgomery county",615931,36.56,-87.34,44900,169464
-"235",37041,"Clarksville","montgomery county",931,36.56,-87.34,439,169464
-"236",37042,"Clarksville","montgomery county",931,36.57,-87.42,68770,169464
-"237",37043,"Clarksville","montgomery county",931615,36.49,-87.24,41670,169464
-"238",37044,"Clarksville","montgomery county",931615,36.56,-87.34,45,169464
-"239",37052,"Cunningham","montgomery county",615931,36.37,-87.43,2310,169464
-"240",37142,"Palmyra","montgomery county",931,36.41,-87.5,1540,169464
-"241",37171,"Southside","montgomery county",615931,36.36,-87.3,900,169464
-"242",37191,"Woodlawn","montgomery county",931,36.5,-87.54,3810,169464
-"243",37022,"Bethpage","sumner county",615,36.5,-86.3,4980,149190
-"244",37031,"Castalian Springs","sumner county",NA,36.38,-86.31,3650,149190
-"245",37048,"Cottontown","sumner county",615,36.48,-86.59,5510,149190
-"246",37066,"Gallatin","sumner county",615,36.37,-86.45,44420,149190
-"247",37075,"Hendersonville","sumner county",615,36.29,-86.6,60550,149190
-"248",37077,"Hendersonville","sumner county",615,36.29,-86.6,875,149190
-"249",37119,"Mitchellville","sumner county",615,36.63,-86.53,25,149190
-"250",37148,"Portland","sumner county",615,36.58,-86.51,21170,149190
-"251",37186,"Westmoreland","sumner county",615,36.56,-86.24,8010,149190
-"252",37617,"Blountville","sullivan county",423,36.53,-82.32,12150,136490
-"253",37618,"Bluff City","sullivan county",423,36.46,-82.27,10960,136490
-"254",37620,"Bristol","sullivan county",423,36.56,-82.19,31310,136490
-"255",37621,"Bristol","sullivan county",423,36.56,-82.19,859,136490
-"256",37625,"Bristol","sullivan county",423,36.56,-82.19,246,136490
-"257",37660,"Kingsport","sullivan county",423,36.52,-82.55,31710,136490
-"258",37662,"Kingsport","sullivan county",423,36.52,-82.55,825,136490
-"259",37663,"Kingsport","sullivan county",423,36.46,-82.49,13440,136490
-"260",37664,"Kingsport","sullivan county",423,36.52,-82.5,24040,136490
-"261",37665,"Kingsport","sullivan county",423,36.58,-82.57,4090,136490
-"262",37669,"Kingsport","sullivan county",423,36.52,-82.55,0,136490
-"263",37686,"Piney Flats","sullivan county",423,36.44,-82.34,6860,136490
-"264",37699,"Piney Flats","sullivan county",423,36.44,-82.34,0,136490
-"265",37601,"Johnson City","washington county",423,36.33,-82.36,28970,113112
-"266",37602,"Johnson City","washington county",423,36.33,-82.36,1105,113112
-"267",37604,"Johnson City","washington county",423,36.3,-82.38,27010,113112
-"268",37605,"Johnson City","washington county",423,36.33,-82.36,734,113112
-"269",37614,"Johnson City","washington county",423,36.3,-82.37,287,113112
-"270",37615,"Johnson City","washington county",423,36.4,-82.46,18430,113112
-"271",37656,"Fall Branch","washington county",423,36.41,-82.62,3090,113112
-"272",37659,"Jonesborough","washington county",423,36.29,-82.47,24370,113112
-"273",37681,"Limestone","washington county",423,36.22,-82.63,5110,113112
-"274",37684,"Mountain Home","washington county",423,36.3,-82.36,426,113112
-"275",37690,"Telford","washington county",423,36.24,-82.54,3580,113112
-"276",37071,"Gladeville","wilson county",615,36.08,-86.4,113,112290
-"277",37087,"Lebanon","wilson county",615,36.2,-86.32,39480,112290
-"278",37088,"Lebanon","wilson county",615,36.2,-86.32,1385,112290
-"279",37090,"Lebanon","wilson county",615,36.11,-86.3,13790,112290
-"280",37121,"Mount Juliet","wilson county",615,36.2,-86.52,652,112290
-"281",37122,"Mount Juliet","wilson county",615,36.2,-86.52,51670,112290
-"282",37136,"Norene","wilson county",615,36.11,-86.29,0,112290
-"283",37184,"Watertown","wilson county",615,36.09,-86.13,5200,112290
-"284",37701,"Alcoa","blount county",865,35.79,-83.97,7030,106944
-"285",37737,"Friendsville","blount county",865,35.75,-84.13,5170,106944
-"286",37777,"Louisville","blount county",865,35.82,-84.04,10500,106944
-"287",37801,"Maryville","blount county",865,35.66,-84.09,22560,106944
-"288",37802,"Maryville","blount county",865,35.74,-83.97,1744,106944
-"289",37803,"Maryville","blount county",865,35.74,-83.97,28450,106944
-"290",37804,"Maryville","blount county",865,35.79,-83.89,21880,106944
-"291",37853,"Rockford","blount county",865,35.82,-83.93,3220,106944
-"292",37878,"Tallassee","blount county",865,35.62,-83.89,370,106944
-"293",37882,"Townsend","blount county",865,35.67,-83.75,2400,106944
-"294",37886,"Walland","blount county",865,35.72,-83.81,3620,106944
-"295",37310,"Charleston","bradley county",423,35.28,-84.76,4050,95670
-"296",37311,"Cleveland","bradley county",423,35.17,-84.86,23280,95670
-"297",37312,"Cleveland","bradley county",423,35.23,-84.88,30140,95670
-"298",37320,"Cleveland","bradley county",423,35.17,-84.86,2252,95670
-"299",37323,"Cleveland","bradley county",423,35.1,-84.82,26900,95670
-"300",37336,"Georgetown","bradley county",423,35.3,-84.91,3860,95670
-"301",37353,"Mc Donald","bradley county",423,35.08,-84.98,4680,95670
-"302",37364,"Cleveland","bradley county",423,35.17,-84.86,508,95670
-"303",37738,"Gatlinburg","sevier county",865,35.72,-83.49,6550,90103
-"304",37764,"Kodak","sevier county",865,35.97,-83.62,8600,90103
-"305",37862,"Sevierville","sevier county",865,35.78,-83.61,19600,90103
-"306",37863,"Pigeon Forge","sevier county",865,35.79,-83.55,6930,90103
-"307",37864,"Sevierville","sevier county",865,35.89,-83.57,2197,90103
-"308",37865,"Seymour","sevier county",NA,35.87,-83.77,19380,90103
-"309",37868,"Pigeon Forge","sevier county",865,35.79,-83.55,1206,90103
-"310",37876,"Sevierville","sevier county",865,35.89,-83.57,25640,90103
-"311",38301,"Jackson","madison county",731,35.63,-88.82,26690,83760
-"312",38302,"Jackson","madison county",731,35.63,-88.82,792,83760
-"313",38303,"Jackson","madison county",731,35.63,-88.82,253,83760
-"314",38305,"Jackson","madison county",731,35.7,-88.77,45390,83760
-"315",38308,"Jackson","madison county",731,35.63,-88.82,560,83760
-"316",38313,"Beech Bluff","madison county",NA,35.6,-88.63,2830,83760
-"317",38314,"Jackson","madison county",731,35.63,-88.82,48,83760
-"318",38356,"Medon","madison county",NA,35.45,-88.86,1970,83760
-"319",38362,"Oakfield","madison county",731,35.73,-88.78,1240,83760
-"320",38366,"Pinson","madison county",731,35.47,-88.73,2160,83760
-"321",38378,"Spring Creek","madison county",731,35.76,-88.68,107,83760
-"322",38391,"Denmark","madison county",731,35.54,-88.97,1070,83760
-"323",38392,"Mercer","madison county",731,35.48,-89.03,650,83760
-"324",38501,"Cookeville","putnam county",931,36.15,-85.5,28850,70455
-"325",38502,"Cookeville","putnam county",931,36.15,-85.5,1019,70455
-"326",38503,"Cookeville","putnam county",931,36.15,-85.5,1395,70455
-"327",38505,"Cookeville","putnam county",931,36.18,-85.51,71,70455
-"328",38506,"Cookeville","putnam county",931,36.19,-85.43,23830,70455
-"329",38544,"Baxter","putnam county",931,36.15,-85.63,5820,70455
-"330",38548,"Buffalo Valley","putnam county",615,36.18,-85.75,680,70455
-"331",38574,"Monterey","putnam county",931,36.13,-85.24,7680,70455
-"332",38582,"Silver Point","putnam county",NA,36.09,-85.76,1110,70455
-"333",37032,"Cedar Hill","robertson county",615931,36.55,-87,4370,66993
-"334",37049,"Cross Plains","robertson county",615,36.54,-86.68,3230,66993
-"335",37073,"Greenbrier","robertson county",615,36.42,-86.8,12870,66993
-"336",37141,"Orlinda","robertson county",615,36.6,-86.67,1190,66993
-"337",37152,"Ridgetop","robertson county",615,36.39,-86.77,433,66993
-"338",37172,"Springfield","robertson county",615,36.49,-86.87,30690,66993
-"339",37188,"White House","robertson county",615,36.46,-86.66,14210,66993
-"340",38401,"Columbia","maury county",615931,35.62,-87.04,50120,66162
-"341",38402,"Columbia","maury county",931,35.62,-87.04,1092,66162
-"342",38451,"Culleoka","maury county",931,35.46,-86.99,4430,66162
-"343",38461,"Hampshire","maury county",931,35.58,-87.35,1250,66162
-"344",38474,"Mount Pleasant","maury county",931,35.55,-87.19,6620,66162
-"345",38482,"Santa Fe","maury county",931,35.75,-87.16,1590,66162
-"346",38487,"Williamsport","maury county",931,35.72,-87.23,1060,66162
-"347",37705,"Andersonville","anderson county",865,36.2,-84.04,4270,64931
-"348",37710,"Briceville","anderson county",865,36.16,-84.3,770,64931
-"349",37716,"Clinton","anderson county",865,36.09,-84.13,21270,64931
-"350",37717,"Clinton","anderson county",865,36.09,-84.13,835,64931
-"351",37754,"Heiskell","anderson county",865,36.12,-84.04,3950,64931
-"352",37769,"Lake City","anderson county",865,36.22,-84.15,4710,64931
-"353",37828,"Norris","anderson county",865,36.21,-84.06,1589,64931
-"354",37830,"Oak Ridge","anderson county",865,35.96,-84.29,26680,64931
-"355",37831,"Oak Ridge","anderson county",865,35.96,-84.29,857,64931
-"356",37778,"Lowland","hamblen county",423,36.15,-83.2,0,60994
-"357",37813,"Morristown","hamblen county",423865,36.21,-83.29,15930,60994
-"358",37814,"Morristown","hamblen county",865423,36.23,-83.34,29580,60994
-"359",37815,"Morristown","hamblen county",423,36.21,-83.29,662,60994
-"360",37816,"Morristown","hamblen county",423,36.21,-83.29,402,60994
-"361",37860,"Russellville","hamblen county",423,36.25,-83.19,3740,60994
-"362",37877,"Talbott","hamblen county",865,36.14,-83.4,7620,60994
-"363",37891,"Whitesburg","hamblen county",423,36.29,-83.13,3060,60994
-"364",37616,"Afton","greene county",423,36.23,-82.75,4220,54717
-"365",37641,"Chuckey","greene county",NA,36.24,-82.71,7090,54717
-"366",37743,"Greeneville","greene county",423,36.07,-82.86,20330,54717
-"367",37744,"Greeneville","greene county",423,36.16,-82.81,957,54717
-"368",37745,"Greeneville","greene county",423,36.16,-82.81,14710,54717
-"369",37809,"Midway","greene county",423,36.16,-83.04,1760,54717
-"370",37810,"Mohawk","greene county",423,36.18,-83.12,1520,54717
-"371",37818,"Mosheim","greene county",423,36.19,-82.95,4130,54717
-"372",38004,"Atoka","tipton county",901,35.44,-89.77,10620,53561
-"373",38011,"Brighton","tipton county",901,35.47,-89.73,8780,53561
-"374",38015,"Burlison","tipton county",901,35.55,-89.78,2300,53561
-"375",38019,"Covington","tipton county",731901,35.56,-89.64,13330,53561
-"376",38023,"Drummonds","tipton county",901,35.46,-89.94,4770,53561
-"377",38049,"Mason","tipton county",901,35.41,-89.53,3660,53561
-"378",38058,"Munford","tipton county",901,35.44,-89.8,9930,53561
-"379",38071,"Tipton","tipton county",901,35.46,-89.97,171,53561
-"380",37742,"Greenback","loudon county",865,35.65,-84.17,5260,52510
-"381",37771,"Lenoir City","loudon county",865,35.8,-84.27,14700,52510
-"382",37772,"Lenoir City","loudon county",865,35.79,-84.22,10780,52510
-"383",37774,"Loudon","loudon county",423865,35.73,-84.35,17480,52510
-"384",37846,"Philadelphia","loudon county",423,35.67,-84.4,4290,52510
-"385",37018,"Beechgrove","coffee county",931,35.64,-86.2,1670,52398
-"386",37342,"Hillsboro","coffee county",931,35.36,-85.95,3120,52398
-"387",37349,"Manchester","coffee county",931,35.46,-86.08,971,52398
-"388",37355,"Manchester","coffee county",931,35.46,-86.08,22740,52398
-"389",37360,"Normandy","coffee county",931,35.45,-86.25,1380,52398
-"390",37382,"Summitville","coffee county",931,35.54,-85.97,327,52398
-"391",37388,"Tullahoma","coffee county",931,35.37,-86.2,22190,52398
-"392",37389,"Arnold Afb","coffee county",931,35.37,-86.14,0,52398
-"393",38233,"Kenton","gibson county",731,36.19,-89.01,2270,47988
-"394",38316,"Bradford","gibson county",731,36.07,-88.81,2340,47988
-"395",38330,"Dyer","gibson county",731,36.07,-88.99,3270,47988
-"396",38331,"Eaton","gibson county",731,35.96,-89.13,16,47988
-"397",38338,"Gibson","gibson county",731,35.87,-88.84,352,47988
-"398",38343,"Humboldt","gibson county",731,35.82,-88.9,13340,47988
-"399",38346,"Idlewild","gibson county",731,35.98,-88.77,67,47988
-"400",38355,"Medina","gibson county",731,35.8,-88.77,6590,47988
-"401",38358,"Milan","gibson county",731,35.91,-88.75,10250,47988
-"402",38369,"Rutherford","gibson county",731,36.12,-88.99,1560,47988
-"403",38382,"Trenton","gibson county",731,35.97,-88.93,7770,47988
-"404",38389,"Yorkville","gibson county",731,36.09,-89.11,163,47988
-"405",37723,"Crab Orchard","cumberland county",931,35.9,-84.88,820,46689
-"406",38555,"Crossville","cumberland county",931,35.95,-85.03,14980,46689
-"407",38557,"Crossville","cumberland county",931,35.95,-85.03,1851,46689
-"408",38558,"Crossville","cumberland county",931,36.01,-84.87,7280,46689
-"409",38571,"Crossville","cumberland county",931,36.05,-85.01,11380,46689
-"410",38572,"Crossville","cumberland county",931,35.85,-85.13,9680,46689
-"411",38578,"Pleasant Hill","cumberland county",931,35.98,-85.2,698,46689
-"412",37029,"Burns","dickson county",615,36.05,-87.31,5270,46039
-"413",37036,"Charlotte","dickson county",615,36.18,-87.34,5070,46039
-"414",37051,"Cumberland Furnace","dickson county",615,36.3,-87.4,3160,46039
-"415",37055,"Dickson","dickson county",615,36.07,-87.37,23970,46039
-"416",37056,"Dickson","dickson county",615,36.07,-87.37,898,46039
-"417",37165,"Slayden","dickson county",615,36.29,-87.47,131,46039
-"418",37181,"Vanleer","dickson county",931615,36.23,-87.44,1240,46039
-"419",37187,"White Bluff","dickson county",615,36.1,-87.21,6300,46039
-"420",37725,"Dandridge","jefferson county",865,36.02,-83.41,14390,45280
-"421",37760,"Jefferson City","jefferson county",865,36.11,-83.48,10690,45280
-"422",37820,"New Market","jefferson county",865,36.09,-83.55,6710,45280
-"423",37871,"Strawberry Plains","jefferson county",NA,36.06,-83.68,7810,45280
-"424",37890,"White Pine","jefferson county",865,36.09,-83.29,5680,45280
-"425",37748,"Harriman","roane county",865,35.93,-84.56,14000,45070
-"426",37763,"Kingston","roane county",865,35.87,-84.51,13340,45070
-"427",37840,"Oliver Springs","roane county",423865,36.03,-84.32,7710,45070
-"428",37854,"Rockwood","roane county",865,35.87,-84.67,10020,45070
-"429",37642,"Church Hill","hawkins county",423,36.52,-82.71,12530,44590
-"430",37645,"Mount Carmel","hawkins county",423,36.56,-82.65,4850,44590
-"431",37711,"Bulls Gap","hawkins county",423,36.26,-83.07,4110,44590
-"432",37731,"Eidson","hawkins county",423,36.5,-83.08,530,44590
-"433",37811,"Mooresburg","hawkins county",423,36.34,-83.22,2680,44590
-"434",37857,"Rogersville","hawkins county",423,36.4,-83,16540,44590
-"435",37873,"Surgoinsville","hawkins county",423,36.47,-82.85,3350,44590
-"436",37020,"Bell Buckle","bedford county",931615,35.59,-86.35,4600,42645
-"437",37160,"Shelbyville","bedford county",931,35.49,-86.44,31360,42645
-"438",37161,"Shelbyville","bedford county",931,35.49,-86.44,0,42645
-"439",37162,"Shelbyville","bedford county",931,35.49,-86.44,895,42645
-"440",37180,"Unionville","bedford county",615931,35.62,-86.59,2930,42645
-"441",37183,"Wartrace","bedford county",931,35.52,-86.33,2860,42645
-"442",37303,"Athens","mcminn county",423,35.45,-84.6,20550,42189
-"443",37309,"Calhoun","mcminn county",423,35.29,-84.74,1770,42189
-"444",37329,"Englewood","mcminn county",423,35.42,-84.48,4630,42189
-"445",37331,"Etowah","mcminn county",423,35.33,-84.52,6270,42189
-"446",37370,"Riceville","mcminn county",423,35.38,-84.69,4050,42189
-"447",37371,"Athens","mcminn county",423,35.45,-84.6,1239,42189
-"448",37826,"Niota","mcminn county",423,35.51,-84.54,3680,42189
-"449",37314,"Coker Creek","monroe county",423,35.26,-84.3,70,37590
-"450",37354,"Madisonville","monroe county",423,35.52,-84.35,13970,37590
-"451",37385,"Tellico Plains","monroe county",423,35.36,-84.29,6370,37590
-"452",37874,"Sweetwater","monroe county",423865,35.6,-84.46,12550,37590
-"453",37885,"Vonore","monroe county",423,35.59,-84.23,4630,37590
-"454",37110,"Mcminnville","warren county",931,35.68,-85.77,26670,36558
-"455",37111,"Mcminnville","warren county",931,35.68,-85.77,995,36558
-"456",37357,"Morrison","warren county",931,35.6,-85.91,4880,36558
-"457",37378,"Smartt","warren county",931,35.63,-85.84,208,36558
-"458",37394,"Viola","warren county",931,35.54,-85.86,229,36558
-"459",38550,"Campaign","warren county",931,35.76,-85.64,56,36558
-"460",38581,"Rock Island","warren county",931,35.71,-85.6,3520,36558
-"461",37015,"Ashland City","cheatham county",615,36.27,-87.05,16510,36380
-"462",37035,"Chapmansboro","cheatham county",615931,36.37,-87.11,3290,36380
-"463",37082,"Kingston Springs","cheatham county",615,36.09,-87.1,5890,36380
-"464",37143,"Pegram","cheatham county",615,36.1,-87.05,3700,36380
-"465",37146,"Pleasant View","cheatham county",615,36.37,-87.04,6990,36380
-"466",38456,"Ethridge","lawrence county",931,35.32,-87.3,2820,35920
-"467",38457,"Five Points","lawrence county",931,35.03,-87.28,640,35920
-"468",38464,"Lawrenceburg","lawrence county",931,35.24,-87.33,18340,35920
-"469",38468,"Leoma","lawrence county",931,35.12,-87.3,4290,35920
-"470",38469,"Loretto","lawrence county",931,35.08,-87.43,3440,35920
-"471",38481,"Saint Joseph","lawrence county",931,35.03,-87.49,800,35920
-"472",38483,"Summertown","lawrence county",931,35.43,-87.33,4740,35920
-"473",38486,"Westpoint","lawrence county",NA,35.15,-87.53,850,35920
-"474",37643,"Elizabethton","carter county",423,36.33,-82.23,25650,35497
-"475",37644,"Elizabethton","carter county",423,36.33,-82.23,1082,35497
-"476",37658,"Hampton","carter county",423,36.28,-82.17,3320,35497
-"477",37682,"Milligan College","carter county",423,36.3,-82.29,415,35497
-"478",37687,"Roan Mountain","carter county",423,36.18,-82.07,3560,35497
-"479",37694,"Watauga","carter county",NA,36.36,-82.29,1470,35497
-"480",38010,"Braden","fayette county",901,35.36,-89.57,18,33315
-"481",38028,"Eads","fayette county",NA,35.2,-89.66,6840,33315
-"482",38036,"Gallaway","fayette county",901,35.32,-89.63,407,33315
-"483",38045,"Laconia","fayette county",901,35.31,-89.23,28,33315
-"484",38046,"La Grange","fayette county",901,35.07,-89.25,205,33315
-"485",38048,"Macon","fayette county",901,35.17,-89.54,107,33315
-"486",38057,"Moscow","fayette county",901,35.06,-89.39,3380,33315
-"487",38060,"Oakland","fayette county",901,35.22,-89.51,9750,33315
-"488",38066,"Rossville","fayette county",901,35.04,-89.54,2720,33315
-"489",38068,"Somerville","fayette county",901,35.23,-89.35,9120,33315
-"490",38076,"Williston","fayette county",901,35.14,-89.44,740,33315
-"491",38007,"Bogota","dyer county",731,36.16,-89.43,157,32297
-"492",38024,"Dyersburg","dyer county",731,36.03,-89.38,22520,32297
-"493",38025,"Dyersburg","dyer county",731,36.03,-89.38,924,32297
-"494",38030,"Finley","dyer county",731,35.98,-89.58,770,32297
-"495",38047,"Lenox","dyer county",731,36.09,-89.5,119,32297
-"496",38059,"Newbern","dyer county",731,36.11,-89.26,6930,32297
-"497",38070,"Tigrett","dyer county",731,35.94,-89.24,167,32297
-"498",38259,"Trimble","dyer county",731,36.2,-89.18,710,32297
-"499",37306,"Belvidere","franklin county",931,35.12,-86.18,2330,31878
-"500",37318,"Cowan","franklin county",931,35.16,-86.01,1590,31878
-"501",37324,"Decherd","franklin county",NA,35.2,-86.08,4340,31878
-"502",37330,"Estill Springs","franklin county",931,35.26,-86.13,6060,31878
-"503",37345,"Huntland","franklin county",931,35.05,-86.26,2080,31878
-"504",37375,"Sewanee","franklin county",931,35.2,-85.92,2110,31878
-"505",37376,"Sherwood","franklin county",931,35.06,-85.95,360,31878
-"506",37383,"Sewanee","franklin county",931,35.2,-85.92,218,31878
-"507",37398,"Winchester","franklin county",931,35.18,-86.1,12790,31878
-"508",37144,"Petersburg","lincoln county",931,35.31,-86.63,2730,30420
-"509",37328,"Elora","lincoln county",NA,35.01,-86.35,1270,30420
-"510",37334,"Fayetteville","lincoln county",931,35.14,-86.56,19780,30420
-"511",37335,"Flintville","lincoln county",931,35.04,-86.45,2240,30420
-"512",37348,"Kelso","lincoln county",931,35.12,-86.46,1000,30420
-"513",37359,"Mulberry","lincoln county",931,35.2,-86.41,610,30420
-"514",38453,"Dellrose","lincoln county",931,35.11,-86.8,370,30420
-"515",38459,"Frankewing","lincoln county",931,35.19,-86.8,340,30420
-"516",38488,"Taft","lincoln county",931,35.05,-86.68,2080,30420
-"517",37321,"Dayton","rhea county",423,35.49,-85.01,16440,29760
-"518",37332,"Evensville","rhea county",423,35.56,-84.95,2310,29760
-"519",37337,"Grandview","rhea county",423,35.74,-84.83,1090,29760
-"520",37338,"Graysville","rhea county",423,35.43,-85.22,2660,29760
-"521",37381,"Spring City","rhea county",423,35.68,-84.86,7260,29760
-"522",37713,"Bybee","cocke county",865,36.04,-83.18,1190,29578
-"523",37722,"Cosby","cocke county",NA,35.81,-83.25,4790,29578
-"524",37727,"Del Rio","cocke county",423,35.91,-83.02,1540,29578
-"525",37753,"Hartford","cocke county",423865,35.81,-83.14,530,29578
-"526",37821,"Newport","cocke county",423865,35.96,-83.19,17250,29578
-"527",37822,"Newport","cocke county",423,35.96,-83.19,1178,29578
-"528",37843,"Parrottsville","cocke county",865,36,-83.09,3100,29578
-"529",37019,"Belfast","marshall county",931,35.4,-86.71,840,27840
-"530",37034,"Chapel Hill","marshall county",931,35.62,-86.69,6350,27840
-"531",37047,"Cornersville","marshall county",931,35.35,-86.84,2140,27840
-"532",37091,"Lewisburg","marshall county",931,35.44,-86.78,18510,27840
-"533",37714,"Caryville","campbell county",423,36.26,-84.3,3420,27710
-"534",37729,"Duff","campbell county",423,36.52,-84.03,1020,27710
-"535",37757,"Jacksboro","campbell county",423,36.33,-84.19,7750,27710
-"536",37762,"Jellico","campbell county",423,36.57,-84.12,2280,27710
-"537",37766,"La Follette","campbell county",423,36.37,-84.12,12810,27710
-"538",37819,"Newcomb","campbell county",423,36.54,-84.2,430,27710
-"539",38232,"Hornbeak","obion county",731,36.33,-89.29,1580,26466
-"540",38240,"Obion","obion county",NA,36.26,-89.19,1660,26466
-"541",38253,"Rives","obion county",731,36.35,-89.04,910,26466
-"542",38254,"Samburg","obion county",731,36.38,-89.35,190,26466
-"543",38257,"South Fulton","obion county",731,36.49,-88.88,3730,26466
-"544",38260,"Troy","obion county",731,36.33,-89.16,3450,26466
-"545",38261,"Union City","obion county",731,36.42,-89.05,14080,26466
-"546",38271,"Woodland Mills","obion county",731,36.47,-89.11,142,26466
-"547",38281,"Union City","obion county",731,36.42,-89.05,724,26466
-"548",38222,"Buchanan","henry county",731,36.42,-88.17,2150,26462
-"549",38223,"Como","henry county",731,36.28,-88.5,62,26462
-"550",38224,"Cottage Grove","henry county",731,36.37,-88.47,840,26462
-"551",38231,"Henry","henry county",731,36.2,-88.41,1470,26462
-"552",38236,"Mansfield","henry county",731,36.18,-88.28,580,26462
-"553",38242,"Paris","henry county",731,36.3,-88.3,16510,26462
-"554",38251,"Puryear","henry county",731,36.44,-88.33,2340,26462
-"555",38256,"Springville","henry county",731,36.25,-88.15,2510,26462
-"556",37707,"Arthur","claiborne county",423,36.54,-83.67,327,26209
-"557",37715,"Clairfield","claiborne county",423,36.54,-83.95,620,26209
-"558",37724,"Cumberland Gap","claiborne county",423,36.55,-83.71,1600,26209
-"559",37730,"Eagan","claiborne county",423,36.55,-83.98,131,26209
-"560",37752,"Harrogate","claiborne county",423,36.56,-83.54,4870,26209
-"561",37773,"Lone Mountain","claiborne county",423,36.38,-83.58,28,26209
-"562",37824,"New Tazewell","claiborne county",423,36.43,-83.6,2101,26209
-"563",37825,"New Tazewell","claiborne county",423,36.43,-83.6,5490,26209
-"564",37851,"Pruden","claiborne county",423,36.58,-83.91,42,26209
-"565",37867,"Shawanee","claiborne county",423,36.57,-83.55,90,26209
-"566",37870,"Speedwell","claiborne county",423,36.47,-83.81,3180,26209
-"567",37879,"Tazewell","claiborne county",423,36.45,-83.57,7730,26209
-"568",38201,"Mc Kenzie","carroll county",731,36.13,-88.51,7760,25734
-"569",38220,"Atwood","carroll county",731,35.97,-88.67,1560,25734
-"570",38235,"Mc Lemoresville","carroll county",731,35.99,-88.56,304,25734
-"571",38258,"Trezevant","carroll county",731,36.01,-88.62,1180,25734
-"572",38317,"Bruceton","carroll county",731,36.03,-88.24,1930,25734
-"573",38318,"Buena Vista","carroll county",731,35.98,-88.28,380,25734
-"574",38321,"Cedar Grove","carroll county",731,35.81,-88.6,2080,25734
-"575",38324,"Clarksburg","carroll county",731,35.87,-88.38,190,25734
-"576",38342,"Hollow Rock","carroll county",731,36.03,-88.27,1150,25734
-"577",38344,"Huntingdon","carroll county",731,36,-88.41,7290,25734
-"578",38348,"Lavinia","carroll county",731,35.86,-88.64,790,25734
-"579",38387,"Westport","carroll county",731,35.88,-88.29,340,25734
-"580",38390,"Yuma","carroll county",731,35.86,-88.37,780,25734
-"581",38449,"Ardmore","giles county",931,35.04,-86.82,2580,23948
-"582",38455,"Elkton","giles county",931,35.04,-86.89,428,23948
-"583",38460,"Goodspring","giles county",931,35.12,-87.14,1170,23948
-"584",38472,"Lynnville","giles county",931,35.37,-87,2260,23948
-"585",38473,"Minor Hill","giles county",931,35.03,-87.17,850,23948
-"586",38477,"Prospect","giles county",931,35.05,-87,2130,23948
-"587",38478,"Pulaski","giles county",931,35.19,-87.03,14530,23948
-"588",38225,"Dresden","weakley county",731,36.27,-88.69,4940,23837
-"589",38226,"Dukedom","weakley county",731,36.47,-88.66,280,23837
-"590",38229,"Gleason","weakley county",731,36.21,-88.61,2350,23837
-"591",38230,"Greenfield","weakley county",731,36.15,-88.8,2830,23837
-"592",38237,"Martin","weakley county",731,36.34,-88.85,10940,23837
-"593",38238,"Martin","weakley county",731,36.34,-88.85,37,23837
-"594",38241,"Palmersville","weakley county",731,36.41,-88.58,610,23837
-"595",38255,"Sharon","weakley county",731,36.23,-88.82,1850,23837
-"596",38328,"Darden","henderson county",731,35.63,-88.23,720,23440
-"597",38345,"Huron","henderson county",731,35.58,-88.5,1660,23440
-"598",38351,"Lexington","henderson county",731,35.65,-88.39,15410,23440
-"599",38368,"Reagan","henderson county",NA,35.51,-88.35,1590,23440
-"600",38371,"Sardis","henderson county",731,35.44,-88.29,1030,23440
-"601",38374,"Scotts Hill","henderson county",731,35.51,-88.23,1620,23440
-"602",38388,"Wildersville","henderson county",731,35.78,-88.36,1410,23440
-"603",38310,"Adamsville","mcnairy county",731,35.23,-88.38,4740,23090
-"604",38315,"Bethel Springs","mcnairy county",731,35.23,-88.6,2830,23090
-"605",38334,"Finger","mcnairy county",731,35.35,-88.61,1520,23090
-"606",38339,"Guys","mcnairy county",731,35.05,-88.52,570,23090
-"607",38357,"Michie","mcnairy county",731,35.06,-88.42,2280,23090
-"608",38359,"Milledgeville","mcnairy county",731,35.37,-88.36,230,23090
-"609",38367,"Ramer","mcnairy county",731,35.07,-88.61,2280,23090
-"610",38375,"Selmer","mcnairy county",731,35.17,-88.59,7560,23090
-"611",38379,"Stantonville","mcnairy county",731,35.15,-88.42,1080,23090
-"612",38393,"Chewalla","mcnairy county",731,35.02,-88.67,0,23090
-"613",38559,"Doyle","white county",931,35.85,-85.51,1080,22670
-"614",38579,"Quebeck","white county",931,35.84,-85.55,820,22670
-"615",38583,"Sparta","white county",931,35.93,-85.47,19750,22670
-"616",38587,"Walling","white county",931,35.85,-85.62,1020,22670
-"617",37340,"Guild","marion county",423,35.03,-85.52,530,22570
-"618",37347,"Jasper","marion county",423,35.05,-85.62,7020,22570
-"619",37374,"Sequatchie","marion county",423,35.19,-85.66,1330,22570
-"620",37380,"South Pittsburg","marion county",423,35.01,-85.71,5490,22570
-"621",37396,"Whiteside","marion county",423,35.01,-85.5,330,22570
-"622",37397,"Whitwell","marion county",423,35.2,-85.51,7870,22570
-"623",38037,"Gates","lauderdale county",NA,35.83,-89.4,1430,21040
-"624",38040,"Halls","lauderdale county",731,35.88,-89.4,4290,21040
-"625",38041,"Henning","lauderdale county",731,35.67,-89.57,1990,21040
-"626",38063,"Ripley","lauderdale county",731,35.74,-89.53,13330,21040
-"627",38008,"Bolivar","hardeman county",731,35.26,-88.99,7950,20520
-"628",38039,"Grand Junction","hardeman county",731901,35.04,-89.18,1780,20520
-"629",38042,"Hickory Valley","hardeman county",901,35.15,-89.12,660,20520
-"630",38044,"Hornsby","hardeman county",731,35.22,-88.83,720,20520
-"631",38052,"Middleton","hardeman county",731,35.06,-88.89,3250,20520
-"632",38061,"Pocahontas","hardeman county",731,35.05,-88.81,750,20520
-"633",38067,"Saulsbury","hardeman county",731901,35.04,-89.08,990,20520
-"634",38075,"Whiteville","hardeman county",731901,35.32,-89.14,3140,20520
-"635",38377,"Silerton","hardeman county",731,35.34,-88.8,0,20520
-"636",38381,"Toone","hardeman county",731,35.35,-88.95,1280,20520
-"637",37708,"Bean Station","grainger county",865,36.34,-83.28,5430,19550
-"638",37709,"Blaine","grainger county",865,36.14,-83.69,3250,19550
-"639",37848,"Powder Springs","grainger county",865,36.24,-83.66,250,19550
-"640",37861,"Rutledge","grainger county",865,36.27,-83.52,6800,19550
-"641",37881,"Thorn Hill","grainger county",NA,36.35,-83.41,1620,19550
-"642",37888,"Washburn","grainger county",865,36.31,-83.59,2200,19550
-"643",37025,"Bon Aqua","hickman county",615,35.94,-87.34,5400,19180
-"644",37033,"Centerville","hickman county",931,35.79,-87.44,6110,19180
-"645",37098,"Lyles","hickman county",615931,35.87,-87.32,4550,19180
-"646",37137,"Nunnelly","hickman county",931,35.89,-87.52,2140,19180
-"647",37140,"Only","hickman county",931,35.87,-87.65,120,19180
-"648",38454,"Duck River","hickman county",931,35.71,-87.35,860,19180
-"649",38326,"Counce","hardin county",731,35.03,-88.29,1990,19115
-"650",38327,"Crump","hardin county",731,35.23,-88.32,460,19115
-"651",38361,"Morris Chapel","hardin county",731,35.31,-88.35,830,19115
-"652",38365,"Pickwick Dam","hardin county",731,35.05,-88.23,245,19115
-"653",38370,"Saltillo","hardin county",731,35.37,-88.21,510,19115
-"654",38372,"Savannah","hardin county",731,35.22,-88.23,14290,19115
-"655",38376,"Shiloh","hardin county",731,35.11,-88.36,250,19115
-"656",38475,"Olivehill","hardin county",931,35.26,-88.04,540,19115
-"657",37732,"Elgin","scott county",423,36.33,-84.6,277,17927
-"658",37755,"Helenwood","scott county",423,36.43,-84.56,2640,17927
-"659",37756,"Huntsville","scott county",423,36.41,-84.48,2220,17927
-"660",37841,"Oneida","scott county",423,36.5,-84.51,7350,17927
-"661",37847,"Pioneer","scott county",NA,36.46,-84.29,2070,17927
-"662",37852,"Robbins","scott county",423,36.32,-84.57,1880,17927
-"663",37892,"Winfield","scott county",423,36.56,-84.45,1490,17927
-"664",37012,"Alexandria","dekalb county",NA,36.07,-86.03,1870,16620
-"665",37059,"Dowelltown","dekalb county",615,36.01,-85.94,1320,16620
-"666",37095,"Liberty","dekalb county",NA,36,-85.98,1540,16620
-"667",37166,"Smithville","dekalb county",931615,35.95,-85.82,11890,16620
-"668",37083,"Lafayette","macon county",615,36.52,-86.03,12290,16380
-"669",37150,"Red Boiling Springs","macon county",931615,36.53,-85.85,4090,16380
-"670",37078,"Hurricane Mills","humphreys county",931,35.94,-87.76,570,15830
-"671",37101,"Mc Ewen","humphreys county",931,36.1,-87.63,5440,15830
-"672",37134,"New Johnsonville","humphreys county",931,36.01,-87.95,2760,15830
-"673",37185,"Waverly","humphreys county",931,36.09,-87.78,7060,15830
-"674",37030,"Carthage","smith county",615,36.25,-85.94,5890,15500
-"675",37057,"Dixon Springs","smith county",615,36.4,-86.04,680,15500
-"676",37145,"Pleasant Shade","smith county",615,36.38,-85.91,1930,15500
-"677",37151,"Riddleton","smith county",615,36.34,-86.03,470,15500
-"678",38547,"Brush Creek","smith county",615,36.11,-86.01,1810,15500
-"679",38552,"Chestnut Mound","smith county",615,36.22,-85.81,300,15500
-"680",38560,"Elmwood","smith county",615,36.24,-85.88,1130,15500
-"681",38563,"Gordonsville","smith county",615,36.18,-85.93,2250,15500
-"682",38567,"Hickman","smith county",615,36.1,-85.9,750,15500
-"683",38569,"Lancaster","smith county",615,36.09,-85.85,290,15500
-"684",38541,"Allons","overton county",NA,36.51,-85.32,1250,15194
-"685",38542,"Allred","overton county",931,36.32,-85.2,31,15194
-"686",38543,"Alpine","overton county",931,36.36,-85.14,450,15194
-"687",38554,"Crawford","overton county",931,36.24,-85.18,690,15194
-"688",38568,"Hilham","overton county",NA,36.44,-85.47,1530,15194
-"689",38570,"Livingston","overton county",931,36.38,-85.32,7690,15194
-"690",38573,"Monroe","overton county",NA,36.45,-85.2,1760,15194
-"691",38580,"Rickman","overton county",931,36.29,-85.3,1700,15194
-"692",38589,"Wilder","overton county",931,36.26,-85.08,93,15194
-"693",37307,"Benton","polk county",423,35.17,-84.65,4180,14833
-"694",37316,"Conasauga","polk county",423,35,-84.73,55,14833
-"695",37317,"Copperhill","polk county",423,34.99,-84.37,1850,14833
-"696",37325,"Delano","polk county",NA,35.25,-84.62,1440,14833
-"697",37326,"Ducktown","polk county",423,35.03,-84.38,818,14833
-"698",37333,"Farner","polk county",423,35.14,-84.32,380,14833
-"699",37361,"Ocoee","polk county",423,35.1,-84.7,1420,14833
-"700",37362,"Old Fort","polk county",NA,35.04,-84.64,2900,14833
-"701",37369,"Reliance","polk county",423,35.18,-84.56,710,14833
-"702",37391,"Turtletown","polk county",423,35.12,-84.35,1080,14833
-"703",38012,"Brownsville","haywood county",731,35.59,-89.25,12610,14720
-"704",38069,"Stanton","haywood county",731,35.46,-89.4,2110,14720
-"705",37650,"Erwin","unicoi county",423,36.14,-82.41,9760,14320
-"706",37657,"Flag Pond","unicoi county",423,36.01,-82.56,660,14320
-"707",37692,"Unicoi","unicoi county",423,36.19,-82.35,3900,14320
-"708",37640,"Butler","johnson county",423,36.31,-82,2600,13050
-"709",37680,"Laurel Bloomery","johnson county",423,36.58,-81.73,540,13050
-"710",37683,"Mountain City","johnson county",423,36.47,-81.8,8500,13050
-"711",37688,"Shady Valley","johnson county",423,36.51,-81.92,770,13050
-"712",37691,"Trade","johnson county",423,36.34,-81.74,640,13050
-"713",38221,"Big Sandy","benton county",731,36.23,-88.08,2380,13050
-"714",38320,"Camden","benton county",731,36.06,-88.1,8620,13050
-"715",38333,"Eva","benton county",731,36.11,-87.99,380,13050
-"716",38341,"Holladay","benton county",NA,35.89,-88.07,1670,13050
-"717",38001,"Alamo","crockett county",731,35.78,-89.11,3750,12935
-"718",38006,"Bells","crockett county",731,35.71,-89.08,4580,12935
-"719",38021,"Crockett Mills","crockett county",731,35.88,-89.16,180,12935
-"720",38034,"Friendship","crockett county",731,35.91,-89.24,2400,12935
-"721",38050,"Maury City","crockett county",731,35.83,-89.23,785,12935
-"722",38336,"Fruitvale","crockett county",731,35.72,-89.06,0,12935
-"723",38337,"Gadsden","crockett county",731,35.79,-89.01,1240,12935
-"724",38504,"Allardt","fentress county",931,36.38,-84.88,1080,12790
-"725",38553,"Clarkrange","fentress county",931,36.21,-84.96,1910,12790
-"726",38556,"Jamestown","fentress county",931,36.43,-84.93,8860,12790
-"727",38565,"Grimsley","fentress county",931,36.25,-85.03,940,12790
-"728",37779,"Luttrell","union county",865,36.2,-83.74,3100,12330
-"729",37807,"Maynardville","union county",865,36.24,-83.8,7810,12330
-"730",37866,"Sharps Chapel","union county",865,36.34,-83.8,1420,12330
-"731",37016,"Auburntown","cannon county",NA,35.94,-86.09,760,12050
-"732",37026,"Bradyville","cannon county",615,35.69,-86.1,1940,12050
-"733",37149,"Readyville","cannon county",NA,35.8,-86.19,2140,12050
-"734",37190,"Woodbury","cannon county",931,35.82,-86.07,7210,12050
-"735",37719,"Coalfield","morgan county",423,36.02,-84.43,532,11954
-"736",37726,"Deer Lodge","morgan county",423,36.21,-84.83,1460,11954
-"737",37733,"Rugby","morgan county",423,36.35,-84.7,40,11954
-"738",37770,"Lancing","morgan county",423,36.15,-84.69,2080,11954
-"739",37829,"Oakdale","morgan county",423,36.01,-84.64,1460,11954
-"740",37845,"Petros","morgan county",423,36.09,-84.44,532,11954
-"741",37872,"Sunbright","morgan county",423,36.24,-84.67,1680,11954
-"742",37887,"Wartburg","morgan county",423,36.1,-84.58,4170,11954
-"743",37301,"Altamont","grundy county",931,35.42,-85.72,1360,11940
-"744",37305,"Beersheba Springs","grundy county",931,35.45,-85.67,590,11940
-"745",37313,"Coalmont","grundy county",931,35.33,-85.71,1000,11940
-"746",37339,"Gruetli Laager","grundy county",931,35.38,-85.63,1490,11940
-"747",37356,"Monteagle","grundy county",931,35.24,-85.84,2150,11940
-"748",37365,"Palmer","grundy county",931,35.35,-85.56,1170,11940
-"749",37366,"Pelham","grundy county",931,35.32,-85.78,800,11940
-"750",37387,"Tracy City","grundy county",931,35.25,-85.75,3380,11940
-"751",38425,"Clifton","wayne county",931,35.38,-87.99,1450,11900
-"752",38450,"Collinwood","wayne county",931,35.17,-87.74,2090,11900
-"753",38452,"Cypress Inn","wayne county",931,35.05,-87.79,800,11900
-"754",38463,"Iron City","wayne county",NA,35.02,-87.58,2170,11900
-"755",38471,"Lutts","wayne county",931,35.11,-87.9,410,11900
-"756",38485,"Waynesboro","wayne county",931,35.32,-87.75,4980,11900
-"757",38332,"Enville","chester county",NA,35.38,-88.42,920,11860
-"758",38340,"Henderson","chester county",731,35.44,-88.64,10120,11860
-"759",38347,"Jacks Creek","chester county",731,35.48,-88.5,340,11860
-"760",38352,"Luray","chester county",731,35.53,-88.53,480,11860
-"761",37023,"Big Rock","stewart county",931,36.59,-87.78,1540,11360
-"762",37028,"Bumpus Mills","stewart county",931,36.62,-87.85,520,11360
-"763",37050,"Cumberland City","stewart county",931,36.38,-87.64,1430,11360
-"764",37058,"Dover","stewart county",931,36.48,-87.84,5760,11360
-"765",37079,"Indian Mound","stewart county",NA,36.47,-87.66,2110,11360
-"766",37327,"Dunlap","sequatchie county",423,35.37,-85.38,10060,10060
-"767",37322,"Decatur","meigs county",423,35.52,-84.79,6870,9750
-"768",37880,"Ten Mile","meigs county",NA,35.66,-84.66,2880,9750
-"769",38311,"Bath Springs","decatur county",931,35.44,-88.1,660,8300
-"770",38329,"Decaturville","decatur county",731,35.58,-88.11,2630,8300
-"771",38363,"Parsons","decatur county",731,35.65,-88.12,4620,8300
-"772",38380,"Sugar Tree","decatur county",NA,35.79,-88.02,390,8300
-"773",38462,"Hohenwald","lewis county",931,35.55,-87.55,8280,8280
-"774",37367,"Pikeville","bledsoe county",423,35.6,-85.19,7280,7280
-"775",38545,"Bloomington Springs","jackson county",931,36.22,-85.66,1030,6860
-"776",38562,"Gainesboro","jackson county",931,36.36,-85.65,4650,6860
-"777",38564,"Granville","jackson county",931,36.27,-85.74,400,6860
-"778",38588,"Whitleyville","jackson county",931,36.48,-85.7,780,6860
-"779",37061,"Erin","houston county",931,36.31,-87.7,4050,6750
-"780",37175,"Stewart","houston county",931,36.32,-87.89,790,6750
-"781",37178,"Tennessee Ridge","houston county",931,36.31,-87.76,1910,6750
-"782",37096,"Linden","perry county",931,35.61,-87.84,4590,6210
-"783",37097,"Lobelville","perry county",931,35.75,-87.79,1620,6210
-"784",37074,"Hartsville","trousdale county",615,36.39,-86.15,6070,6070
-"785",38077,"Wynnburg","lake county",731,36.33,-89.47,95,4515
-"786",38079,"Tiptonville","lake county",731,36.37,-89.47,2450,4515
-"787",38080,"Ridgely","lake county",731,36.26,-89.48,1970,4515
-"788",38551,"Celina","clay county",931,36.54,-85.5,3220,4180
-"789",38575,"Moss","clay county",931,36.59,-85.68,960,4180
-"790",38549,"Byrdstown","pickett county",931,36.57,-85.13,3110,4020
-"791",38577,"Pall Mall","pickett county",NA,36.56,-84.95,910,4020
-"792",37765,"Kyles Ford","hancock county",423,36.57,-83.06,390,4010
-"793",37869,"Sneedville","hancock county",423,36.53,-83.21,3620,4010
-"794",38585,"Spencer","van buren county",423931,35.74,-85.45,3180,3180
-"795",37352,"Lynchburg","moore county",931,35.28,-86.35,2840,2840
+"1",37501,"Memphis","shelby",901,35.1,-90,0,874585
+"2",37544,"Memphis","shelby",901,35.15,-90.05,0,874585
+"3",38002,"Arlington","shelby",901,35.28,-89.66,39380,874585
+"4",38014,"Brunswick","shelby",901,35.28,-89.72,173,874585
+"5",38016,"Cordova","shelby",901,35.18,-89.76,42200,874585
+"6",38017,"Collierville","shelby",901,35.05,-89.67,49960,874585
+"7",38018,"Cordova","shelby",901,35.15,-89.75,33590,874585
+"8",38027,"Collierville","shelby",901,35.05,-89.67,694,874585
+"9",38029,"Ellendale","shelby",901,35.24,-89.82,445,874585
+"10",38053,"Millington","shelby",901,35.33,-89.88,24750,874585
+"11",38054,"Millington","shelby",901,35.34,-89.87,200,874585
+"12",38055,"Millington","shelby",901,35.33,-89.88,0,874585
+"13",38083,"Millington","shelby",901,35.33,-89.88,628,874585
+"14",38088,"Cordova","shelby",901,35.15,-89.75,1002,874585
+"15",38101,"Memphis","shelby",901,35.1,-90,847,874585
+"16",38103,"Memphis","shelby",901,35.15,-90.05,8450,874585
+"17",38104,"Memphis","shelby",901,35.13,-90,16920,874585
+"18",38105,"Memphis","shelby",901,35.15,-90.03,4690,874585
+"19",38106,"Memphis","shelby",901,35.1,-90.09,21560,874585
+"20",38107,"Memphis","shelby",901,35.17,-90.02,13950,874585
+"21",38108,"Memphis","shelby",901,35.18,-89.97,16480,874585
+"22",38109,"Memphis","shelby",901,35.04,-90.16,41370,874585
+"23",38110,"Memphis","shelby",901,35.05,-89.94,0,874585
+"24",38111,"Memphis","shelby",901,35.11,-89.94,36430,874585
+"25",38112,"Memphis","shelby",901,35.15,-89.98,13730,874585
+"26",38113,"Memphis","shelby",901,35.1,-90,103,874585
+"27",38114,"Memphis","shelby",901,35.1,-90,22760,874585
+"28",38115,"Memphis","shelby",901,35.05,-89.86,40890,874585
+"29",38116,"Memphis","shelby",901,35.03,-90.01,37200,874585
+"30",38117,"Memphis","shelby",901,35.12,-89.91,25120,874585
+"31",38118,"Memphis","shelby",901,35.03,-89.93,43750,874585
+"32",38119,"Memphis","shelby",901,35.08,-89.85,20770,874585
+"33",38120,"Memphis","shelby",901,35.12,-89.85,13360,874585
+"34",38122,"Memphis","shelby",901,35.16,-89.92,23930,874585
+"35",38124,"Memphis","shelby",901,35.1,-90,254,874585
+"36",38125,"Memphis","shelby",901,35.03,-89.79,39210,874585
+"37",38126,"Memphis","shelby",901,35.13,-90.04,4850,874585
+"38",38127,"Memphis","shelby",901,35.24,-90.02,37470,874585
+"39",38128,"Memphis","shelby",901,35.22,-89.93,38840,874585
+"40",38130,"Memphis","shelby",901,35.1,-90,681,874585
+"41",38131,"Memphis","shelby",901,35.07,-89.99,0,874585
+"42",38132,"Memphis","shelby",901,35.07,-89.99,67,874585
+"43",38133,"Memphis","shelby",901,35.21,-89.79,21230,874585
+"44",38134,"Memphis","shelby",901,35.17,-89.86,35700,874585
+"45",38135,"Memphis","shelby",901,35.24,-89.85,27910,874585
+"46",38136,"Memphis","shelby",901,35.1,-90,0,874585
+"47",38137,"Memphis","shelby",901,35.1,-90,42,874585
+"48",38138,"Germantown","shelby",901,35.08,-89.79,23780,874585
+"49",38139,"Germantown","shelby",901,35.08,-89.76,16760,874585
+"50",38141,"Memphis","shelby",901,35.02,-89.86,23890,874585
+"51",38142,"Memphis","shelby",901,35.14,-90.04,0,874585
+"52",38145,"Memphis","shelby",901,35.1,-90,0,874585
+"53",38147,"Memphis","shelby",901,35.1,-90,0,874585
+"54",38148,"Memphis","shelby",901,35.1,-90,0,874585
+"55",38150,"Memphis","shelby",901,35.1,-90,0,874585
+"56",38151,"Memphis","shelby",901,35.1,-90,0,874585
+"57",38152,"Memphis","shelby",901,35.12,-89.93,140,874585
+"58",38157,"Memphis","shelby",901,35.1,-90,23,874585
+"59",38159,"Memphis","shelby",901,35.1,-90,0,874585
+"60",38161,"Memphis","shelby",901,35.1,-90,0,874585
+"61",38163,"Memphis","shelby",901,35.1,-90,18,874585
+"62",38165,"Memphis","shelby",901,35.14,-90.04,0,874585
+"63",38166,"Memphis","shelby",901,35.1,-90,0,874585
+"64",38167,"Memphis","shelby",901,35.1,-90,596,874585
+"65",38168,"Memphis","shelby",901,35.1,-90,614,874585
+"66",38173,"Memphis","shelby",901,35.1,-90,314,874585
+"67",38174,"Memphis","shelby",901,35.1,-90,544,874585
+"68",38175,"Memphis","shelby",901,35.1,-90,1142,874585
+"69",38177,"Memphis","shelby",901,35.1,-90,284,874585
+"70",38181,"Memphis","shelby",901,35.1,-90,1033,874585
+"71",38182,"Memphis","shelby",901,35.1,-90,128,874585
+"72",38183,"Germantown","shelby",901,35.08,-89.79,910,874585
+"73",38184,"Memphis","shelby",901,35.1,-90,857,874585
+"74",38186,"Memphis","shelby",901,35.1,-90,708,874585
+"75",38187,"Memphis","shelby",901,35.1,-90,556,874585
+"76",38188,"Memphis","shelby",901,35.1,-90,0,874585
+"77",38190,"Memphis","shelby",901,35.1,-90,657,874585
+"78",38193,"Memphis","shelby",901,35.1,-90,0,874585
+"79",38194,"Memphis","shelby",901,35.1,-90,0,874585
+"80",38197,"Memphis","shelby",901,35.1,-90,45,874585
+"81",37011,"Antioch","davidson",615,36.04,-86.64,1107,615632
+"82",37013,"Antioch","davidson",615,36.04,-86.64,83330,615632
+"83",37070,"Goodlettsville","davidson",615,36.33,-86.7,794,615632
+"84",37072,"Goodlettsville","davidson",615,36.33,-86.7,28090,615632
+"85",37076,"Hermitage","davidson",615,36.13,-86.58,34190,615632
+"86",37080,"Joelton","davidson",615,36.33,-86.91,6670,615632
+"87",37115,"Madison","davidson",615,36.25,-86.69,35320,615632
+"88",37116,"Madison","davidson",615,36.25,-86.69,785,615632
+"89",37138,"Old Hickory","davidson",615,36.22,-86.61,21240,615632
+"90",37189,"Whites Creek","davidson",615,36.28,-86.83,3390,615632
+"91",37201,"Nashville","davidson",615,36.17,-86.78,960,615632
+"92",37202,"Nashville","davidson",615,36.17,-86.78,567,615632
+"93",37203,"Nashville","davidson",615,36.15,-86.79,11350,615632
+"94",37204,"Nashville","davidson",615,36.11,-86.77,11340,615632
+"95",37205,"Nashville","davidson",615,36.11,-86.87,22280,615632
+"96",37206,"Nashville","davidson",615,36.18,-86.73,22890,615632
+"97",37207,"Nashville","davidson",615,36.23,-86.78,34660,615632
+"98",37208,"Nashville","davidson",615,36.18,-86.81,13250,615632
+"99",37209,"Nashville","davidson",615,36.19,-86.95,30020,615632
+"100",37210,"Nashville","davidson",615,36.15,-86.73,13100,615632
+"101",37211,"Nashville","davidson",615,36.07,-86.72,72980,615632
+"102",37212,"Nashville","davidson",615,36.13,-86.8,10880,615632
+"103",37213,"Nashville","davidson",615,36.17,-86.77,116,615632
+"104",37214,"Nashville","davidson",615,36.16,-86.67,28020,615632
+"105",37215,"Nashville","davidson",615,36.08,-86.83,20790,615632
+"106",37216,"Nashville","davidson",615,36.22,-86.73,16060,615632
+"107",37217,"Nashville","davidson",615,36.11,-86.66,31740,615632
+"108",37218,"Nashville","davidson",615,36.16,-86.89,12410,615632
+"109",37219,"Nashville","davidson",615,36.17,-86.78,1320,615632
+"110",37220,"Nashville","davidson",615,36.07,-86.79,6470,615632
+"111",37221,"Nashville","davidson",615,36.05,-86.97,36780,615632
+"112",37222,"Nashville","davidson",615,36.17,-86.78,648,615632
+"113",37224,"Nashville","davidson",615,36.17,-86.78,320,615632
+"114",37227,"Nashville","davidson",615,36.17,-86.78,0,615632
+"115",37228,"Nashville","davidson",615,36.2,-86.8,1040,615632
+"116",37229,"Nashville","davidson",615,36.17,-86.78,505,615632
+"117",37230,"Nashville","davidson",615,36.17,-86.78,20,615632
+"118",37232,"Nashville","davidson",615,36.17,-86.78,0,615632
+"119",37234,"Nashville","davidson",615,36.17,-86.78,0,615632
+"120",37235,"Nashville","davidson",615,36.17,-86.78,156,615632
+"121",37236,"Nashville","davidson",615,36.17,-86.78,0,615632
+"122",37237,"Nashville","davidson",615,36.16,-86.78,10,615632
+"123",37238,"Nashville","davidson",615,36.17,-86.78,0,615632
+"124",37240,"Nashville","davidson",615,36.14,-86.81,0,615632
+"125",37241,"Nashville","davidson",615,36.17,-86.78,0,615632
+"126",37242,"Nashville","davidson",615,36.17,-86.78,0,615632
+"127",37243,"Nashville","davidson",615,36.17,-86.78,34,615632
+"128",37244,"Nashville","davidson",615,36.17,-86.78,0,615632
+"129",37245,"Nashville","davidson",615,36.16,-86.78,0,615632
+"130",37246,"Nashville","davidson",615,36.16,-86.79,0,615632
+"131",37247,"Nashville","davidson",615,36.16,-86.78,0,615632
+"132",37248,"Nashville","davidson",615,36.16,-86.78,0,615632
+"133",37249,"Nashville","davidson",615,36.16,-86.78,0,615632
+"134",37250,"Nashville","davidson",615,36.17,-86.78,0,615632
+"135",37721,"Corryton","knox",NA,36.12,-83.8,11630,387397
+"136",37806,"Mascot","knox",865,36.08,-83.73,2510,387397
+"137",37849,"Powell","knox",865,36.03,-84.02,24050,387397
+"138",37901,"Knoxville","knox",865,35.97,-83.94,488,387397
+"139",37902,"Knoxville","knox",865,35.96,-83.92,1200,387397
+"140",37909,"Knoxville","knox",865,35.95,-84.02,12600,387397
+"141",37912,"Knoxville","knox",865,36.01,-83.98,18430,387397
+"142",37914,"Knoxville","knox",865,35.98,-83.8,17020,387397
+"143",37915,"Knoxville","knox",865,35.97,-83.9,3550,387397
+"144",37916,"Knoxville","knox",865,35.95,-83.93,1030,387397
+"145",37917,"Knoxville","knox",865,36,-83.91,18690,387397
+"146",37918,"Knoxville","knox",865,36.06,-83.92,37740,387397
+"147",37919,"Knoxville","knox",865,35.91,-84,24870,387397
+"148",37920,"Knoxville","knox",865,35.91,-83.87,30120,387397
+"149",37921,"Knoxville","knox",865,35.97,-83.94,25180,387397
+"150",37922,"Knoxville","knox",865,35.86,-84.1,34300,387397
+"151",37923,"Knoxville","knox",865,35.93,-84.08,26180,387397
+"152",37924,"Knoxville","knox",865,36.03,-83.8,10310,387397
+"153",37927,"Knoxville","knox",865,35.97,-83.94,612,387397
+"154",37928,"Knoxville","knox",865,35.97,-83.94,565,387397
+"155",37929,"Knoxville","knox",865,35.97,-83.94,0,387397
+"156",37930,"Knoxville","knox",865,35.97,-83.94,906,387397
+"157",37931,"Knoxville","knox",865,35.98,-84.13,25320,387397
+"158",37932,"Knoxville","knox",865,35.92,-84.2,15530,387397
+"159",37933,"Knoxville","knox",865,35.97,-83.94,750,387397
+"160",37934,"Knoxville","knox",865,35.87,-84.17,24700,387397
+"161",37938,"Knoxville","knox",865,36.12,-83.94,16470,387397
+"162",37939,"Knoxville","knox",865,35.97,-83.94,491,387397
+"163",37940,"Knoxville","knox",865,35.97,-83.94,654,387397
+"164",37950,"Knoxville","knox",865,35.97,-83.94,1031,387397
+"165",37990,"Knoxville","knox",865,35.86,-84.12,0,387397
+"166",37995,"Knoxville","knox",865,35.97,-83.94,36,387397
+"167",37996,"Knoxville","knox",865,35.97,-83.94,90,387397
+"168",37997,"Knoxville","knox",865,35.97,-83.94,0,387397
+"169",37998,"Knoxville","knox",865,35.97,-83.94,344,387397
+"170",37302,"Apison","hamilton",423,35.01,-85,3720,314435
+"171",37304,"Bakewell","hamilton",423,35.39,-85.11,0,314435
+"172",37308,"Birchwood","hamilton",NA,35.36,-84.99,2480,314435
+"173",37315,"Collegedale","hamilton",423,35.05,-85.05,2155,314435
+"174",37341,"Harrison","hamilton",423,35.12,-85.14,11660,314435
+"175",37343,"Hixson","hamilton",423,35.16,-85.2,38480,314435
+"176",37350,"Lookout Mountain","hamilton",423,34.99,-85.35,1930,314435
+"177",37351,"Lupton City","hamilton",423,35.1,-85.26,300,314435
+"178",37363,"Ooltewah","hamilton",423,35.06,-85.09,32620,314435
+"179",37373,"Sale Creek","hamilton",423,35.38,-85.1,2670,314435
+"180",37377,"Signal Mountain","hamilton",NA,35.13,-85.34,15470,314435
+"181",37379,"Soddy Daisy","hamilton",423,35.26,-85.17,23830,314435
+"182",37384,"Soddy Daisy","hamilton",423,35.26,-85.17,1172,314435
+"183",37401,"Chattanooga","hamilton",423,35.06,-85.25,510,314435
+"184",37402,"Chattanooga","hamilton",423,35.04,-85.32,2020,314435
+"185",37403,"Chattanooga","hamilton",423,35.05,-85.29,1690,314435
+"186",37404,"Chattanooga","hamilton",423,35.03,-85.27,12270,314435
+"187",37405,"Chattanooga","hamilton",423,35.12,-85.41,13330,314435
+"188",37406,"Chattanooga","hamilton",423,35.06,-85.25,10610,314435
+"189",37407,"Chattanooga","hamilton",423,35,-85.29,8660,314435
+"190",37408,"Chattanooga","hamilton",423,35.03,-85.31,1570,314435
+"191",37409,"Chattanooga","hamilton",423,35.01,-85.34,2870,314435
+"192",37410,"Chattanooga","hamilton",423,35,-85.31,2940,314435
+"193",37411,"Chattanooga","hamilton",423,35.03,-85.23,15740,314435
+"194",37412,"Chattanooga","hamilton",423,35,-85.23,20420,314435
+"195",37414,"Chattanooga","hamilton",423,35.06,-85.25,691,314435
+"196",37415,"Chattanooga","hamilton",423,35.12,-85.28,20370,314435
+"197",37416,"Chattanooga","hamilton",423,35.1,-85.18,13160,314435
+"198",37419,"Chattanooga","hamilton",423,35.04,-85.4,5630,314435
+"199",37421,"Chattanooga","hamilton",423,35.03,-85.15,44090,314435
+"200",37422,"Chattanooga","hamilton",423,35.06,-85.25,698,314435
+"201",37424,"Chattanooga","hamilton",423,35.06,-85.25,657,314435
+"202",37450,"Chattanooga","hamilton",423,35.06,-85.25,22,314435
+"203",37037,"Christiana","rutherford",615931,35.7,-86.34,6950,262628
+"204",37060,"Eagleville","rutherford",615,35.74,-86.65,2340,262628
+"205",37063,"Fosterville","rutherford",615,35.65,-86.4,0,262628
+"206",37085,"Lascassas","rutherford",NA,35.94,-86.29,4090,262628
+"207",37086,"La Vergne","rutherford",615,35.99,-86.57,33360,262628
+"208",37089,"La Vergne","rutherford",615,35.99,-86.57,0,262628
+"209",37118,"Milton","rutherford",NA,35.92,-86.17,1240,262628
+"210",37127,"Murfreesboro","rutherford",615,35.78,-86.33,16170,262628
+"211",37128,"Murfreesboro","rutherford",615,35.78,-86.49,46880,262628
+"212",37129,"Murfreesboro","rutherford",615,35.93,-86.44,47710,262628
+"213",37130,"Murfreesboro","rutherford",615,35.85,-86.39,44910,262628
+"214",37131,"Murfreesboro","rutherford",615,35.85,-86.39,0,262628
+"215",37132,"Murfreesboro","rutherford",615,35.85,-86.36,195,262628
+"216",37133,"Murfreesboro","rutherford",615,35.85,-86.39,1223,262628
+"217",37153,"Rockvale","rutherford",NA,35.75,-86.55,5340,262628
+"218",37167,"Smyrna","rutherford",615,35.98,-86.51,52220,262628
+"219",37014,"Arrington","williamson",615,35.88,-86.63,1850,233495
+"220",37024,"Brentwood","williamson",615,35.99,-86.78,888,233495
+"221",37027,"Brentwood","williamson",615,35.99,-86.78,56160,233495
+"222",37046,"College Grove","williamson",615,35.77,-86.74,3730,233495
+"223",37062,"Fairview","williamson",615,35.97,-87.12,10560,233495
+"224",37064,"Franklin","williamson",615,35.88,-86.95,51990,233495
+"225",37065,"Franklin","williamson",615,35.92,-86.84,625,233495
+"226",37067,"Franklin","williamson",615,35.92,-86.84,26160,233495
+"227",37068,"Franklin","williamson",615,35.92,-86.84,922,233495
+"228",37069,"Franklin","williamson",615,35.99,-86.9,19500,233495
+"229",37135,"Nolensville","williamson",615,35.94,-86.64,13390,233495
+"230",37174,"Spring Hill","williamson",615931,35.74,-86.92,34320,233495
+"231",37179,"Thompsons Station","williamson",615,35.82,-87.01,12380,233495
+"232",38476,"Primm Springs","williamson",615,35.8,-87.25,1020,233495
+"233",37010,"Adams","montgomery",615931,36.58,-87.06,5080,169464
+"234",37040,"Clarksville","montgomery",615931,36.56,-87.34,44900,169464
+"235",37041,"Clarksville","montgomery",931,36.56,-87.34,439,169464
+"236",37042,"Clarksville","montgomery",931,36.57,-87.42,68770,169464
+"237",37043,"Clarksville","montgomery",931615,36.49,-87.24,41670,169464
+"238",37044,"Clarksville","montgomery",931615,36.56,-87.34,45,169464
+"239",37052,"Cunningham","montgomery",615931,36.37,-87.43,2310,169464
+"240",37142,"Palmyra","montgomery",931,36.41,-87.5,1540,169464
+"241",37171,"Southside","montgomery",615931,36.36,-87.3,900,169464
+"242",37191,"Woodlawn","montgomery",931,36.5,-87.54,3810,169464
+"243",37022,"Bethpage","sumner",615,36.5,-86.3,4980,149190
+"244",37031,"Castalian Springs","sumner",NA,36.38,-86.31,3650,149190
+"245",37048,"Cottontown","sumner",615,36.48,-86.59,5510,149190
+"246",37066,"Gallatin","sumner",615,36.37,-86.45,44420,149190
+"247",37075,"Hendersonville","sumner",615,36.29,-86.6,60550,149190
+"248",37077,"Hendersonville","sumner",615,36.29,-86.6,875,149190
+"249",37119,"Mitchellville","sumner",615,36.63,-86.53,25,149190
+"250",37148,"Portland","sumner",615,36.58,-86.51,21170,149190
+"251",37186,"Westmoreland","sumner",615,36.56,-86.24,8010,149190
+"252",37617,"Blountville","sullivan",423,36.53,-82.32,12150,136490
+"253",37618,"Bluff City","sullivan",423,36.46,-82.27,10960,136490
+"254",37620,"Bristol","sullivan",423,36.56,-82.19,31310,136490
+"255",37621,"Bristol","sullivan",423,36.56,-82.19,859,136490
+"256",37625,"Bristol","sullivan",423,36.56,-82.19,246,136490
+"257",37660,"Kingsport","sullivan",423,36.52,-82.55,31710,136490
+"258",37662,"Kingsport","sullivan",423,36.52,-82.55,825,136490
+"259",37663,"Kingsport","sullivan",423,36.46,-82.49,13440,136490
+"260",37664,"Kingsport","sullivan",423,36.52,-82.5,24040,136490
+"261",37665,"Kingsport","sullivan",423,36.58,-82.57,4090,136490
+"262",37669,"Kingsport","sullivan",423,36.52,-82.55,0,136490
+"263",37686,"Piney Flats","sullivan",423,36.44,-82.34,6860,136490
+"264",37699,"Piney Flats","sullivan",423,36.44,-82.34,0,136490
+"265",37601,"Johnson City","washington",423,36.33,-82.36,28970,113112
+"266",37602,"Johnson City","washington",423,36.33,-82.36,1105,113112
+"267",37604,"Johnson City","washington",423,36.3,-82.38,27010,113112
+"268",37605,"Johnson City","washington",423,36.33,-82.36,734,113112
+"269",37614,"Johnson City","washington",423,36.3,-82.37,287,113112
+"270",37615,"Johnson City","washington",423,36.4,-82.46,18430,113112
+"271",37656,"Fall Branch","washington",423,36.41,-82.62,3090,113112
+"272",37659,"Jonesborough","washington",423,36.29,-82.47,24370,113112
+"273",37681,"Limestone","washington",423,36.22,-82.63,5110,113112
+"274",37684,"Mountain Home","washington",423,36.3,-82.36,426,113112
+"275",37690,"Telford","washington",423,36.24,-82.54,3580,113112
+"276",37071,"Gladeville","wilson",615,36.08,-86.4,113,112290
+"277",37087,"Lebanon","wilson",615,36.2,-86.32,39480,112290
+"278",37088,"Lebanon","wilson",615,36.2,-86.32,1385,112290
+"279",37090,"Lebanon","wilson",615,36.11,-86.3,13790,112290
+"280",37121,"Mount Juliet","wilson",615,36.2,-86.52,652,112290
+"281",37122,"Mount Juliet","wilson",615,36.2,-86.52,51670,112290
+"282",37136,"Norene","wilson",615,36.11,-86.29,0,112290
+"283",37184,"Watertown","wilson",615,36.09,-86.13,5200,112290
+"284",37701,"Alcoa","blount",865,35.79,-83.97,7030,106944
+"285",37737,"Friendsville","blount",865,35.75,-84.13,5170,106944
+"286",37777,"Louisville","blount",865,35.82,-84.04,10500,106944
+"287",37801,"Maryville","blount",865,35.66,-84.09,22560,106944
+"288",37802,"Maryville","blount",865,35.74,-83.97,1744,106944
+"289",37803,"Maryville","blount",865,35.74,-83.97,28450,106944
+"290",37804,"Maryville","blount",865,35.79,-83.89,21880,106944
+"291",37853,"Rockford","blount",865,35.82,-83.93,3220,106944
+"292",37878,"Tallassee","blount",865,35.62,-83.89,370,106944
+"293",37882,"Townsend","blount",865,35.67,-83.75,2400,106944
+"294",37886,"Walland","blount",865,35.72,-83.81,3620,106944
+"295",37310,"Charleston","bradley",423,35.28,-84.76,4050,95670
+"296",37311,"Cleveland","bradley",423,35.17,-84.86,23280,95670
+"297",37312,"Cleveland","bradley",423,35.23,-84.88,30140,95670
+"298",37320,"Cleveland","bradley",423,35.17,-84.86,2252,95670
+"299",37323,"Cleveland","bradley",423,35.1,-84.82,26900,95670
+"300",37336,"Georgetown","bradley",423,35.3,-84.91,3860,95670
+"301",37353,"Mc Donald","bradley",423,35.08,-84.98,4680,95670
+"302",37364,"Cleveland","bradley",423,35.17,-84.86,508,95670
+"303",37738,"Gatlinburg","sevier",865,35.72,-83.49,6550,90103
+"304",37764,"Kodak","sevier",865,35.97,-83.62,8600,90103
+"305",37862,"Sevierville","sevier",865,35.78,-83.61,19600,90103
+"306",37863,"Pigeon Forge","sevier",865,35.79,-83.55,6930,90103
+"307",37864,"Sevierville","sevier",865,35.89,-83.57,2197,90103
+"308",37865,"Seymour","sevier",NA,35.87,-83.77,19380,90103
+"309",37868,"Pigeon Forge","sevier",865,35.79,-83.55,1206,90103
+"310",37876,"Sevierville","sevier",865,35.89,-83.57,25640,90103
+"311",38301,"Jackson","madison",731,35.63,-88.82,26690,83760
+"312",38302,"Jackson","madison",731,35.63,-88.82,792,83760
+"313",38303,"Jackson","madison",731,35.63,-88.82,253,83760
+"314",38305,"Jackson","madison",731,35.7,-88.77,45390,83760
+"315",38308,"Jackson","madison",731,35.63,-88.82,560,83760
+"316",38313,"Beech Bluff","madison",NA,35.6,-88.63,2830,83760
+"317",38314,"Jackson","madison",731,35.63,-88.82,48,83760
+"318",38356,"Medon","madison",NA,35.45,-88.86,1970,83760
+"319",38362,"Oakfield","madison",731,35.73,-88.78,1240,83760
+"320",38366,"Pinson","madison",731,35.47,-88.73,2160,83760
+"321",38378,"Spring Creek","madison",731,35.76,-88.68,107,83760
+"322",38391,"Denmark","madison",731,35.54,-88.97,1070,83760
+"323",38392,"Mercer","madison",731,35.48,-89.03,650,83760
+"324",38501,"Cookeville","putnam",931,36.15,-85.5,28850,70455
+"325",38502,"Cookeville","putnam",931,36.15,-85.5,1019,70455
+"326",38503,"Cookeville","putnam",931,36.15,-85.5,1395,70455
+"327",38505,"Cookeville","putnam",931,36.18,-85.51,71,70455
+"328",38506,"Cookeville","putnam",931,36.19,-85.43,23830,70455
+"329",38544,"Baxter","putnam",931,36.15,-85.63,5820,70455
+"330",38548,"Buffalo Valley","putnam",615,36.18,-85.75,680,70455
+"331",38574,"Monterey","putnam",931,36.13,-85.24,7680,70455
+"332",38582,"Silver Point","putnam",NA,36.09,-85.76,1110,70455
+"333",37032,"Cedar Hill","robertson",615931,36.55,-87,4370,66993
+"334",37049,"Cross Plains","robertson",615,36.54,-86.68,3230,66993
+"335",37073,"Greenbrier","robertson",615,36.42,-86.8,12870,66993
+"336",37141,"Orlinda","robertson",615,36.6,-86.67,1190,66993
+"337",37152,"Ridgetop","robertson",615,36.39,-86.77,433,66993
+"338",37172,"Springfield","robertson",615,36.49,-86.87,30690,66993
+"339",37188,"White House","robertson",615,36.46,-86.66,14210,66993
+"340",38401,"Columbia","maury",615931,35.62,-87.04,50120,66162
+"341",38402,"Columbia","maury",931,35.62,-87.04,1092,66162
+"342",38451,"Culleoka","maury",931,35.46,-86.99,4430,66162
+"343",38461,"Hampshire","maury",931,35.58,-87.35,1250,66162
+"344",38474,"Mount Pleasant","maury",931,35.55,-87.19,6620,66162
+"345",38482,"Santa Fe","maury",931,35.75,-87.16,1590,66162
+"346",38487,"Williamsport","maury",931,35.72,-87.23,1060,66162
+"347",37705,"Andersonville","anderson",865,36.2,-84.04,4270,64931
+"348",37710,"Briceville","anderson",865,36.16,-84.3,770,64931
+"349",37716,"Clinton","anderson",865,36.09,-84.13,21270,64931
+"350",37717,"Clinton","anderson",865,36.09,-84.13,835,64931
+"351",37754,"Heiskell","anderson",865,36.12,-84.04,3950,64931
+"352",37769,"Lake City","anderson",865,36.22,-84.15,4710,64931
+"353",37828,"Norris","anderson",865,36.21,-84.06,1589,64931
+"354",37830,"Oak Ridge","anderson",865,35.96,-84.29,26680,64931
+"355",37831,"Oak Ridge","anderson",865,35.96,-84.29,857,64931
+"356",37778,"Lowland","hamblen",423,36.15,-83.2,0,60994
+"357",37813,"Morristown","hamblen",423865,36.21,-83.29,15930,60994
+"358",37814,"Morristown","hamblen",865423,36.23,-83.34,29580,60994
+"359",37815,"Morristown","hamblen",423,36.21,-83.29,662,60994
+"360",37816,"Morristown","hamblen",423,36.21,-83.29,402,60994
+"361",37860,"Russellville","hamblen",423,36.25,-83.19,3740,60994
+"362",37877,"Talbott","hamblen",865,36.14,-83.4,7620,60994
+"363",37891,"Whitesburg","hamblen",423,36.29,-83.13,3060,60994
+"364",37616,"Afton","greene",423,36.23,-82.75,4220,54717
+"365",37641,"Chuckey","greene",NA,36.24,-82.71,7090,54717
+"366",37743,"Greeneville","greene",423,36.07,-82.86,20330,54717
+"367",37744,"Greeneville","greene",423,36.16,-82.81,957,54717
+"368",37745,"Greeneville","greene",423,36.16,-82.81,14710,54717
+"369",37809,"Midway","greene",423,36.16,-83.04,1760,54717
+"370",37810,"Mohawk","greene",423,36.18,-83.12,1520,54717
+"371",37818,"Mosheim","greene",423,36.19,-82.95,4130,54717
+"372",38004,"Atoka","tipton",901,35.44,-89.77,10620,53561
+"373",38011,"Brighton","tipton",901,35.47,-89.73,8780,53561
+"374",38015,"Burlison","tipton",901,35.55,-89.78,2300,53561
+"375",38019,"Covington","tipton",731901,35.56,-89.64,13330,53561
+"376",38023,"Drummonds","tipton",901,35.46,-89.94,4770,53561
+"377",38049,"Mason","tipton",901,35.41,-89.53,3660,53561
+"378",38058,"Munford","tipton",901,35.44,-89.8,9930,53561
+"379",38071,"Tipton","tipton",901,35.46,-89.97,171,53561
+"380",37742,"Greenback","loudon",865,35.65,-84.17,5260,52510
+"381",37771,"Lenoir City","loudon",865,35.8,-84.27,14700,52510
+"382",37772,"Lenoir City","loudon",865,35.79,-84.22,10780,52510
+"383",37774,"Loudon","loudon",423865,35.73,-84.35,17480,52510
+"384",37846,"Philadelphia","loudon",423,35.67,-84.4,4290,52510
+"385",37018,"Beechgrove","coffee",931,35.64,-86.2,1670,52398
+"386",37342,"Hillsboro","coffee",931,35.36,-85.95,3120,52398
+"387",37349,"Manchester","coffee",931,35.46,-86.08,971,52398
+"388",37355,"Manchester","coffee",931,35.46,-86.08,22740,52398
+"389",37360,"Normandy","coffee",931,35.45,-86.25,1380,52398
+"390",37382,"Summitville","coffee",931,35.54,-85.97,327,52398
+"391",37388,"Tullahoma","coffee",931,35.37,-86.2,22190,52398
+"392",37389,"Arnold Afb","coffee",931,35.37,-86.14,0,52398
+"393",38233,"Kenton","gibson",731,36.19,-89.01,2270,47988
+"394",38316,"Bradford","gibson",731,36.07,-88.81,2340,47988
+"395",38330,"Dyer","gibson",731,36.07,-88.99,3270,47988
+"396",38331,"Eaton","gibson",731,35.96,-89.13,16,47988
+"397",38338,"Gibson","gibson",731,35.87,-88.84,352,47988
+"398",38343,"Humboldt","gibson",731,35.82,-88.9,13340,47988
+"399",38346,"Idlewild","gibson",731,35.98,-88.77,67,47988
+"400",38355,"Medina","gibson",731,35.8,-88.77,6590,47988
+"401",38358,"Milan","gibson",731,35.91,-88.75,10250,47988
+"402",38369,"Rutherford","gibson",731,36.12,-88.99,1560,47988
+"403",38382,"Trenton","gibson",731,35.97,-88.93,7770,47988
+"404",38389,"Yorkville","gibson",731,36.09,-89.11,163,47988
+"405",37723,"Crab Orchard","cumberland",931,35.9,-84.88,820,46689
+"406",38555,"Crossville","cumberland",931,35.95,-85.03,14980,46689
+"407",38557,"Crossville","cumberland",931,35.95,-85.03,1851,46689
+"408",38558,"Crossville","cumberland",931,36.01,-84.87,7280,46689
+"409",38571,"Crossville","cumberland",931,36.05,-85.01,11380,46689
+"410",38572,"Crossville","cumberland",931,35.85,-85.13,9680,46689
+"411",38578,"Pleasant Hill","cumberland",931,35.98,-85.2,698,46689
+"412",37029,"Burns","dickson",615,36.05,-87.31,5270,46039
+"413",37036,"Charlotte","dickson",615,36.18,-87.34,5070,46039
+"414",37051,"Cumberland Furnace","dickson",615,36.3,-87.4,3160,46039
+"415",37055,"Dickson","dickson",615,36.07,-87.37,23970,46039
+"416",37056,"Dickson","dickson",615,36.07,-87.37,898,46039
+"417",37165,"Slayden","dickson",615,36.29,-87.47,131,46039
+"418",37181,"Vanleer","dickson",931615,36.23,-87.44,1240,46039
+"419",37187,"White Bluff","dickson",615,36.1,-87.21,6300,46039
+"420",37725,"Dandridge","jefferson",865,36.02,-83.41,14390,45280
+"421",37760,"Jefferson City","jefferson",865,36.11,-83.48,10690,45280
+"422",37820,"New Market","jefferson",865,36.09,-83.55,6710,45280
+"423",37871,"Strawberry Plains","jefferson",NA,36.06,-83.68,7810,45280
+"424",37890,"White Pine","jefferson",865,36.09,-83.29,5680,45280
+"425",37748,"Harriman","roane",865,35.93,-84.56,14000,45070
+"426",37763,"Kingston","roane",865,35.87,-84.51,13340,45070
+"427",37840,"Oliver Springs","roane",423865,36.03,-84.32,7710,45070
+"428",37854,"Rockwood","roane",865,35.87,-84.67,10020,45070
+"429",37642,"Church Hill","hawkins",423,36.52,-82.71,12530,44590
+"430",37645,"Mount Carmel","hawkins",423,36.56,-82.65,4850,44590
+"431",37711,"Bulls Gap","hawkins",423,36.26,-83.07,4110,44590
+"432",37731,"Eidson","hawkins",423,36.5,-83.08,530,44590
+"433",37811,"Mooresburg","hawkins",423,36.34,-83.22,2680,44590
+"434",37857,"Rogersville","hawkins",423,36.4,-83,16540,44590
+"435",37873,"Surgoinsville","hawkins",423,36.47,-82.85,3350,44590
+"436",37020,"Bell Buckle","bedford",931615,35.59,-86.35,4600,42645
+"437",37160,"Shelbyville","bedford",931,35.49,-86.44,31360,42645
+"438",37161,"Shelbyville","bedford",931,35.49,-86.44,0,42645
+"439",37162,"Shelbyville","bedford",931,35.49,-86.44,895,42645
+"440",37180,"Unionville","bedford",615931,35.62,-86.59,2930,42645
+"441",37183,"Wartrace","bedford",931,35.52,-86.33,2860,42645
+"442",37303,"Athens","mcminn",423,35.45,-84.6,20550,42189
+"443",37309,"Calhoun","mcminn",423,35.29,-84.74,1770,42189
+"444",37329,"Englewood","mcminn",423,35.42,-84.48,4630,42189
+"445",37331,"Etowah","mcminn",423,35.33,-84.52,6270,42189
+"446",37370,"Riceville","mcminn",423,35.38,-84.69,4050,42189
+"447",37371,"Athens","mcminn",423,35.45,-84.6,1239,42189
+"448",37826,"Niota","mcminn",423,35.51,-84.54,3680,42189
+"449",37314,"Coker Creek","monroe",423,35.26,-84.3,70,37590
+"450",37354,"Madisonville","monroe",423,35.52,-84.35,13970,37590
+"451",37385,"Tellico Plains","monroe",423,35.36,-84.29,6370,37590
+"452",37874,"Sweetwater","monroe",423865,35.6,-84.46,12550,37590
+"453",37885,"Vonore","monroe",423,35.59,-84.23,4630,37590
+"454",37110,"Mcminnville","warren",931,35.68,-85.77,26670,36558
+"455",37111,"Mcminnville","warren",931,35.68,-85.77,995,36558
+"456",37357,"Morrison","warren",931,35.6,-85.91,4880,36558
+"457",37378,"Smartt","warren",931,35.63,-85.84,208,36558
+"458",37394,"Viola","warren",931,35.54,-85.86,229,36558
+"459",38550,"Campaign","warren",931,35.76,-85.64,56,36558
+"460",38581,"Rock Island","warren",931,35.71,-85.6,3520,36558
+"461",37015,"Ashland City","cheatham",615,36.27,-87.05,16510,36380
+"462",37035,"Chapmansboro","cheatham",615931,36.37,-87.11,3290,36380
+"463",37082,"Kingston Springs","cheatham",615,36.09,-87.1,5890,36380
+"464",37143,"Pegram","cheatham",615,36.1,-87.05,3700,36380
+"465",37146,"Pleasant View","cheatham",615,36.37,-87.04,6990,36380
+"466",38456,"Ethridge","lawrence",931,35.32,-87.3,2820,35920
+"467",38457,"Five Points","lawrence",931,35.03,-87.28,640,35920
+"468",38464,"Lawrenceburg","lawrence",931,35.24,-87.33,18340,35920
+"469",38468,"Leoma","lawrence",931,35.12,-87.3,4290,35920
+"470",38469,"Loretto","lawrence",931,35.08,-87.43,3440,35920
+"471",38481,"Saint Joseph","lawrence",931,35.03,-87.49,800,35920
+"472",38483,"Summertown","lawrence",931,35.43,-87.33,4740,35920
+"473",38486,"Westpoint","lawrence",NA,35.15,-87.53,850,35920
+"474",37643,"Elizabethton","carter",423,36.33,-82.23,25650,35497
+"475",37644,"Elizabethton","carter",423,36.33,-82.23,1082,35497
+"476",37658,"Hampton","carter",423,36.28,-82.17,3320,35497
+"477",37682,"Milligan College","carter",423,36.3,-82.29,415,35497
+"478",37687,"Roan Mountain","carter",423,36.18,-82.07,3560,35497
+"479",37694,"Watauga","carter",NA,36.36,-82.29,1470,35497
+"480",38010,"Braden","fayette",901,35.36,-89.57,18,33315
+"481",38028,"Eads","fayette",NA,35.2,-89.66,6840,33315
+"482",38036,"Gallaway","fayette",901,35.32,-89.63,407,33315
+"483",38045,"Laconia","fayette",901,35.31,-89.23,28,33315
+"484",38046,"La Grange","fayette",901,35.07,-89.25,205,33315
+"485",38048,"Macon","fayette",901,35.17,-89.54,107,33315
+"486",38057,"Moscow","fayette",901,35.06,-89.39,3380,33315
+"487",38060,"Oakland","fayette",901,35.22,-89.51,9750,33315
+"488",38066,"Rossville","fayette",901,35.04,-89.54,2720,33315
+"489",38068,"Somerville","fayette",901,35.23,-89.35,9120,33315
+"490",38076,"Williston","fayette",901,35.14,-89.44,740,33315
+"491",38007,"Bogota","dyer",731,36.16,-89.43,157,32297
+"492",38024,"Dyersburg","dyer",731,36.03,-89.38,22520,32297
+"493",38025,"Dyersburg","dyer",731,36.03,-89.38,924,32297
+"494",38030,"Finley","dyer",731,35.98,-89.58,770,32297
+"495",38047,"Lenox","dyer",731,36.09,-89.5,119,32297
+"496",38059,"Newbern","dyer",731,36.11,-89.26,6930,32297
+"497",38070,"Tigrett","dyer",731,35.94,-89.24,167,32297
+"498",38259,"Trimble","dyer",731,36.2,-89.18,710,32297
+"499",37306,"Belvidere","franklin",931,35.12,-86.18,2330,31878
+"500",37318,"Cowan","franklin",931,35.16,-86.01,1590,31878
+"501",37324,"Decherd","franklin",NA,35.2,-86.08,4340,31878
+"502",37330,"Estill Springs","franklin",931,35.26,-86.13,6060,31878
+"503",37345,"Huntland","franklin",931,35.05,-86.26,2080,31878
+"504",37375,"Sewanee","franklin",931,35.2,-85.92,2110,31878
+"505",37376,"Sherwood","franklin",931,35.06,-85.95,360,31878
+"506",37383,"Sewanee","franklin",931,35.2,-85.92,218,31878
+"507",37398,"Winchester","franklin",931,35.18,-86.1,12790,31878
+"508",37144,"Petersburg","lincoln",931,35.31,-86.63,2730,30420
+"509",37328,"Elora","lincoln",NA,35.01,-86.35,1270,30420
+"510",37334,"Fayetteville","lincoln",931,35.14,-86.56,19780,30420
+"511",37335,"Flintville","lincoln",931,35.04,-86.45,2240,30420
+"512",37348,"Kelso","lincoln",931,35.12,-86.46,1000,30420
+"513",37359,"Mulberry","lincoln",931,35.2,-86.41,610,30420
+"514",38453,"Dellrose","lincoln",931,35.11,-86.8,370,30420
+"515",38459,"Frankewing","lincoln",931,35.19,-86.8,340,30420
+"516",38488,"Taft","lincoln",931,35.05,-86.68,2080,30420
+"517",37321,"Dayton","rhea",423,35.49,-85.01,16440,29760
+"518",37332,"Evensville","rhea",423,35.56,-84.95,2310,29760
+"519",37337,"Grandview","rhea",423,35.74,-84.83,1090,29760
+"520",37338,"Graysville","rhea",423,35.43,-85.22,2660,29760
+"521",37381,"Spring City","rhea",423,35.68,-84.86,7260,29760
+"522",37713,"Bybee","cocke",865,36.04,-83.18,1190,29578
+"523",37722,"Cosby","cocke",NA,35.81,-83.25,4790,29578
+"524",37727,"Del Rio","cocke",423,35.91,-83.02,1540,29578
+"525",37753,"Hartford","cocke",423865,35.81,-83.14,530,29578
+"526",37821,"Newport","cocke",423865,35.96,-83.19,17250,29578
+"527",37822,"Newport","cocke",423,35.96,-83.19,1178,29578
+"528",37843,"Parrottsville","cocke",865,36,-83.09,3100,29578
+"529",37019,"Belfast","marshall",931,35.4,-86.71,840,27840
+"530",37034,"Chapel Hill","marshall",931,35.62,-86.69,6350,27840
+"531",37047,"Cornersville","marshall",931,35.35,-86.84,2140,27840
+"532",37091,"Lewisburg","marshall",931,35.44,-86.78,18510,27840
+"533",37714,"Caryville","campbell",423,36.26,-84.3,3420,27710
+"534",37729,"Duff","campbell",423,36.52,-84.03,1020,27710
+"535",37757,"Jacksboro","campbell",423,36.33,-84.19,7750,27710
+"536",37762,"Jellico","campbell",423,36.57,-84.12,2280,27710
+"537",37766,"La Follette","campbell",423,36.37,-84.12,12810,27710
+"538",37819,"Newcomb","campbell",423,36.54,-84.2,430,27710
+"539",38232,"Hornbeak","obion",731,36.33,-89.29,1580,26466
+"540",38240,"Obion","obion",NA,36.26,-89.19,1660,26466
+"541",38253,"Rives","obion",731,36.35,-89.04,910,26466
+"542",38254,"Samburg","obion",731,36.38,-89.35,190,26466
+"543",38257,"South Fulton","obion",731,36.49,-88.88,3730,26466
+"544",38260,"Troy","obion",731,36.33,-89.16,3450,26466
+"545",38261,"Union City","obion",731,36.42,-89.05,14080,26466
+"546",38271,"Woodland Mills","obion",731,36.47,-89.11,142,26466
+"547",38281,"Union City","obion",731,36.42,-89.05,724,26466
+"548",38222,"Buchanan","henry",731,36.42,-88.17,2150,26462
+"549",38223,"Como","henry",731,36.28,-88.5,62,26462
+"550",38224,"Cottage Grove","henry",731,36.37,-88.47,840,26462
+"551",38231,"Henry","henry",731,36.2,-88.41,1470,26462
+"552",38236,"Mansfield","henry",731,36.18,-88.28,580,26462
+"553",38242,"Paris","henry",731,36.3,-88.3,16510,26462
+"554",38251,"Puryear","henry",731,36.44,-88.33,2340,26462
+"555",38256,"Springville","henry",731,36.25,-88.15,2510,26462
+"556",37707,"Arthur","claiborne",423,36.54,-83.67,327,26209
+"557",37715,"Clairfield","claiborne",423,36.54,-83.95,620,26209
+"558",37724,"Cumberland Gap","claiborne",423,36.55,-83.71,1600,26209
+"559",37730,"Eagan","claiborne",423,36.55,-83.98,131,26209
+"560",37752,"Harrogate","claiborne",423,36.56,-83.54,4870,26209
+"561",37773,"Lone Mountain","claiborne",423,36.38,-83.58,28,26209
+"562",37824,"New Tazewell","claiborne",423,36.43,-83.6,2101,26209
+"563",37825,"New Tazewell","claiborne",423,36.43,-83.6,5490,26209
+"564",37851,"Pruden","claiborne",423,36.58,-83.91,42,26209
+"565",37867,"Shawanee","claiborne",423,36.57,-83.55,90,26209
+"566",37870,"Speedwell","claiborne",423,36.47,-83.81,3180,26209
+"567",37879,"Tazewell","claiborne",423,36.45,-83.57,7730,26209
+"568",38201,"Mc Kenzie","carroll",731,36.13,-88.51,7760,25734
+"569",38220,"Atwood","carroll",731,35.97,-88.67,1560,25734
+"570",38235,"Mc Lemoresville","carroll",731,35.99,-88.56,304,25734
+"571",38258,"Trezevant","carroll",731,36.01,-88.62,1180,25734
+"572",38317,"Bruceton","carroll",731,36.03,-88.24,1930,25734
+"573",38318,"Buena Vista","carroll",731,35.98,-88.28,380,25734
+"574",38321,"Cedar Grove","carroll",731,35.81,-88.6,2080,25734
+"575",38324,"Clarksburg","carroll",731,35.87,-88.38,190,25734
+"576",38342,"Hollow Rock","carroll",731,36.03,-88.27,1150,25734
+"577",38344,"Huntingdon","carroll",731,36,-88.41,7290,25734
+"578",38348,"Lavinia","carroll",731,35.86,-88.64,790,25734
+"579",38387,"Westport","carroll",731,35.88,-88.29,340,25734
+"580",38390,"Yuma","carroll",731,35.86,-88.37,780,25734
+"581",38449,"Ardmore","giles",931,35.04,-86.82,2580,23948
+"582",38455,"Elkton","giles",931,35.04,-86.89,428,23948
+"583",38460,"Goodspring","giles",931,35.12,-87.14,1170,23948
+"584",38472,"Lynnville","giles",931,35.37,-87,2260,23948
+"585",38473,"Minor Hill","giles",931,35.03,-87.17,850,23948
+"586",38477,"Prospect","giles",931,35.05,-87,2130,23948
+"587",38478,"Pulaski","giles",931,35.19,-87.03,14530,23948
+"588",38225,"Dresden","weakley",731,36.27,-88.69,4940,23837
+"589",38226,"Dukedom","weakley",731,36.47,-88.66,280,23837
+"590",38229,"Gleason","weakley",731,36.21,-88.61,2350,23837
+"591",38230,"Greenfield","weakley",731,36.15,-88.8,2830,23837
+"592",38237,"Martin","weakley",731,36.34,-88.85,10940,23837
+"593",38238,"Martin","weakley",731,36.34,-88.85,37,23837
+"594",38241,"Palmersville","weakley",731,36.41,-88.58,610,23837
+"595",38255,"Sharon","weakley",731,36.23,-88.82,1850,23837
+"596",38328,"Darden","henderson",731,35.63,-88.23,720,23440
+"597",38345,"Huron","henderson",731,35.58,-88.5,1660,23440
+"598",38351,"Lexington","henderson",731,35.65,-88.39,15410,23440
+"599",38368,"Reagan","henderson",NA,35.51,-88.35,1590,23440
+"600",38371,"Sardis","henderson",731,35.44,-88.29,1030,23440
+"601",38374,"Scotts Hill","henderson",731,35.51,-88.23,1620,23440
+"602",38388,"Wildersville","henderson",731,35.78,-88.36,1410,23440
+"603",38310,"Adamsville","mcnairy",731,35.23,-88.38,4740,23090
+"604",38315,"Bethel Springs","mcnairy",731,35.23,-88.6,2830,23090
+"605",38334,"Finger","mcnairy",731,35.35,-88.61,1520,23090
+"606",38339,"Guys","mcnairy",731,35.05,-88.52,570,23090
+"607",38357,"Michie","mcnairy",731,35.06,-88.42,2280,23090
+"608",38359,"Milledgeville","mcnairy",731,35.37,-88.36,230,23090
+"609",38367,"Ramer","mcnairy",731,35.07,-88.61,2280,23090
+"610",38375,"Selmer","mcnairy",731,35.17,-88.59,7560,23090
+"611",38379,"Stantonville","mcnairy",731,35.15,-88.42,1080,23090
+"612",38393,"Chewalla","mcnairy",731,35.02,-88.67,0,23090
+"613",38559,"Doyle","white",931,35.85,-85.51,1080,22670
+"614",38579,"Quebeck","white",931,35.84,-85.55,820,22670
+"615",38583,"Sparta","white",931,35.93,-85.47,19750,22670
+"616",38587,"Walling","white",931,35.85,-85.62,1020,22670
+"617",37340,"Guild","marion",423,35.03,-85.52,530,22570
+"618",37347,"Jasper","marion",423,35.05,-85.62,7020,22570
+"619",37374,"Sequatchie","marion",423,35.19,-85.66,1330,22570
+"620",37380,"South Pittsburg","marion",423,35.01,-85.71,5490,22570
+"621",37396,"Whiteside","marion",423,35.01,-85.5,330,22570
+"622",37397,"Whitwell","marion",423,35.2,-85.51,7870,22570
+"623",38037,"Gates","lauderdale",NA,35.83,-89.4,1430,21040
+"624",38040,"Halls","lauderdale",731,35.88,-89.4,4290,21040
+"625",38041,"Henning","lauderdale",731,35.67,-89.57,1990,21040
+"626",38063,"Ripley","lauderdale",731,35.74,-89.53,13330,21040
+"627",38008,"Bolivar","hardeman",731,35.26,-88.99,7950,20520
+"628",38039,"Grand Junction","hardeman",731901,35.04,-89.18,1780,20520
+"629",38042,"Hickory Valley","hardeman",901,35.15,-89.12,660,20520
+"630",38044,"Hornsby","hardeman",731,35.22,-88.83,720,20520
+"631",38052,"Middleton","hardeman",731,35.06,-88.89,3250,20520
+"632",38061,"Pocahontas","hardeman",731,35.05,-88.81,750,20520
+"633",38067,"Saulsbury","hardeman",731901,35.04,-89.08,990,20520
+"634",38075,"Whiteville","hardeman",731901,35.32,-89.14,3140,20520
+"635",38377,"Silerton","hardeman",731,35.34,-88.8,0,20520
+"636",38381,"Toone","hardeman",731,35.35,-88.95,1280,20520
+"637",37708,"Bean Station","grainger",865,36.34,-83.28,5430,19550
+"638",37709,"Blaine","grainger",865,36.14,-83.69,3250,19550
+"639",37848,"Powder Springs","grainger",865,36.24,-83.66,250,19550
+"640",37861,"Rutledge","grainger",865,36.27,-83.52,6800,19550
+"641",37881,"Thorn Hill","grainger",NA,36.35,-83.41,1620,19550
+"642",37888,"Washburn","grainger",865,36.31,-83.59,2200,19550
+"643",37025,"Bon Aqua","hickman",615,35.94,-87.34,5400,19180
+"644",37033,"Centerville","hickman",931,35.79,-87.44,6110,19180
+"645",37098,"Lyles","hickman",615931,35.87,-87.32,4550,19180
+"646",37137,"Nunnelly","hickman",931,35.89,-87.52,2140,19180
+"647",37140,"Only","hickman",931,35.87,-87.65,120,19180
+"648",38454,"Duck River","hickman",931,35.71,-87.35,860,19180
+"649",38326,"Counce","hardin",731,35.03,-88.29,1990,19115
+"650",38327,"Crump","hardin",731,35.23,-88.32,460,19115
+"651",38361,"Morris Chapel","hardin",731,35.31,-88.35,830,19115
+"652",38365,"Pickwick Dam","hardin",731,35.05,-88.23,245,19115
+"653",38370,"Saltillo","hardin",731,35.37,-88.21,510,19115
+"654",38372,"Savannah","hardin",731,35.22,-88.23,14290,19115
+"655",38376,"Shiloh","hardin",731,35.11,-88.36,250,19115
+"656",38475,"Olivehill","hardin",931,35.26,-88.04,540,19115
+"657",37732,"Elgin","scott",423,36.33,-84.6,277,17927
+"658",37755,"Helenwood","scott",423,36.43,-84.56,2640,17927
+"659",37756,"Huntsville","scott",423,36.41,-84.48,2220,17927
+"660",37841,"Oneida","scott",423,36.5,-84.51,7350,17927
+"661",37847,"Pioneer","scott",NA,36.46,-84.29,2070,17927
+"662",37852,"Robbins","scott",423,36.32,-84.57,1880,17927
+"663",37892,"Winfield","scott",423,36.56,-84.45,1490,17927
+"664",37012,"Alexandria","dekalb",NA,36.07,-86.03,1870,16620
+"665",37059,"Dowelltown","dekalb",615,36.01,-85.94,1320,16620
+"666",37095,"Liberty","dekalb",NA,36,-85.98,1540,16620
+"667",37166,"Smithville","dekalb",931615,35.95,-85.82,11890,16620
+"668",37083,"Lafayette","macon",615,36.52,-86.03,12290,16380
+"669",37150,"Red Boiling Springs","macon",931615,36.53,-85.85,4090,16380
+"670",37078,"Hurricane Mills","humphreys",931,35.94,-87.76,570,15830
+"671",37101,"Mc Ewen","humphreys",931,36.1,-87.63,5440,15830
+"672",37134,"New Johnsonville","humphreys",931,36.01,-87.95,2760,15830
+"673",37185,"Waverly","humphreys",931,36.09,-87.78,7060,15830
+"674",37030,"Carthage","smith",615,36.25,-85.94,5890,15500
+"675",37057,"Dixon Springs","smith",615,36.4,-86.04,680,15500
+"676",37145,"Pleasant Shade","smith",615,36.38,-85.91,1930,15500
+"677",37151,"Riddleton","smith",615,36.34,-86.03,470,15500
+"678",38547,"Brush Creek","smith",615,36.11,-86.01,1810,15500
+"679",38552,"Chestnut Mound","smith",615,36.22,-85.81,300,15500
+"680",38560,"Elmwood","smith",615,36.24,-85.88,1130,15500
+"681",38563,"Gordonsville","smith",615,36.18,-85.93,2250,15500
+"682",38567,"Hickman","smith",615,36.1,-85.9,750,15500
+"683",38569,"Lancaster","smith",615,36.09,-85.85,290,15500
+"684",38541,"Allons","overton",NA,36.51,-85.32,1250,15194
+"685",38542,"Allred","overton",931,36.32,-85.2,31,15194
+"686",38543,"Alpine","overton",931,36.36,-85.14,450,15194
+"687",38554,"Crawford","overton",931,36.24,-85.18,690,15194
+"688",38568,"Hilham","overton",NA,36.44,-85.47,1530,15194
+"689",38570,"Livingston","overton",931,36.38,-85.32,7690,15194
+"690",38573,"Monroe","overton",NA,36.45,-85.2,1760,15194
+"691",38580,"Rickman","overton",931,36.29,-85.3,1700,15194
+"692",38589,"Wilder","overton",931,36.26,-85.08,93,15194
+"693",37307,"Benton","polk",423,35.17,-84.65,4180,14833
+"694",37316,"Conasauga","polk",423,35,-84.73,55,14833
+"695",37317,"Copperhill","polk",423,34.99,-84.37,1850,14833
+"696",37325,"Delano","polk",NA,35.25,-84.62,1440,14833
+"697",37326,"Ducktown","polk",423,35.03,-84.38,818,14833
+"698",37333,"Farner","polk",423,35.14,-84.32,380,14833
+"699",37361,"Ocoee","polk",423,35.1,-84.7,1420,14833
+"700",37362,"Old Fort","polk",NA,35.04,-84.64,2900,14833
+"701",37369,"Reliance","polk",423,35.18,-84.56,710,14833
+"702",37391,"Turtletown","polk",423,35.12,-84.35,1080,14833
+"703",38012,"Brownsville","haywood",731,35.59,-89.25,12610,14720
+"704",38069,"Stanton","haywood",731,35.46,-89.4,2110,14720
+"705",37650,"Erwin","unicoi",423,36.14,-82.41,9760,14320
+"706",37657,"Flag Pond","unicoi",423,36.01,-82.56,660,14320
+"707",37692,"Unicoi","unicoi",423,36.19,-82.35,3900,14320
+"708",37640,"Butler","johnson",423,36.31,-82,2600,13050
+"709",37680,"Laurel Bloomery","johnson",423,36.58,-81.73,540,13050
+"710",37683,"Mountain City","johnson",423,36.47,-81.8,8500,13050
+"711",37688,"Shady Valley","johnson",423,36.51,-81.92,770,13050
+"712",37691,"Trade","johnson",423,36.34,-81.74,640,13050
+"713",38221,"Big Sandy","benton",731,36.23,-88.08,2380,13050
+"714",38320,"Camden","benton",731,36.06,-88.1,8620,13050
+"715",38333,"Eva","benton",731,36.11,-87.99,380,13050
+"716",38341,"Holladay","benton",NA,35.89,-88.07,1670,13050
+"717",38001,"Alamo","crockett",731,35.78,-89.11,3750,12935
+"718",38006,"Bells","crockett",731,35.71,-89.08,4580,12935
+"719",38021,"Crockett Mills","crockett",731,35.88,-89.16,180,12935
+"720",38034,"Friendship","crockett",731,35.91,-89.24,2400,12935
+"721",38050,"Maury City","crockett",731,35.83,-89.23,785,12935
+"722",38336,"Fruitvale","crockett",731,35.72,-89.06,0,12935
+"723",38337,"Gadsden","crockett",731,35.79,-89.01,1240,12935
+"724",38504,"Allardt","fentress",931,36.38,-84.88,1080,12790
+"725",38553,"Clarkrange","fentress",931,36.21,-84.96,1910,12790
+"726",38556,"Jamestown","fentress",931,36.43,-84.93,8860,12790
+"727",38565,"Grimsley","fentress",931,36.25,-85.03,940,12790
+"728",37779,"Luttrell","union",865,36.2,-83.74,3100,12330
+"729",37807,"Maynardville","union",865,36.24,-83.8,7810,12330
+"730",37866,"Sharps Chapel","union",865,36.34,-83.8,1420,12330
+"731",37016,"Auburntown","cannon",NA,35.94,-86.09,760,12050
+"732",37026,"Bradyville","cannon",615,35.69,-86.1,1940,12050
+"733",37149,"Readyville","cannon",NA,35.8,-86.19,2140,12050
+"734",37190,"Woodbury","cannon",931,35.82,-86.07,7210,12050
+"735",37719,"Coalfield","morgan",423,36.02,-84.43,532,11954
+"736",37726,"Deer Lodge","morgan",423,36.21,-84.83,1460,11954
+"737",37733,"Rugby","morgan",423,36.35,-84.7,40,11954
+"738",37770,"Lancing","morgan",423,36.15,-84.69,2080,11954
+"739",37829,"Oakdale","morgan",423,36.01,-84.64,1460,11954
+"740",37845,"Petros","morgan",423,36.09,-84.44,532,11954
+"741",37872,"Sunbright","morgan",423,36.24,-84.67,1680,11954
+"742",37887,"Wartburg","morgan",423,36.1,-84.58,4170,11954
+"743",37301,"Altamont","grundy",931,35.42,-85.72,1360,11940
+"744",37305,"Beersheba Springs","grundy",931,35.45,-85.67,590,11940
+"745",37313,"Coalmont","grundy",931,35.33,-85.71,1000,11940
+"746",37339,"Gruetli Laager","grundy",931,35.38,-85.63,1490,11940
+"747",37356,"Monteagle","grundy",931,35.24,-85.84,2150,11940
+"748",37365,"Palmer","grundy",931,35.35,-85.56,1170,11940
+"749",37366,"Pelham","grundy",931,35.32,-85.78,800,11940
+"750",37387,"Tracy City","grundy",931,35.25,-85.75,3380,11940
+"751",38425,"Clifton","wayne",931,35.38,-87.99,1450,11900
+"752",38450,"Collinwood","wayne",931,35.17,-87.74,2090,11900
+"753",38452,"Cypress Inn","wayne",931,35.05,-87.79,800,11900
+"754",38463,"Iron City","wayne",NA,35.02,-87.58,2170,11900
+"755",38471,"Lutts","wayne",931,35.11,-87.9,410,11900
+"756",38485,"Waynesboro","wayne",931,35.32,-87.75,4980,11900
+"757",38332,"Enville","chester",NA,35.38,-88.42,920,11860
+"758",38340,"Henderson","chester",731,35.44,-88.64,10120,11860
+"759",38347,"Jacks Creek","chester",731,35.48,-88.5,340,11860
+"760",38352,"Luray","chester",731,35.53,-88.53,480,11860
+"761",37023,"Big Rock","stewart",931,36.59,-87.78,1540,11360
+"762",37028,"Bumpus Mills","stewart",931,36.62,-87.85,520,11360
+"763",37050,"Cumberland City","stewart",931,36.38,-87.64,1430,11360
+"764",37058,"Dover","stewart",931,36.48,-87.84,5760,11360
+"765",37079,"Indian Mound","stewart",NA,36.47,-87.66,2110,11360
+"766",37327,"Dunlap","sequatchie",423,35.37,-85.38,10060,10060
+"767",37322,"Decatur","meigs",423,35.52,-84.79,6870,9750
+"768",37880,"Ten Mile","meigs",NA,35.66,-84.66,2880,9750
+"769",38311,"Bath Springs","decatur",931,35.44,-88.1,660,8300
+"770",38329,"Decaturville","decatur",731,35.58,-88.11,2630,8300
+"771",38363,"Parsons","decatur",731,35.65,-88.12,4620,8300
+"772",38380,"Sugar Tree","decatur",NA,35.79,-88.02,390,8300
+"773",38462,"Hohenwald","lewis",931,35.55,-87.55,8280,8280
+"774",37367,"Pikeville","bledsoe",423,35.6,-85.19,7280,7280
+"775",38545,"Bloomington Springs","jackson",931,36.22,-85.66,1030,6860
+"776",38562,"Gainesboro","jackson",931,36.36,-85.65,4650,6860
+"777",38564,"Granville","jackson",931,36.27,-85.74,400,6860
+"778",38588,"Whitleyville","jackson",931,36.48,-85.7,780,6860
+"779",37061,"Erin","houston",931,36.31,-87.7,4050,6750
+"780",37175,"Stewart","houston",931,36.32,-87.89,790,6750
+"781",37178,"Tennessee Ridge","houston",931,36.31,-87.76,1910,6750
+"782",37096,"Linden","perry",931,35.61,-87.84,4590,6210
+"783",37097,"Lobelville","perry",931,35.75,-87.79,1620,6210
+"784",37074,"Hartsville","trousdale",615,36.39,-86.15,6070,6070
+"785",38077,"Wynnburg","lake",731,36.33,-89.47,95,4515
+"786",38079,"Tiptonville","lake",731,36.37,-89.47,2450,4515
+"787",38080,"Ridgely","lake",731,36.26,-89.48,1970,4515
+"788",38551,"Celina","clay",931,36.54,-85.5,3220,4180
+"789",38575,"Moss","clay",931,36.59,-85.68,960,4180
+"790",38549,"Byrdstown","pickett",931,36.57,-85.13,3110,4020
+"791",38577,"Pall Mall","pickett",NA,36.56,-84.95,910,4020
+"792",37765,"Kyles Ford","hancock",423,36.57,-83.06,390,4010
+"793",37869,"Sneedville","hancock",423,36.53,-83.21,3620,4010
+"794",38585,"Spencer","van",423931,35.74,-85.45,3180,3180
+"795",37352,"Lynchburg","moore",931,35.28,-86.35,2840,2840
