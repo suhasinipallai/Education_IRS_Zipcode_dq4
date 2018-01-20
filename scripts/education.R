@@ -48,3 +48,10 @@ education_df_plus_3 <- education_county_only %>%
 # Save off df for use later on
 saveRDS(education_df_plus_3, './r-objects/education_df_plus_3.rds')
 write.csv(education_df_plus_3, './r-objects/education_df_plus_3.csv')
+
+# Create a subset of the education_df_plus_3 to merge in with the irs/zipcode datasets.
+education_merge_irs_zip_subset <- education_df_plus_3[, c(2, 22:31)]
+
+# Save off df for use later on
+saveRDS(education_merge_irs_zip_subset, './r-objects/education_merge_irs_zip_subset.rds')
+write.csv(education_merge_irs_zip_subset, './r-objects/education_merge_irs_zip_subset.csv')
