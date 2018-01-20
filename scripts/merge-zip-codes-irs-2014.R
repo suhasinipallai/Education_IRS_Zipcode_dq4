@@ -30,7 +30,11 @@ zip_codes_irs_df_by_county <- zip_codes_irs_df %>%
     
   ) %>% 
   ungroup() %>% 
-  mutate( income_per_tax_return = (sum_total_income_amount / sum_total_income_returns) * 1000 ) %>% 
+  mutate( 
+    
+    income_per_tax_return = sum_total_income_amount / sum_total_income_returns 
+    
+  ) %>% 
   select(
     
     county, sum_total_population, sum_total_income_returns, sum_total_income_amount, 
