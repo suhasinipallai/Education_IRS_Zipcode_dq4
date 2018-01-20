@@ -1,6 +1,7 @@
 library("readr")
 library("dplyr")
 library("tidyr")
+library("stringr")
 
 education_df <- read_csv('./data/achievement_profile_data_with_CORE.csv')
 
@@ -12,13 +13,13 @@ education_county_only <- dplyr::filter(education_df, grepl('(C|c)ounty', system_
 education_county_only <- education_county_only %>% 
   rename(county = system_name)
 
-education_county_only$county <- tolower(education_county_only$county)
-
 # From --> gibson county special school district
 education_county_only[26, 'county'] <- 'gibson county'
 
 # From Jackson-Madison County
 education_county_only[56, 'county'] <- 'madison county'
+
+education_county_only$county <- word(tolower(education_county_only$county), 1)
 
 assign_mean_to_zeros_na <- function(df, colName) {
   df[colName][(is.na(df[colName])) | df[colName] == 0] <- mean(df[[colName]][!0], na.rm = TRUE)
