@@ -4,6 +4,7 @@ library("ggplot2")
 library("stringr")
 library("reshape2")
 library("car")
+library("dplyr")
 
 education_df_plus_3 <- readRDS('./r-objects/education_df_plus_3.rds')
 
@@ -27,6 +28,7 @@ scatterplot(
 scatterplot(
   ACT_Composite ~ value | variable, 
   legend.title = "ACT / Math, Science, Lit ~ Excluding 0 as Avg",
+  labels = md_education,
   xlab = "Avg Subject Scores",
   ylab = "ACT Scores",
   data = md_education %>% filter(value != 0), 
@@ -47,7 +49,10 @@ md_dropout_graduation_act <- melt(edu_act_dropout_vs_graduation, id="ACT_Composi
 scatterplot(
   ACT_Composite ~ value, 
   legend.title = "ACT / Dropout Pct",
-  xlab = "Dropout Pct",
+  xlab = paste("Dropout Pct", cor(
+    md_dropout_graduation_act$ACT_Composite, 
+    md_dropout_graduation_act$value
+  )),
   ylab = "ACT Scores",
   data = md_dropout_graduation_act %>% filter(variable == "Dropout"), 
   smoother = FALSE, 
@@ -58,10 +63,13 @@ scatterplot(
 scatterplot(
   ACT_Composite ~ value, 
   legend.title = "ACT / Graduation Pct",
-  xlab = "Graduation Pct",
+  xlab = paste("Graduation Pct", cor(
+    md_dropout_graduation_act$ACT_Composite, 
+    md_dropout_graduation_act$value
+  )), 
   ylab = "ACT Scores",
   data = md_dropout_graduation_act %>% filter(variable == "Graduation"), 
-  smoother = FALSE, 
+  smoother = "loessLine", 
   grid = FALSE, 
   frame = FALSE
 )
