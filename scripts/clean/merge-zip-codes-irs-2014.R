@@ -6,8 +6,11 @@ library("dplyr")
 zip_codes_df <- readRDS('./r-objects/zip_codes_group_by_county.rds')
 irs_df <- readRDS('./r-objects/irs_2014_dataset_initial_ds.rds')
 
+irs_2014_dataset_with_gross <- readRDS('./r-objects/irs_2014_dataset_initial_ds_with_gross.rds')
+
 # Merge both irs and zip codes data by zip
 zip_codes_irs_df <- merge(zip_codes_df, irs_df, by = 'zip')
+zip_codes_irs_df_with_gross <- merge(irs_2014_dataset_with_gross, zip_codes_df, by = 'zip')
 
 # we want each row to represent the county. With that being said, we want to grab the sum and mean
 # of the columns specified. 
@@ -31,7 +34,7 @@ zip_codes_irs_df_by_county <- zip_codes_irs_df %>%
   ungroup() %>% 
   mutate( 
     
-    income_per_tax_return = sum_total_income_amount / sum_total_income_returns 
+    income_per_tax_return = sum_total_income_amount / sum_total_income_returns
     
   ) %>% 
   select(
@@ -42,6 +45,14 @@ zip_codes_irs_df_by_county <- zip_codes_irs_df %>%
     
   ) %>% 
   arrange( desc( county ) )
+
+summary(zip_codes_irs_df_by_county$income_per_tax_return)
+
+attach(zip_codes_irs_df_by_county)
+zip_codes_irs_df_by_county$income_category[income_per_tax_return <= 40.87] <- 'Low Income'
+zip_codes_irs_df_by_county$income_category[(income_per_tax_return > 40.87) & (income_per_tax_return <= 48.56)] <- 'Medium Income'
+zip_codes_irs_df_by_county$income_category[(income_per_tax_return > 48.56) & (income_per_tax_return <= 60)] <- 'High Income'
+zip_codes_irs_df_by_county$income_category[income_per_tax_return > 60] <- 'Very High Income'
 
 # Save off df for use later on
 saveRDS(zip_codes_irs_df_by_county, './r-objects/zip_codes_irs_df_by_county.rds')

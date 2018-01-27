@@ -34,7 +34,7 @@ find_cor <- function(df, col_name, thresh=0.2) {
     
     if (col_corr > thresh) {
       cpairs(
-        df[, c(col, col_name)],
+        df[, c(col_name, col)],
         gap=.5,
         upper.panel=panel.smooth,
         main = paste(col, "/", col_name, "/ Corr: ", col_corr)
@@ -44,5 +44,5 @@ find_cor <- function(df, col_name, thresh=0.2) {
 }
 
 for (demo in c("Pct_Black", "Pct_Hispanic", "Pct_Native_American")) {
-  find_cor(df = education_tax_income, col_name = demo, thresh = 0.5)
+  find_cor(df = education_tax_income, col_name = demo, thresh = 0.3)
 }
