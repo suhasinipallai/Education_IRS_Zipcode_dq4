@@ -31,6 +31,8 @@ irs_2014_dataset_group_by_zip_total_gross_income <- irs_2014_dataset %>%
   filter(gross_income == 'Total') %>% 
   select(-gross_income)
 
+View(irs_2014_dataset_group_by_zip_total_gross_income)
+
 # 'zip', 'gross_income', 'num_dependents', 'adj_gross_income', 'total_income_returns', 'total_income_amount' 'taxes_paid_returns' 'taxes_paid_amount'
 irs_2014_dataset_initial_ds <- irs_2014_dataset_group_by_zip_total_gross_income[c(1:5, 17, 18)]
 
