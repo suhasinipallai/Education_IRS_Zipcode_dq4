@@ -25,5 +25,3 @@ lapply(
 
 cor_df <- zip_codes_df[ , c(2:7,9:11,15)]
 chart.Correlation(cor_df, histogram = T, pch = 19)
-
-
