@@ -196,11 +196,85 @@ merge_irs_all_by_county <- zip_codes_irs_gross_income_total_df %>%
        ) %>% 
   arrange( desc( county ) )
 
-View(merge_irs_all_by_county)
+View(merge_irs_all_by_county_sor2011)
 
+# sorting data on 2011 income_per_tax_return
+
+merge_irs_all_by_county_sor2011 <- merge_irs_all_by_county %>% arrange(desc(income_per_tax_return_2011))
 
 ggplot(merge_irs_all_by_county, 
        aes(x=county ,y=income_per_tax_return_2011)) +
        geom_boxplot()
 
 boxplot(income_per_tax_return_2011 ~ county,data=merge_irs_all_by_county)
+
+colnames(merge_irs_all_by_county)
+View(merge_irs_all_by_county_sor2011)
+
+
+df_sort <- merge_irs_all_by_county_sor2011 %>% 
+  filter(rank(desc(income_per_tax_return_2011))<=10) %>% 
+  select(county,income_per_tax_return_2011,income_per_tax_return_2012,income_per_tax_return_2013,income_per_tax_return_2014,income_per_tax_return_2015)
+
+View(df_sort)
+library(reshape2)
+df_sort_melt <- melt(df_sort,id="county")
+
+View(df_sort_melt)
+df_sort_melt_s<-df_sort_melt %>%  arrange(county)
+
+
+ggplot(df_sort_melt_s,aes(x=variable,y=value,group=county,color=county)) +geom_line(size=2) +labs(y="Income_per_tax_return * 1000",x="Years") 
+df_top_10_2011 <- merge_irs_all_by_county[,c(1:5)] %>% 
+  filter(rank(desc(income_per_tax_return_2011))<=10) %>% 
+  arrange(desc(income_per_tax_return_2011)) 
+
+df_top_10_2012 <- merge_irs_all_by_county[,c(1,8)] %>% 
+  filter(rank(desc(income_per_tax_return_2012))<=10) %>% 
+  arrange(desc(income_per_tax_return_2012)) 
+
+df_top_10_2013 <- merge_irs_all_by_county[,c(1,12)] %>% 
+  filter(rank(desc(income_per_tax_return_2013))<=10) %>% 
+  arrange(desc(income_per_tax_return_2013)) 
+
+df_top_10_2014 <- merge_irs_all_by_county[,c(1,16)] %>% 
+  filter(rank(desc(income_per_tax_return_2014))<=10) %>% 
+  arrange(desc(income_per_tax_return_2014)) 
+
+df_top_10_2015 <- merge_irs_all_by_county[,c(1,20)] %>% 
+  filter(rank(desc(income_per_tax_return_2015))<=10) %>% 
+  arrange(desc(income_per_tax_return_2015)) 
+
+attach(df_top_10_2011)
+boxplot(income_per_tax_return_2011 ~ county , data=df_top_10_2011)
+
+View(df_top_10_2015)
+
+ggplot(df_top_10_2011,aes(y=income_per_tax_return_2011,x=county)) +
+  geom_boxplot()
+
+
+ggplot(merge_irs_all_by_county,aes(y=income_per_tax_return_2011,x=county)) +
+  geom_point()
+
+str(merge_irs_all_by_county)
+
+df<-select(merge_irs_all_by_county,c(1,4,8,12,16,20))
+
+colnames(merge_irs_all_by_county)
+colnames(df)
+
+
+
+ggplot(df,aes(x=county,y=income_per_tax_return_2011)) + geom_point()
+
+attach(merge_irs_all_by_county)
+plot(income_per_tax_return_2011, income_per_tax_return_2012) 
+abline(lm(income_per_tax_return_2012~income_per_tax_return_2011))
+title("income per tax return")
+
+slices <- merge_irs_all_by_county[,c(4, 8,12,16,20)]
+lbls <- c("2011", "2012", "2013", "2014", "2015")
+pie(slices, labels = lbls, main="Pie Chart of Variuous Years")
+
+

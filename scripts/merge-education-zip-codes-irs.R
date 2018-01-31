@@ -237,7 +237,9 @@ ggplot(df_top_10,
 View(zip_irs_education_df)
 colnames(zip_irs_education_df)
 
+
 op<- par(mar= c(5,5,5,5,5,5,5,5,5))
+par(cex.axis=1)
 boxplot(income_per_tax_return ~ CORE_region, data=zip_irs_education_df,las=2,srt=45, 
        col=(c("gold","darkgreen")),
        ylab="income_per_tax_return",ylim=c(0,150))
