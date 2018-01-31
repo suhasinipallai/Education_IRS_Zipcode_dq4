@@ -7,6 +7,8 @@ zip_codes_irs_df_by_county <- readRDS('./r-objects/zip_codes_irs_df_by_county.rd
 # Merge both irs and zip codes data by zip
 zip_irs_education_df <- merge(education, zip_codes_irs_df_by_county, by = 'county')
 
+View(zip_irs_education_df)
+
 # Save off df for use later on
 saveRDS(zip_irs_education_df, './r-objects/zip_irs_education_df.rds')
 write.csv(zip_irs_education_df, './r-objects/zip_irs_education_df.csv')

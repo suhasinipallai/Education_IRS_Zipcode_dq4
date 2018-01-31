@@ -28,9 +28,12 @@ assign_mean_to_na <- function(df, colName) {
   df
 }
 
+View(education_county_only)
+colnames(education_county_only)
+
 # Assign mean of AlgI and AlgII col to NA vals, respectively. We did want to include these additional columns in case the data ever changed. 
 # The also considers 0's and diregards them before calculating mean, and replaces them with the mean.
-cols_to_convert <- c('AlgI', 'AlgII', 'BioI', 'Chemistry', 'ELA', 'EngI', 'EngII', 'EngIII', 'Math', 'Science')
+cols_to_convert <- c('AlgI', 'AlgII', 'BioI', 'Chemistry', 'ELA', 'EngI', 'EngII', 'EngIII', 'Math', 'Science','Pct_Black','Pct_Hispanic','Pct_Native_American')
 for (i in seq_along(cols_to_convert)) {
   education_county_only <- assign_mean_to_na(education_county_only,  cols_to_convert[i])
 }
@@ -47,12 +50,14 @@ education_df_plus_3 <- education_county_only %>%
     
   )
 
+colnames(education_df_plus_3)
+
 # Save off df for use later on
 saveRDS(education_df_plus_3, './r-objects/education_df_plus_3.rds')
 write.csv(education_df_plus_3, './r-objects/education_df_plus_3.csv')
 
 # Create a subset of the education_df_plus_3 to merge in with the irs/zipcode datasets.
-education_merge_irs_zip_subset <- education_df_plus_3[, c(2, 22:31)]
+education_merge_irs_zip_subset <- education_df_plus_3[, c(2, 14:31)]
 
 # Save off df for use later on
 saveRDS(education_merge_irs_zip_subset, './r-objects/education_merge_irs_zip_subset.rds')
