@@ -14,28 +14,25 @@ edu_subjects_act <- education_df_plus_3[, c("ACT_Composite", "mean_math", "mean_
 # Melt the df to be indexed by Act compositea
 md_education <- melt(edu_subjects_act, id="ACT_Composite")
 
-scatterplot(
-  ACT_Composite ~ value | variable, 
-  legend.title = "ACT / Math, Science, Lit",
-  xlab = "Avg Subject Scores",
-  ylab = "ACT Scores",
-  data = md_education, 
-  smoother = FALSE, 
-  grid = FALSE, 
-  frame = FALSE
-)
+act_vs_subjects_scatter <- function(df, legend.title) {
+  scatterplot(
+    df$ACT_Composite ~ df$value | df$variable, 
+    legend.title = legend.title,
+    xlab = "Avg Subject Scores",
+    ylab = "ACT Scores",
+    data = df, 
+    smoother = FALSE, 
+    grid = FALSE, 
+    frame = FALSE
+  )
+}
 
-scatterplot(
-  ACT_Composite ~ value | variable, 
-  legend.title = "ACT / Math, Science, Lit ~ Excluding 0 as Avg",
-  labels = md_education,
-  xlab = "Avg Subject Scores",
-  ylab = "ACT Scores",
-  data = md_education %>% filter(value != 0), 
-  smoother = FALSE, 
-  grid = FALSE, 
-  frame = FALSE
-)
+md_education %>% 
+  act_vs_subjects_scatter(legend.title = "ACT / Math, Science, Lit")
+
+md_education %>% 
+  filter(value != 0) %>%   
+  act_vs_subjects_scatter(legend.title = "ACT / Math, Science, Lit ~ Excluding 0 as Avg")
 
 # Subset the education data to only contain the act composite, math, science, and lit cols
 edu_act_dropout_vs_graduation <- education_df_plus_3[, c("ACT_Composite", "Dropout", "Graduation")]
@@ -46,33 +43,27 @@ md_dropout_graduation_act <- melt(edu_act_dropout_vs_graduation, id="ACT_Composi
 
 # These plots were made to help visualize the relationship between act
 # scores and either dropout or graduation rate
-scatterplot(
-  ACT_Composite ~ value, 
-  legend.title = "ACT / Dropout Pct",
-  xlab = paste("Dropout Pct", cor(
-    md_dropout_graduation_act$ACT_Composite, 
-    md_dropout_graduation_act$value
-  )),
-  ylab = "ACT Scores",
-  data = md_dropout_graduation_act %>% filter(variable == "Dropout"), 
-  smoother = FALSE, 
-  grid = FALSE, 
-  frame = FALSE
-)
+dropout_vs_graduation_scatter <- function(df, legend.title, xlab, filter_on) {
+  scatterplot(
+    ACT_Composite ~ value, 
+    legend.title = legend.title,
+    xlab = paste(xlab, cor(
+      df$ACT_Composite, 
+      df$value
+    )),
+    ylab = "ACT Scores",
+    data = df %>% filter(variable == filter_on), 
+    smoother = FALSE, 
+    grid = FALSE, 
+    frame = FALSE
+  )
+}
 
-scatterplot(
-  ACT_Composite ~ value, 
-  legend.title = "ACT / Graduation Pct",
-  xlab = paste("Graduation Pct", cor(
-    md_dropout_graduation_act$ACT_Composite, 
-    md_dropout_graduation_act$value
-  )), 
-  ylab = "ACT Scores",
-  data = md_dropout_graduation_act %>% filter(variable == "Graduation"), 
-  smoother = "loessLine", 
-  grid = FALSE, 
-  frame = FALSE
-)
+md_dropout_graduation_act %>% 
+  dropout_vs_graduation_scatter(legend.title = "ACT / Dropout Pct", xlab = "Dropout Pct", filter_on = "Dropout")
+
+md_dropout_graduation_act %>% 
+  dropout_vs_graduation_scatter(legend.title = "ACT / Graduation Pct", xlab = "Graduation Pct", filter_on = "Graduation")
 
 # Subset the education data to only contain the act composite, math, science, and lit cols
 edu_act_vs_core_region <- education_df_plus_3[, c("ACT_Composite", "CORE_region")]

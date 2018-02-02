@@ -24,7 +24,7 @@ education_county_only[56, 'county'] <- 'madison county'
 education_county_only$county <- word(tolower(education_county_only$county), 1)
 
 assign_mean_to_na <- function(df, colName) {
-  df[colName][is.na(df[colName])] <- mean(df[[colName]], na.rm = TRUE)
+  df[colName][is.na(df[colName])] <- 0
   df
 }
 

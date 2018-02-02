@@ -1,0 +1,42 @@
+---
+output: 
+  html_document:
+    theme: yeti
+    css: styles.css
+    includes:
+      before_body: header.html
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library("MASS")
+library("dplyr")
+library("ggplot2")
+library("grid")
+library("stringr")
+library("reshape2")
+library("car")
+library("PerformanceAnalytics")
+
+
+irs_2011_2015 <- readRDS('../../r-objects/irs_2011_2015.rds')
+education_df_plus_3 <- readRDS('../../r-objects/education_df_plus_3.rds')
+zip_codes_df <- readRDS('../../r-objects/zip_irs_education_df.rds')
+
+```
+
+<div class="row question-row">
+  <blockquote class="blockquote">
+    Performance Analytics Summary
+  </blockquote>
+  
+  <div class="col-md-12">
+```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.height=10,fig.width=10}
+cor_df <- zip_codes_df[ , c(2:7,9:11,15)]
+chart.Correlation(cor_df, histogram = T, pch = 19)
+```
+  </div>
+</div>
+
+
+

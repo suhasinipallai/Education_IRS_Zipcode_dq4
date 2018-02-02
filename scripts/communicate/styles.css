@@ -1,0 +1,34 @@
+/*COLORS
+
+Paper --> #EFEFEF
+Ink --> #062F4F
+Lavendar --> #6D7993
+Embers --> #B82601
+
+*/
+
+#header {
+	margin-top: 2em;
+	margin-bottom: 4em;
+}
+
+.blockquote {
+	border: 2px solid #EFEFEF;
+	border-radius: 4px;
+	margin: 2em;
+	border: none;
+}
+
+.blockquote > pre {
+	font-size: 20px;
+	background-color: #EFEFEF;
+	text-align: center;
+	word-break: normal;	
+}
+
+.question-row {
+	text-align: center;
+	border: 2px solid #EFEFEF;
+	border-radius: 4px;
+	margin: 2em;
+}
