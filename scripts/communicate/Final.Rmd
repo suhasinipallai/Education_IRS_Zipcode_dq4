@@ -23,6 +23,7 @@ library("PerformanceAnalytics")
 irs_2011_2015 <- readRDS('../../r-objects/irs_2011_2015.rds')
 education_df_plus_3 <- readRDS('../../r-objects/education_df_plus_3.rds')
 zip_codes_df <- readRDS('../../r-objects/zip_irs_education_df.rds')
+demo_act <- readRDS('../../r-objects/zip_irs_education_df.rds')[, c("Pct_Black", "Pct_Hispanic", "ACT_Composite", "county", "income_per_tax_return")]
 
 ```
 
@@ -395,6 +396,44 @@ grid.draw(
 ```
   </div>
   <p class="lead">We notice that the medium and high income groups rank highest across all three variables. They have the highest graduation rate, lowest dropout rate, and overall highest ACT Scores.</p>
+</div>
+
+<div class="row question-row">
+  <blockquote class="blockquote">
+    Act Scores for the Black and Hispanic populations within TN counties, with size based on Income.
+  </blockquote>
+  
+  <div class="col-md-12">
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+# Melt the df to be indexed by Act compositea
+md_demo_act <- melt(demo_act, id=c("ACT_Composite", "county", "income_per_tax_return"))
+
+md_demo_act %>% 
+  ggplot(aes(
+    x = value,
+    y = ACT_Composite,
+    color = variable,
+    size = income_per_tax_return
+  )) + 
+  geom_point() +
+  scale_colour_manual(values=c('#B82601', '#062F4F')) +
+  geom_smooth(method='lm') + 
+  labs(
+    title="Avg ACT Scores By Demographics With Size Based on Income Levels",
+    y="ACT Score",
+    x = "Population Percentage"
+  ) +
+  theme(axis.text.y = element_text(
+      face = 'bold'
+    )
+  ) +
+  theme(axis.title.y = element_text(
+      face = 'bold'
+    )
+  )
+
+```
+  </div>
 </div>
 
 
