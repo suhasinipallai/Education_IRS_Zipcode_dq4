@@ -133,6 +133,8 @@ zip_codes_irs_gross_income_total_df <- merge(
 ) %>% 
   select(-gross_income)
 
+View(merge_irs_all_by_county)
+
 merge_irs_all_by_county <- zip_codes_irs_gross_income_total_df %>% 
   group_by(county, year) %>% 
   summarise (
