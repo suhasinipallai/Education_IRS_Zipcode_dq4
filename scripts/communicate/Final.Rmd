@@ -1,0 +1,456 @@
+---
+output: 
+  html_document:
+    theme: yeti
+    css: styles.css
+    includes:
+      before_body: header.html
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library("MASS")
+library("dplyr")
+library("ggplot2")
+library("grid")
+library("stringr")
+library("reshape2")
+library("car")
+library("PerformanceAnalytics")
+
+
+irs_2011_2015 <- readRDS('../../r-objects/irs_2011_2015.rds')
+education_df_plus_3 <- readRDS('../../r-objects/education_df_plus_3.rds')
+zip_codes_df <- readRDS('../../r-objects/zip_irs_education_df.rds')
+demo_act <- readRDS('../../r-objects/zip_irs_education_df.rds')[, c("Pct_Black", "Pct_Hispanic", "ACT_Composite", "county", "income_per_tax_return")]
+
+```
+
+```{r, echo=FALSE}
+df_sort <- irs_2011_2015 %>% 
+  filter(income_per_tax_return >= 8) %>% 
+  select(county, year, income_per_tax_return)
+
+```
+
+<div class="row question-row">
+  <blockquote class="blockquote">
+    Q1: What is the income distribution amongst TN counties?
+  </blockquote>
+  <div class="col-md-12">
+```{r, echo=FALSE}
+
+h <- hist(df_sort$income_per_tax_return, breaks=10, plot=FALSE)
+cuts <- cut(h$breaks, c(-Inf, 9, 19, 23, 25, Inf))
+plot(
+  h, 
+  col=c('#062F4F', '#6D7993', '#B82601', '#6D7993', '#B82601')[cuts],
+  main = '',
+  xlab = 'Household Income Range * 1000',
+  ylab = 'County Frequency'
+)
+
+```
+  </div>
+  <p class="lead"><em>** The majority of the county's household income falls between $2000 - $17000.</em></p>
+</div>
+
+
+
+
+<div class="row question-row">
+  <blockquote class="blockquote">
+    Q2: Is there any change in income over the years?
+  </blockquote>
+  <div class="col-md-12">
+```{r irs_2011_2015, echo = FALSE}
+df_sort <- irs_2011_2015 %>% 
+  filter(income_per_tax_return >= 8) %>% 
+  select(
+    county, year, income_per_tax_return
+  )
+
+df_sort %>% 
+  ggplot(
+    aes(
+      x = year,
+      y = income_per_tax_return, 
+      group = county, 
+      color = county
+    )
+  ) + geom_line(size = 1.5) + 
+  labs(y = "Income Per Tax Return * 1000", x = "Years")
+
+```
+  </div>
+  <p class="lead"><em>** The majority of counties maintain their rank amongst other counties.</em></p>
+</div>
+
+
+
+
+```{r, echo=FALSE}
+ggplot_num_returns <- function(df, range, y.label="") {
+  df_sort_1 <- irs_2011_2015 %>% 
+    dplyr::filter(sum_total_income_returns >= range) %>% 
+    dplyr::select(
+      county, year, sum_total_income_returns
+    )
+  
+  df_sort_1 %>% 
+    ggplot(
+      aes(
+        x = year,
+        y = sum_total_income_returns, 
+        group = county,
+        color = county
+      )
+    ) + 
+    geom_line(size = 1.5) + 
+    labs(y = y.label, x = "") +
+    theme(axis.text.x = element_text(
+        face = 'bold', 
+        size = 14
+      )
+    ) +
+    theme(axis.text.y = element_text(
+        face = 'bold', 
+        size = 14
+      )
+    ) +
+    theme(axis.title.y = element_text(
+        size = 20
+      )
+    ) +
+    scale_y_continuous(labels = scales::comma) +
+    scale_color_hue(l = 60, c = 50)
+}
+
+```
+
+<div class="row question-row">
+  <blockquote class="blockquote">
+    Q3: Which counties have highest number of tax filers per year?
+  </blockquote>
+  <div class="col-md-6">
+```{r, echo=FALSE}
+ggplot_num_returns(irs_2011_2015, 20000, y.label = "Num of Tax Payers Per Year")
+```
+  </div>
+  <div class="col-md-6">
+```{r, echo=FALSE}
+ggplot_num_returns(irs_2011_2015, 200000)
+```
+  </div>
+  <p class="lead"><em>** <strong>Davidson County</strong> is having a consistent increase in the number of tax filers, while <strong>Shelby County</strong> is decreasing.</em></p>
+</div>
+
+
+
+```{r, echo=FALSE}
+create_hist <- function(df, col.name, col.breaks, col.colors, main, y.lab='') {
+  h <- hist(df[[col.name]], breaks=10, plot=FALSE)
+  cuts <- cut(h$breaks, col.breaks)
+  plot(
+    h, 
+    col=col.colors[cuts],
+    main = main,
+    ylab = y.lab,
+    xlab = ''
+  )
+}
+```
+
+
+<div class="row question-row">
+  <blockquote class="blockquote">
+    Q4: For 2014, what is the overall situation within our education dataset regarding student graduation, dropout, and suspension?
+  </blockquote>
+  <div class="col-md-12">
+```{r, echo=FALSE}
+par(mfrow=c(1, 3))
+education_df_plus_3 %>% 
+  create_hist('Graduation', c(-Inf, 82, 91, 95, Inf), c('#B82601', '#6D7993', '#062F4F', '#6D7993'), 'Graduation', y.lab = 'County Frequency')
+
+education_df_plus_3 %>% 
+  create_hist('Dropout', c(-Inf, 1, 3, 4, 11, Inf), c('#6D7993', '#062F4F', '#6D7993', '#6D7993', '#B82601'), 'Dropout')
+
+education_df_plus_3 %>% 
+  create_hist('Pct_Suspended', c(-Inf, 1, 6, 11, 13, Inf), c('#062F4F', '#6D7993', '#B82601', '#6D7993', '#B82601'), 'Pct Suspended')
+
+```
+  </div>
+
+  <div class="col-md-12">
+    
+* Graduation rate is highest in Meigs, lowest in <strong><em>Shelby</em></strong>.
+* Dropout rate is highest in <strong><em>Shelby</em></strong> county, while kids are studious in Pickett and Meigs counties.
+* Teachers seem to be <em>very</em> strict in <strong><em>Shelby</em></strong> county, since it holds the highest student suspension rate.
+
+  </div>
+</div>
+
+
+
+
+<div class="row question-row">
+  <blockquote class="blockquote">
+    Q5: For 2014, what is the overall situation within our education dataset regarding student performance?
+  </blockquote>
+  <div class="col-md-12">
+```{r, echo=FALSE}
+par(mfrow=c(2, 2))
+education_df_plus_3 %>% 
+  create_hist('ACT_Composite', c(-Inf, 17, 18, 20, Inf), c('#6D7993', '#062F4F', '#6D7993', '#B82601'), 'ACT_Composite', y.lab = 'County Frequency')
+
+education_df_plus_3 %>% 
+  create_hist('mean_math', c(-Inf, 19, 39, 69, 79, 89, Inf), c('#6D7993', '#B82601', '#6D7993', '#062F4F', '#6D7993', '#B82601'), 'Avg Math')
+
+education_df_plus_3 %>% 
+  create_hist('mean_science', c(-Inf, 39, 69, 79, 89, Inf), c('#B82601', '#6D7993', '#062F4F', '#6D7993', '#B82601'), 'Avg Science', y.lab = 'County Frequency')
+
+education_df_plus_3 %>% 
+  create_hist('mean_literature', c(-Inf, 29, 44, 49, 69, Inf), c('#B82601', '#6D7993', '#062F4F', '#6D7993', '#B82601'), 'Avg Literature')
+
+```
+  </div>
+
+* <strong><em>Williamson</em></strong> county is showing highest ACT scores, average mathematics, literature, and second highest in science scores.
+* The lowest ACT scores are from Lake and Fayette counties
+* The lowest mathematics scores are from Cheatham and Putnam counties.
+* <strong><em>Fentress</em></strong> takes the lead for the highest science scores at 100%, with Lake being lowest, and <strong><em>Shelby</em></strong> 3rd lowest.
+* The lowest literature scores are from Hancock county.
+
+</div>
+
+
+
+<div class="row question-row">
+  <blockquote class="blockquote">
+    Q6: For 2014, what is the average ACT Scores per region within TN?
+  </blockquote>
+  <div class="md-col-12">
+```{r, echo=FALSE, message=FALSE, warnings=FALSE}
+
+# Subset the education data to only contain the act composite, math, science, and lit cols
+edu_act_vs_core_region <- education_df_plus_3[, c("ACT_Composite", "CORE_region")]
+
+# Melt the df to be indexed by Act composite
+md_act_core <- melt(edu_act_vs_core_region, id="ACT_Composite")
+
+md_act_core_labels <- c("East TN", "First TN", "Mid Cumberland", "Northwest", "South Central", "Southeast", "Southwest/Memphis", "Upper Cumberland")
+
+md_act_core %>% 
+  ggplot(aes(
+    value,
+    ACT_Composite
+  )) + 
+  geom_boxplot() + 
+  geom_dotplot(
+    binaxis='y', 
+    stackdir='center', 
+    dotsize = .5, 
+    fill="red"
+  ) +
+  theme(
+    axis.text.x = element_text(angle=55, vjust=0.6),
+    panel.background = element_rect(
+      fill = "#6D7993",
+      colour = "#6D7993",
+      size = 0.5, 
+      linetype = "solid"
+    ),
+    
+  ) + 
+  labs(
+    title="ACT Scores per CORE Region", 
+    subtitle="Each dot represents 1 row in source data",
+    x="",
+    y="ACT Score"
+  ) +
+  scale_x_discrete(labels = md_act_core_labels)
+
+```
+  </div>
+
+<p class="lead">Mid Cumberland show the highest average overall, which also includes Williamson county.</p>
+
+</div>
+
+
+
+
+
+
+<div class="row question-row">
+  <blockquote class="blockquote">
+    Q7: How do dropout, graduation, and ACT scores compare to income scales?
+  </blockquote>
+  <div class="col-md-12>
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.height=10}
+
+zip_codes_df$income_category <- lapply(zip_codes_df$income_category, function(cat) {
+  str_split(cat, ' Income')[[1]][[1]]
+})
+
+zip_codes_df$income_category <- factor(
+  zip_codes_df$income_category, 
+  levels = c('Low', 'Medium', 'High', 'Very High'),
+  ordered = TRUE
+)
+
+# par(mfrow=c(1, 3))
+
+
+plot1 <- zip_codes_df %>% 
+  ggplot(aes(
+    income_category,
+    Dropout
+  )) + 
+  geom_boxplot(
+    color = c("#062F4F", "#6D7993", "#6D7993", "#B82601")
+  ) + 
+  geom_dotplot(
+    binaxis='y', 
+    stackdir='center', 
+    dotsize = .5, 
+    fill="black"
+  ) +
+  theme(
+    axis.text.x = element_blank(),
+    panel.background = element_rect(
+      size = 0.5, 
+      linetype = "solid"
+    )
+  ) + 
+  labs(
+    title="Dropout Rates per Income Bucket", 
+    subtitle="Each dot represents 1 row in source data",
+    x="",
+    y="Dropout"
+  )
+
+plot2 <- zip_codes_df %>% 
+  ggplot(aes(
+    income_category,
+    Graduation
+  )) + 
+  geom_boxplot(
+    color = c("#062F4F", "#6D7993", "#6D7993", "#B82601")
+  ) + 
+  geom_dotplot(
+    binaxis='y', 
+    stackdir='center', 
+    dotsize = .5, 
+    fill="black"
+  ) +
+  theme(
+    axis.text.x = element_blank(),
+    panel.background = element_rect(
+      size = 0.5, 
+      linetype = "solid"
+    )
+  ) + 
+  labs(
+    title="Graduation Rates per Income Bucket", 
+    subtitle="Each dot represents 1 row in source data",
+    x="",
+    y="Graduation"
+  )
+
+plot3 <- zip_codes_df %>% 
+  ggplot(aes(
+    income_category,
+    ACT_Composite
+  )) + 
+  geom_boxplot(
+    color = c("#062F4F", "#6D7993", "#6D7993", "#B82601")
+  ) + 
+  geom_dotplot(
+    binaxis='y', 
+    stackdir='center', 
+    dotsize = .5, 
+    fill="black"
+  ) +
+  theme(
+    axis.text.x = element_text(angle=55, vjust=0.6),
+    panel.background = element_rect(
+      size = 0.5, 
+      linetype = "solid"
+    )
+  ) + 
+  labs(
+    title="ACT Scores per Income Bucket", 
+    subtitle="Each dot represents 1 row in source data",
+    x="",
+    y="ACT Composite"
+  )
+
+grid.newpage()
+grid.draw(
+  rbind(ggplotGrob(plot1), ggplotGrob(plot2), ggplotGrob(plot3), size = "last")
+)
+
+```
+  </div>
+  <p class="lead">We notice that the medium and high income groups rank highest across all three variables. They have the highest graduation rate, lowest dropout rate, and overall highest ACT Scores.</p>
+</div>
+
+<div class="row question-row">
+  <blockquote class="blockquote">
+    Act Scores for the Black and Hispanic populations within TN counties, with size based on Income.
+  </blockquote>
+  
+  <div class="col-md-12">
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+# Melt the df to be indexed by Act compositea
+md_demo_act <- melt(demo_act, id=c("ACT_Composite", "county", "income_per_tax_return"))
+
+md_demo_act %>% 
+  ggplot(aes(
+    x = value,
+    y = ACT_Composite,
+    color = variable,
+    size = income_per_tax_return
+  )) + 
+  geom_point() +
+  scale_colour_manual(values=c('#B82601', '#062F4F')) +
+  geom_smooth(method='lm') + 
+  labs(
+    title="Avg ACT Scores By Demographics With Size Based on Income Levels",
+    y="ACT Score",
+    x = "Population Percentage"
+  ) +
+  theme(axis.text.y = element_text(
+      face = 'bold'
+    )
+  ) +
+  theme(axis.title.y = element_text(
+      face = 'bold'
+    )
+  )
+
+```
+  </div>
+</div>
+
+
+
+<div class="row question-row">
+  <blockquote class="blockquote">
+    Performance Analytics Summary
+  </blockquote>
+  
+  <div class="col-md-12">
+```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.height=10,fig.width=10}
+cor_df <- zip_codes_df[ , c(2:7,9:11,15)]
+chart.Correlation(cor_df, histogram = T, pch = 19)
+```
+  </div>
+</div>
+
+
+
+
