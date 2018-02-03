@@ -15,7 +15,7 @@ Embers --> #B82601
 .blockquote {
 	border: 2px solid #EFEFEF;
 	border-radius: 4px;
-	margin: 2em;
+	margin: 0 2em;	
 	border: none;
 }
 
@@ -31,4 +31,11 @@ Embers --> #B82601
 	border: 2px solid #EFEFEF;
 	border-radius: 4px;
 	margin: 2em;
+	padding: 1em;
+}
+
+.description {
+	font-size: 16px;
+	font-family: monospace;
+	color: #6f6f6f;
 }

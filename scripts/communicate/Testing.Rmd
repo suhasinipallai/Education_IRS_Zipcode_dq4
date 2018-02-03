@@ -12,6 +12,7 @@ knitr::opts_chunk$set(echo = TRUE)
 library("MASS")
 library("dplyr")
 library("ggplot2")
+library("ggalt")
 library("grid")
 library("stringr")
 library("reshape2")
@@ -28,13 +29,16 @@ demo_act <- readRDS('../../r-objects/zip_irs_education_df.rds')[, c("Pct_Black",
 
 <div class="row question-row">
   <blockquote class="blockquote">
-    Act Scores for the Black and Hispanic populations within TN counties, with size based on Income.
+    Act Scores Black and Hispanic Populations
   </blockquote>
   
   <div class="col-md-12">
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
 # Melt the df to be indexed by Act compositea
 md_demo_act <- melt(demo_act, id=c("ACT_Composite", "county", "income_per_tax_return"))
+
+md_demo_act_shelby_williamson <- md_demo_act %>% 
+  dplyr::filter(county == 'williamson' | county == 'shelby')
 
 md_demo_act %>% 
   ggplot(aes(
@@ -44,6 +48,11 @@ md_demo_act %>%
     size = income_per_tax_return
   )) + 
   geom_point() +
+  geom_point(
+    aes(value, ACT_Composite),
+    data = md_demo_act_shelby_williamson,
+    color = 'purple'
+  ) +
   scale_colour_manual(values=c('#B82601', '#062F4F')) +
   geom_smooth(method='lm') + 
   labs(
@@ -62,7 +71,9 @@ md_demo_act %>%
 
 ```
   </div>
+<div class="description">
+  <p>This graph really helps paint a better picture regarding ACT vs Income, while also incorporating racial demographics as a factor.</p>
+  <p>With color relating to race, and size shown by income levels, you can pretty clearly see that there is not a consistent trend regarding income. There are some counties with a high income level doing <em>FANTASTIC</em> on the ACT (such as <strong><em>Williamson</em></strong> at <strong><em>23.8</em></strong>), as well as some mid level counties. Similarly, there are some higher incomes doing <em>POORLY</em> on the ACT.</p>
+  <p>However, there does seem to be at least a small, but not insignificant, correlation between the racial population and education levels within counties. As this graph portrays, counties with a higher black population tend to do worse on the ACT vs the hispanic population, with the highest being.. <strong>><em>Shelby</em></strong> at <strong><em>78.4%</em></strong> black population.</p>
 </div>
-
-
-
+</div>

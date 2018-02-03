@@ -36,10 +36,10 @@ df_sort <- irs_2011_2015 %>%
 
 <div class="row question-row">
   <blockquote class="blockquote">
-    Q1: What is the income distribution amongst TN counties?
+    Income Distribution Amongst TN Counties (2011-2015)
   </blockquote>
-  <div class="col-md-12">
-```{r, echo=FALSE}
+<div class="col-md-7">
+```{r, echo=FALSE, fig.height=5, fig.width=4}
 
 h <- hist(df_sort$income_per_tax_return, breaks=10, plot=FALSE)
 cuts <- cut(h$breaks, c(-Inf, 9, 19, 23, 25, Inf))
@@ -47,13 +47,17 @@ plot(
   h, 
   col=c('#062F4F', '#6D7993', '#B82601', '#6D7993', '#B82601')[cuts],
   main = '',
-  xlab = 'Household Income Range * 1000',
+  xlab = 'Avg Income Per Tax Return * 1000',
   ylab = 'County Frequency'
 )
 
 ```
-  </div>
-  <p class="lead"><em>** The majority of the county's household income falls between $2000 - $17000.</em></p>
+</div>
+<div class="col-md-5 description" style="margin-top: 5em;">
+  <p>Plotting a histogram of the average income per tax returns for these years shows us that the majority of households fall between $8000 and $14000.</p>
+  <p>The lowest county being <em>Madison County</em> in 2011, and the highest with <em>Williamson County</em> in 2015.<em></p>
+  <p>According to the Census ACS 1-year survey, the median household income for Tennessee was $48,547 in 2016, the latest figures available. Compared to the median US household income, Tennessee median household income is $9,070 lower.</p>
+</div>
 </div>
 
 
@@ -61,7 +65,7 @@ plot(
 
 <div class="row question-row">
   <blockquote class="blockquote">
-    Q2: Is there any change in income over the years?
+    Change in Income (2011-2015)
   </blockquote>
   <div class="col-md-12">
 ```{r irs_2011_2015, echo = FALSE}
@@ -80,7 +84,9 @@ df_sort %>%
       color = county
     )
   ) + geom_line(size = 1.5) + 
-  labs(y = "Income Per Tax Return * 1000", x = "Years")
+  labs(y = 'Avg Income Per Tax Return * 1000', x = 'Years') +
+  scale_color_hue(l = 60, c = 50)
+
 
 ```
   </div>
@@ -91,14 +97,14 @@ df_sort %>%
 
 
 ```{r, echo=FALSE}
-ggplot_num_returns <- function(df, range, y.label="") {
+ggplot_num_returns <- function(df, range, y.label="", point=FALSE) {
   df_sort_1 <- irs_2011_2015 %>% 
     dplyr::filter(sum_total_income_returns >= range) %>% 
     dplyr::select(
       county, year, sum_total_income_returns
     )
   
-  df_sort_1 %>% 
+  p <- df_sort_1 %>% 
     ggplot(
       aes(
         x = year,
@@ -125,13 +131,27 @@ ggplot_num_returns <- function(df, range, y.label="") {
     ) +
     scale_y_continuous(labels = scales::comma) +
     scale_color_hue(l = 60, c = 50)
+  
+  if (point) {
+    p + 
+      geom_point() +
+      geom_label(
+        aes(label=sum_total_income_returns), 
+        hjust = 0, 
+        vjust = 0,
+        nudge_x = -.5,
+        nudge_y = .2
+      )
+  } else {
+    p
+  }
 }
 
 ```
 
 <div class="row question-row">
   <blockquote class="blockquote">
-    Q3: Which counties have highest number of tax filers per year?
+    Counties With the Highest Number of Tax Filers Per Year
   </blockquote>
   <div class="col-md-6">
 ```{r, echo=FALSE}
@@ -140,10 +160,13 @@ ggplot_num_returns(irs_2011_2015, 20000, y.label = "Num of Tax Payers Per Year")
   </div>
   <div class="col-md-6">
 ```{r, echo=FALSE}
-ggplot_num_returns(irs_2011_2015, 200000)
+ggplot_num_returns(irs_2011_2015, 200000, point=TRUE)
 ```
   </div>
-  <p class="lead"><em>** <strong>Davidson County</strong> is having a consistent increase in the number of tax filers, while <strong>Shelby County</strong> is decreasing.</em></p>
+<div class="row description">
+  <p><strong>Nashville/Davidson County's</strong> growth is no surprise. Both the cost of survival and downtown traffic can tell you this much. By the looks of these graphs (and now personal knowledge as a resident in 2018), we can assume the population growth is only going to increase.</p>
+  <p><strong><em>Shelby County</em></strong>, on the other hand, is another story. This county has the highest decrease in tax filers between these years, yet maintains the highest amount of total income returns every year.</p>
+</div>
 </div>
 
 
@@ -163,32 +186,48 @@ create_hist <- function(df, col.name, col.breaks, col.colors, main, y.lab='') {
 ```
 
 
+```{r, echo=FALSE}
+create_hist <- function(df, col.name, col.breaks, col.colors, main, y.lab='') {
+  h <- hist(df[[col.name]], breaks=10, plot=FALSE)
+  cuts <- cut(h$breaks, col.breaks)
+  plot(
+    h, 
+    col=col.colors[cuts],
+    main = '',
+    ylab = y.lab,
+    xlab = ''
+  )
+}
+```
+
+
 <div class="row question-row">
   <blockquote class="blockquote">
-    Q4: For 2014, what is the overall situation within our education dataset regarding student graduation, dropout, and suspension?
+    Overall Education Pct Regarding Student 
+    Graduation, Dropout, and Suspension
   </blockquote>
   <div class="col-md-12">
 ```{r, echo=FALSE}
 par(mfrow=c(1, 3))
 education_df_plus_3 %>% 
-  create_hist('Graduation', c(-Inf, 82, 91, 95, Inf), c('#B82601', '#6D7993', '#062F4F', '#6D7993'), 'Graduation', y.lab = 'County Frequency')
+  create_hist('Graduation', c(-Inf, 81, 91, 95, Inf), c('#B82601', '#6D7993', '#062F4F', '#6D7993'), 'Graduation', y.lab = 'County Frequency')
 
 education_df_plus_3 %>% 
-  create_hist('Dropout', c(-Inf, 1, 3, 4, 11, Inf), c('#6D7993', '#062F4F', '#6D7993', '#6D7993', '#B82601'), 'Dropout')
+  create_hist('Dropout', c(-Inf, 1, 3, 4, 11, 12, 14, Inf), c('#6D7993', '#062F4F', '#6D7993', '#6D7993', '#B82601', '#6D7993', '#B82601'), 'Dropout')
 
 education_df_plus_3 %>% 
   create_hist('Pct_Suspended', c(-Inf, 1, 6, 11, 13, Inf), c('#062F4F', '#6D7993', '#B82601', '#6D7993', '#B82601'), 'Pct Suspended')
 
 ```
   </div>
-
-  <div class="col-md-12">
-    
+<div class="row description">
+  <p>Now we get into the education data. Plotting these graphs provide some insight with regards to the highest and lowest counties.</p>
+  
 * Graduation rate is highest in Meigs, lowest in <strong><em>Shelby</em></strong>.
 * Dropout rate is highest in <strong><em>Shelby</em></strong> county, while kids are studious in Pickett and Meigs counties.
 * Teachers seem to be <em>very</em> strict in <strong><em>Shelby</em></strong> county, since it holds the highest student suspension rate.
 
-  </div>
+</div>
 </div>
 
 
@@ -196,7 +235,8 @@ education_df_plus_3 %>%
 
 <div class="row question-row">
   <blockquote class="blockquote">
-    Q5: For 2014, what is the overall situation within our education dataset regarding student performance?
+    Overall Education Pct Regarding Student 
+    ACT Scores, Math, Science, and Literature
   </blockquote>
   <div class="col-md-12">
 ```{r, echo=FALSE}
@@ -215,6 +255,7 @@ education_df_plus_3 %>%
 
 ```
   </div>
+<div class="row description">
 
 * <strong><em>Williamson</em></strong> county is showing highest ACT scores, average mathematics, literature, and second highest in science scores.
 * The lowest ACT scores are from Lake and Fayette counties
@@ -222,22 +263,30 @@ education_df_plus_3 %>%
 * <strong><em>Fentress</em></strong> takes the lead for the highest science scores at 100%, with Lake being lowest, and <strong><em>Shelby</em></strong> 3rd lowest.
 * The lowest literature scores are from Hancock county.
 
+  <p>Ok.. So now we are starting to see a trend. Both Shelby and Williamson County have appeared multiple times in our research. Are there any commonalities?</p>
+  
+![](https://media1.tenor.com/images/960540760efc9858f3dfa5f73eea54a2/tenor.gif?itemid=5758220)
+
+</div>
 </div>
 
 
 
 <div class="row question-row">
   <blockquote class="blockquote">
-    Q6: For 2014, what is the average ACT Scores per region within TN?
+    Average ACT Scores Per Core Region Within TN
   </blockquote>
   <div class="md-col-12">
 ```{r, echo=FALSE, message=FALSE, warnings=FALSE}
 
 # Subset the education data to only contain the act composite, math, science, and lit cols
-edu_act_vs_core_region <- education_df_plus_3[, c("ACT_Composite", "CORE_region")]
+edu_act_vs_core_region <- education_df_plus_3[, c("ACT_Composite", "CORE_region", "county")]
 
 # Melt the df to be indexed by Act composite
-md_act_core <- melt(edu_act_vs_core_region, id="ACT_Composite")
+md_act_core <- melt(edu_act_vs_core_region, id=c("ACT_Composite", "county"))
+
+md_act_core_shelby_williamson <- md_act_core %>% 
+  dplyr::filter(county == 'williamson' | county == 'shelby')
 
 md_act_core_labels <- c("East TN", "First TN", "Mid Cumberland", "Northwest", "South Central", "Southeast", "Southwest/Memphis", "Upper Cumberland")
 
@@ -253,6 +302,17 @@ md_act_core %>%
     dotsize = .5, 
     fill="red"
   ) +
+  geom_dotplot(
+    aes(
+      value,
+    ACT_Composite
+    ),
+    data = md_act_core_shelby_williamson,
+    binaxis='y', 
+    stackdir='center', 
+    dotsize = 1, 
+    fill="blue"
+  ) +
   theme(
     axis.text.x = element_text(angle=55, vjust=0.6),
     panel.background = element_rect(
@@ -260,7 +320,7 @@ md_act_core %>%
       colour = "#6D7993",
       size = 0.5, 
       linetype = "solid"
-    ),
+    )
     
   ) + 
   labs(
@@ -273,8 +333,11 @@ md_act_core %>%
 
 ```
   </div>
-
-<p class="lead">Mid Cumberland show the highest average overall, which also includes Williamson county.</p>
+<div class="row description">
+  <p><em>Mid Cumberland</em> show the highest average overall, which also includes <strong><em>Williamson</em></strong> county.</p>
+  <p>Can you guess who falls within the Southwest Memphis region?? I'll give you a hint.</p>
+  <p>It starts with <strong><em>"Shel"</em></strong> and ends with <strong><em>"by"</em></strong>..</p>
+</div>
 
 </div>
 
@@ -285,9 +348,14 @@ md_act_core %>%
 
 <div class="row question-row">
   <blockquote class="blockquote">
-    Q7: How do dropout, graduation, and ACT scores compare to income scales?
+    Income VS. Dropout, Graduation, ACT Scores
   </blockquote>
-  <div class="col-md-12>
+<div class="description" style="font-size: 12px">
+  
+  <p><strong>Low: `<= 40.87K` / Mid: `> 40.87K` / High: `> 48.56K` / Very High: `> 60K`</strong></p>
+  
+</div>
+<div class="col-md-12>
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.height=10}
 
@@ -300,6 +368,11 @@ zip_codes_df$income_category <- factor(
   levels = c('Low', 'Medium', 'High', 'Very High'),
   ordered = TRUE
 )
+
+zip_codes_df_shelby_williamson <- zip_codes_df %>% 
+  dplyr::filter(
+    county == 'shelby' | county == 'williamson'
+  )
 
 # par(mfrow=c(1, 3))
 
@@ -317,6 +390,17 @@ plot1 <- zip_codes_df %>%
     stackdir='center', 
     dotsize = .5, 
     fill="black"
+  ) +
+  geom_dotplot(
+    aes(
+      income_category,
+      Dropout
+    ),
+    data = zip_codes_df_shelby_williamson,
+    binaxis='y', 
+    stackdir='center', 
+    dotsize = 1, 
+    fill="blue"
   ) +
   theme(
     axis.text.x = element_blank(),
@@ -346,6 +430,17 @@ plot2 <- zip_codes_df %>%
     dotsize = .5, 
     fill="black"
   ) +
+  geom_dotplot(
+    aes(
+      income_category,
+      Graduation
+    ),
+    data = zip_codes_df_shelby_williamson,
+    binaxis='y', 
+    stackdir='center', 
+    dotsize = 1, 
+    fill="blue"
+  ) +
   theme(
     axis.text.x = element_blank(),
     panel.background = element_rect(
@@ -374,6 +469,17 @@ plot3 <- zip_codes_df %>%
     dotsize = .5, 
     fill="black"
   ) +
+  geom_dotplot(
+    aes(
+      income_category,
+      ACT_Composite
+    ),
+    data = zip_codes_df_shelby_williamson,
+    binaxis='y', 
+    stackdir='center', 
+    dotsize = 1, 
+    fill="blue"
+  ) +
   theme(
     axis.text.x = element_text(angle=55, vjust=0.6),
     panel.background = element_rect(
@@ -395,18 +501,25 @@ grid.draw(
 
 ```
   </div>
-  <p class="lead">We notice that the medium and high income groups rank highest across all three variables. They have the highest graduation rate, lowest dropout rate, and overall highest ACT Scores.</p>
+<div class="description">
+  <p>Now we get into the interesting stuff.</p>
+  <p>We notice that the medium and high income groups rank highest across all three variables. One thing that is consistent about all three is <strong><em>Williamson</em></strong> and <strong><em>Shelby</em></strong>. Shelby is an outlier in each case regarding Dropout and Graduation, whereas Williamson is the outlier in ACT scores, as well as Shelby.</p>
+  <p>So what does this tell us?? In general, higher income ranges do not have a huge affect on student education levels compared to the lower. In fact, student that live in counties with a med/high income tend to do better than students within a low or very high income bucket.</p>
+</div>
 </div>
 
 <div class="row question-row">
   <blockquote class="blockquote">
-    Act Scores for the Black and Hispanic populations within TN counties, with size based on Income.
+    Act Scores Black and Hispanic Populations
   </blockquote>
   
   <div class="col-md-12">
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
 # Melt the df to be indexed by Act compositea
 md_demo_act <- melt(demo_act, id=c("ACT_Composite", "county", "income_per_tax_return"))
+
+md_demo_act_shelby_williamson <- md_demo_act %>% 
+  dplyr::filter(county == 'williamson' | county == 'shelby')
 
 md_demo_act %>% 
   ggplot(aes(
@@ -416,6 +529,11 @@ md_demo_act %>%
     size = income_per_tax_return
   )) + 
   geom_point() +
+  geom_point(
+    aes(value, ACT_Composite),
+    data = md_demo_act_shelby_williamson,
+    color = 'blue'
+  ) +
   scale_colour_manual(values=c('#B82601', '#062F4F')) +
   geom_smooth(method='lm') + 
   labs(
@@ -434,18 +552,30 @@ md_demo_act %>%
 
 ```
   </div>
+<div class="description">
+  <p>This graph really helps paint a better picture regarding ACT vs Income, while also incorporating racial demographics as a factor.</p>
+  <p>With color relating to race, and size shown by income levels, you can pretty clearly see that there is not a consistent trend regarding income. There are some counties with a high income level doing <em>FANTASTIC</em> on the ACT (such as <strong><em>Williamson</em></strong> at <strong><em>23.8</em></strong>), as well as some mid level counties. Similarly, there are some higher incomes doing <em>POORLY</em> on the ACT.</p>
+  <p>However, there does seem to be at least a small, but not insignificant, correlation between the racial population and education levels within counties. As this graph portrays, counties with a higher black population tend to do worse on the ACT vs the hispanic population, with the highest being.. <strong>><em>Shelby</em></strong> at <strong><em>78.4%</em></strong> black population.</p>
+</div>
 </div>
 
 
 
 <div class="row question-row">
   <blockquote class="blockquote">
-    Performance Analytics Summary
+    Correlation Among Variables
   </blockquote>
   
   <div class="col-md-12">
-```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.height=10,fig.width=10}
-cor_df <- zip_codes_df[ , c(2:7,9:11,15)]
+```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.height=8,fig.width=10}
+cor_df <- zip_codes_df[ , c(
+  "income_per_tax_return",
+  "ACT_Composite",
+  "Graduation",
+  "Dropout",
+  "Pct_Black",
+  "Pct_Hispanic"
+)]
 chart.Correlation(cor_df, histogram = T, pch = 19)
 ```
   </div>
