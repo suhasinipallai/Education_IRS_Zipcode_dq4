@@ -1,0 +1,187 @@
+---
+title: "Correlation between Education (2014) and Income Datasets(2011-15) of TN"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    social: menu
+    source_code: embed
+    vertical_layout: fill
+---
+
+<style>                     
+.navbar {
+  background-color:orange;
+  border-color:black;
+}
+.navbar-brand {
+color:black!important;
+}
+</style> 
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library("MASS")
+library("dplyr")
+library("ggplot2")
+library("grid")
+library("stringr")
+library("reshape2")
+library("plotly")
+library("dygraphs")
+library("metricsgraphics")
+library("DT")
+```
+
+Column {data-width=750,data-height=750}
+-----------------------------------------------------------------------
+
+### Core Region Wise Vs Various Indicators
+
+[tn_map link](https://hit.health.tn.gov/tnmap/print_tnmap.htm)
+```{r}
+education_df_plus_3 <- readRDS('./r-objects/education_df_plus_3.rds')
+core_region_act <- education_df_plus_3 %>% 
+   group_by(CORE_region) %>% 
+   summarize(
+     avg_act_scores =mean(ACT_Composite),
+     avg_pupil_exp_times_thousand = mean(Per_Pupil_Expenditures)/1000,
+     avg_graduation_rate = mean(Graduation),
+     avg_suspension_rate = mean(Pct_Suspended),
+     avg_dropout_rate = mean(Dropout),
+     avg_hispanic= mean(Pct_Hispanic),
+     avg_black = mean(Pct_Black),
+     avg_native_american = mean(Pct_Native_American)
+     ) %>% 
+   ungroup() %>% 
+   select(CORE_region,avg_act_scores,avg_pupil_exp_times_thousand,avg_graduation_rate,avg_suspension_rate,avg_dropout_rate,avg_hispanic,avg_black,avg_native_american) %>% 
+  arrange(desc(avg_act_scores)) 
+
+ 
+melt_core <- melt(data=core_region_act,id.vars ="CORE_region")
+
+p1 <- ggplot(data=melt_core,aes(x=CORE_region,y=value,color=variable)) +
+  geom_point() +
+  geom_smooth(method='lm')  + 
+  scale_size_continuous(range = c(5,12))
+  
+
+ggplotly(p1)
+
+```
+
+### Data Table
+
+
+```{r}
+mean_pupil_exp_vs_core_region <- education_df_plus_3 %>% 
+  group_by(CORE_region) %>% 
+  summarise(
+    mean_pupil_exp = round(mean(Per_Pupil_Expenditures),2)
+  ) %>% 
+  ungroup() %>% 
+  select(CORE_region,mean_pupil_exp) %>% 
+  arrange(desc(mean_pupil_exp))
+
+
+datatable(mean_pupil_exp_vs_core_region, options = list(
+  searching = FALSE,
+  pageLength = 5,
+  lengthMenu = c(5, 10, 15, 20)
+    ) 
+)
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Number Of Tax Payers Over Years[Per Pupil Expenditure is highest in Davidson county/then Shelby]
+
+```{r}
+irs_2011_2015 <- readRDS('./r-objects/irs_2011_2015.rds')
+ggplot_num_returns <- function(df, range, y.label="", point=FALSE) {
+  df_sort_1 <- irs_2011_2015 %>% 
+    dplyr::filter(sum_total_income_returns >= range) %>% 
+    dplyr::select(
+      county, year, sum_total_income_returns
+    )
+  
+  p <- df_sort_1 %>% 
+    ggplot(
+      aes(
+        x = year,
+        y = sum_total_income_returns, 
+        group = county,
+        color = county
+      )
+    ) + 
+    geom_line(size = 1.5) + 
+    labs(y = y.label, x = "") +
+    theme(axis.text.x = element_text(
+        face = 'bold', 
+        size = 10
+      )
+    ) +
+    theme(axis.text.y = element_text(
+        face = 'bold', 
+        size = 10
+      )
+    ) +
+    theme(axis.title.y = element_text(
+        size = 10
+      )
+    ) +
+    scale_y_continuous(labels = scales::comma) +
+    scale_color_hue(l = 60, c = 50)
+  
+  if (point) {
+    p + 
+      geom_point() +
+      geom_label(
+        aes(label=sum_total_income_returns), 
+        hjust = 0, 
+        vjust = 0,
+        nudge_x = -.5,
+        nudge_y = .2
+      )
+  } else {
+    p
+  }
+}
+p1 <- ggplot_num_returns(irs_2011_2015, 20000, y.label = "Num of Tax Payers Per Year")
+
+ggplotly(p1)
+
+
+```
+
+### Graduation Rate
+
+```{r}
+
+grad_rate1 <- paste0(round(max(education_df_plus_3$Graduation),2)," %")
+valueBox(grad_rate1, caption = "Graduation Rate in Meigs County,TN (Southeast CORE)", icon = "fa-graduation-cap", color = "blue", href = NULL)
+
+```
+
+### ACT Scores
+
+```{r}
+act_score <- paste0(round(max(education_df_plus_3$ACT_Composite)))
+
+valueBox(act_score, caption = "Avg 2014 ACT Scores in Williamson County,TN (Mid Cumberland CORE Region)  ", icon = "fa-thumbs-up", color = "green", href = NULL)
+
+```
+
+### Suspension Rate
+
+```{r}
+dropout_rate <- paste0(round(max(education_df_plus_3$Dropout),2), " %")
+
+valueBox(dropout_rate, caption = "Drop Out Rate in Shelby County,TN(Southwest/Memphis CORE Region)", icon = "fa-thumbs-down", color = "red", href = NULL)
+
+
+```
+
+
+
+

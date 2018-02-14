@@ -1,0 +1,334 @@
+---
+title: "Correlation between Education and Income Datasets of TN"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    css: style1.css
+    vertical_layout: fill
+---
+
+<style>                     
+.navbar {
+  background-color:orange;
+  border-color:black;
+}
+.navbar-brand {
+color:black!important;
+}
+
+
+</style>  
+```{r setup, include=FALSE}
+library(flexdashboard)
+library("MASS")
+library("dplyr")
+library("ggplot2")
+library("grid")
+library("stringr")
+library("reshape2")
+library("plotly")
+library("dygraphs")
+library("metricsgraphics")
+```
+
+
+-------------------------------
+#Introduction {.sidebar}
+<body>
+<strong>This report deals with TN 2014  
+
+* income 
+* education data.
+
+This tells us the correlation between them.
+</strong>
+
+
+
+
+<strong> <p> These plots shows the comparison of various variables with the income range being bucketed into low,medium ,high and very high groups.</p> </strong>
+
+<p>
+This plot shows the various variables plotted for the <i>CORE Region </i> of Tennessee.
+</p>
+
+</body>
+
+-----------------------------------------------------------------------
+
+# Income 
+
+### Dropout, Graduation, ACT scores VS Income
+
+
+```{r echo=FALSE}
+
+irs_2011_2015 <- readRDS('./r-objects/irs_2011_2015.rds')
+zip_codes_df <- readRDS('./r-objects/zip_irs_education_df.rds')
+zip_codes_df$income_category <- lapply(zip_codes_df$income_category, function(cat) {
+  str_split(cat, ' Income')[[1]][[1]]
+})
+
+zip_codes_df$income_category <- factor(
+  zip_codes_df$income_category, 
+  levels = c('Low', 'Medium', 'High', 'Very High'),
+  ordered = TRUE
+)
+
+zip_codes_df_shelby_williamson <- zip_codes_df %>% 
+  dplyr::filter(
+    county == 'shelby' | county == 'williamson'
+  )
+
+# par(mfrow=c(1, 3))
+
+
+plot1 <- zip_codes_df %>% 
+  ggplot(aes(
+    income_category,
+    Dropout
+  )) + 
+  geom_boxplot() +
+  geom_dotplot(
+    binaxis='y', 
+    stackdir='center', 
+    dotsize = .5, 
+    fill="black"
+  ) +
+  geom_dotplot(
+    aes(
+      income_category,
+      Dropout
+    ),
+    data = zip_codes_df_shelby_williamson,
+    binaxis='y', 
+    stackdir='center', 
+    dotsize = 1, 
+    fill="blue"
+  ) +
+  theme(
+    axis.text.x = element_blank(),
+    panel.background = element_rect(
+      size = 0.5, 
+      linetype = "solid"
+    )
+  ) + 
+  labs(
+    title="Dropout Rates per Income Bucket", 
+    x="",
+    y="Dropout"
+  )
+
+
+plot2 <- zip_codes_df %>% 
+  ggplot(aes(
+    income_category,
+    Graduation
+  )) + 
+  geom_boxplot() + 
+  geom_dotplot(
+    binaxis='y', 
+    stackdir='center', 
+    dotsize = .5, 
+    fill="black"
+  ) +
+  geom_dotplot(
+    aes(
+      income_category,
+      Graduation
+    ),
+    data = zip_codes_df_shelby_williamson,
+    binaxis='y', 
+    stackdir='center', 
+    dotsize = 1, 
+    fill="blue"
+  ) +
+  theme(
+    axis.text.x = element_blank(),
+    panel.background = element_rect(
+      size = 0.5, 
+      linetype = "solid"
+    )
+  ) + 
+  labs(
+    title="Graduation Rates per Income Bucket", 
+    x="",
+    y="Graduation"
+  )
+
+plot3 <- zip_codes_df %>% 
+  ggplot(aes(
+    income_category,
+    ACT_Composite
+  )) + 
+  geom_boxplot() + 
+  geom_dotplot(
+    binaxis='y', 
+    stackdir='center', 
+    dotsize = .5, 
+    fill="black"
+  ) +
+  geom_dotplot(
+    aes(
+      income_category,
+      ACT_Composite
+    ),
+    data = zip_codes_df_shelby_williamson,
+    binaxis='y', 
+    stackdir='center', 
+    dotsize = 1, 
+    fill="blue"
+  ) +
+  theme(
+    axis.text.x = element_text(angle=55, vjust=0.6),
+    panel.background = element_rect(
+      size = 0.5, 
+      linetype = "solid"
+    )
+  ) + 
+  labs(
+    title="ACT Scores per Income Bucket", 
+    x="",
+    y="ACT Composite"
+  )
+grid.newpage()
+grid.draw(
+  rbind(ggplotGrob(plot1), ggplotGrob(plot2), ggplotGrob(plot3), size = "last")
+)
+
+```
+
+
+------------------------------------
+# Education
+
+###Chart B
+
+```{r }
+education_df_plus_3 <- readRDS('./r-objects/education_df_plus_3.rds')
+
+
+create_hist <- function(df, col.name, col.breaks, col.colors, main, x.lab='',y.lab='') {
+  h <- hist(df[[col.name]], breaks=10, plot=FALSE)
+  cuts <- cut(h$breaks, col.breaks)
+  plot(
+    h, 
+    col=col.colors[cuts],
+    main = '',
+    ylab = y.lab,
+    xlab = x.lab
+  )
+}
+
+
+par(mfrow=c(1, 3))
+
+education_df_plus_3 %>% 
+  create_hist('Graduation', c(-Inf, 81, 91, 95, Inf), c('#B82601', '#6D7993', '#062F4F', '#6D7993'), 'grad vs count','Graduation Rate','Count Freq')
+
+
+education_df_plus_3 %>% 
+  create_hist('Dropout', c(-Inf, 1, 3, 4, 11, 12, 14, Inf), c('#6D7993', '#062F4F', '#6D7993', '#6D7993', '#B82601', '#6D7993', '#B82601'),'grad vs count', 'Dropout Rate' ,'Count Freq')
+
+education_df_plus_3 %>% 
+   create_hist('Pct_Suspended', c(-Inf, 1, 6, 11, 13, Inf), c('#062F4F', '#6D7993', '#B82601', '#6D7993', '#B82601'),'grad vs count','Suspension', 'Count Freq')
+
+```
+
+
+------------------------------------
+# Core Region Wise
+
+###Chart C
+
+```{r  echo=FALSE, message=FALSE, warnings=FALSE}
+# Subset the education data to only contain the act composite, math, science, and lit cols
+edu_act_vs_core_region <- education_df_plus_3[, c("ACT_Composite", "CORE_region", "county")]
+
+# Melt the df to be indexed by Act composite
+md_act_core <- melt(edu_act_vs_core_region, id=c("ACT_Composite", "county"))
+
+md_act_core_shelby_williamson <- md_act_core %>% 
+  dplyr::filter(county == 'williamson' | county == 'shelby')
+
+md_act_core_labels <- c("East TN", "First TN", "Mid Cumberland", "Northwest", "South Central", "Southeast", "Southwest/Memphis", "Upper Cumberland")
+
+p1 <-md_act_core %>% 
+  ggplot(aes(
+    value,
+    ACT_Composite
+  )) + 
+  geom_boxplot() + 
+  geom_dotplot(
+    binaxis='y', 
+    stackdir='center', 
+    dotsize = .5, 
+    fill="red"
+  ) +
+  geom_dotplot(
+    aes(
+      value,
+    ACT_Composite
+    ),
+    data = md_act_core_shelby_williamson,
+    binaxis='y', 
+    stackdir='center', 
+    dotsize = 1, 
+    fill="blue"
+  ) +
+  theme(
+    axis.text.x = element_text(angle=55, vjust=0.6),
+    panel.background = element_rect(
+      fill = "#6D7993",
+      colour = "#6D7993",
+      size = 0.5, 
+      linetype = "solid"
+    )
+    
+  ) + 
+  labs(
+    title="ACT Scores per CORE Region", 
+    subtitle="Each dot represents 1 row in source data",
+    x="",
+    y="ACT Score"
+  ) +
+  scale_x_discrete(labels = md_act_core_labels)
+
+p1 %>%
+  ggplotly(tooltip = c("x", "y"))
+
+
+```
+
+Row
+
+---------------------------------
+### core
+
+``` {r}
+core_region_act <- education_df_plus_3 %>% 
+   group_by(CORE_region) %>% 
+   summarize(
+     avg_act =mean(ACT_Composite),
+     avg_graduation = mean(Graduation),
+     avg_expelled = mean(Pct_Expelled),
+     avg_dropout = mean(Dropout),
+     avg_hispanic= mean(Pct_Hispanic),
+     avg_black = mean(Pct_Black),
+     avg_native_american = mean(Pct_Native_American)
+     ) %>% 
+   ungroup() %>% 
+   select(CORE_region,avg_act,avg_graduation,avg_expelled,avg_dropout,avg_hispanic,avg_black,avg_native_american) %>% 
+  arrange(desc(avg_act)) 
+
+ 
+melt_core <- melt(data=core_region_act,id.vars ="CORE_region")
+
+p1 <- ggplot(data=melt_core,aes(x=CORE_region,y=value,color=variable)) +
+  geom_point() +
+  geom_smooth(method='lm')  + 
+  scale_size_continuous(range = c(5,12))
+ggplotly(p1)
+
+```
+

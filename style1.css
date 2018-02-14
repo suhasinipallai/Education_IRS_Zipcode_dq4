@@ -1,0 +1,19 @@
+.bgred {
+  background-color: pink;
+}
+
+.sidebar{
+  background-color:pink;
+  
+}
+
+.blockquote > pre {
+	font-size: 20px;
+	background-color: #EFEFEF;
+	text-align: center;
+	word-break: normal;	
+}
+
+ body {
+        background-color:beige;
+    }

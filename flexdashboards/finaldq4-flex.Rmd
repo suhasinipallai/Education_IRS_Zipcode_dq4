@@ -1,0 +1,154 @@
+---
+title: "Correletion btw Tennesse Education and Income datasets"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: rows
+    css: style1.css
+    vertical_layout: scroll
+---
+<style>                     
+.navbar {
+  background-color:orange;
+  border-color:black;
+}
+.navbar-brand {
+color:black!important;
+}
+</style> 
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library("MASS")
+library("dplyr")
+library("ggplot2")
+library("grid")
+library("stringr")
+library("reshape2")
+library("plotly")
+library("dygraphs")
+library("metricsgraphics")
+```
+
+```{r set-options, echo=FALSE, cache=FALSE}
+options(width = 400)
+```
+
+Row {data-height=550}
+-----------------------------------------------------------------------
+
+### CORE Region Vs Various Factors
+
+```{r height=150,width=150}
+education_df_plus_3 <- readRDS('./r-objects/education_df_plus_3.rds')
+core_region_act <- education_df_plus_3 %>% 
+   group_by(CORE_region) %>% 
+   summarize(
+     avg_act =mean(ACT_Composite),
+     avg_graduation = mean(Graduation),
+     avg_expelled = mean(Pct_Expelled),
+     avg_dropout = mean(Dropout),
+     avg_hispanic= mean(Pct_Hispanic),
+     avg_black = mean(Pct_Black),
+     avg_native_american = mean(Pct_Native_American)
+     ) %>% 
+   ungroup() %>% 
+   select(CORE_region,avg_act,avg_graduation,avg_expelled,avg_dropout,avg_hispanic,avg_black,avg_native_american) %>% 
+  arrange(desc(avg_act)) 
+
+ 
+melt_core <- melt(data=core_region_act,id.vars ="CORE_region")
+
+p1 <- ggplot(data=melt_core,aes(x=CORE_region,y=value,color=variable)) +
+  geom_point() +
+  geom_smooth(method='lm')  + 
+  scale_size_continuous(range = c(5,12))
+  
+
+ggplotly(p1)
+
+
+```
+
+Row {data-height=450}
+-----------------------------------------------------------------------
+
+### Number of Tax Payers Over Year's
+
+```{r}
+irs_2011_2015 <- readRDS('./r-objects/irs_2011_2015.rds')
+ggplot_num_returns <- function(df, range, y.label="", point=FALSE) {
+  df_sort_1 <- irs_2011_2015 %>% 
+    dplyr::filter(sum_total_income_returns >= range) %>% 
+    dplyr::select(
+      county, year, sum_total_income_returns
+    )
+  
+  p <- df_sort_1 %>% 
+    ggplot(
+      aes(
+        x = year,
+        y = sum_total_income_returns, 
+        group = county,
+        color = county
+      )
+    ) + 
+    geom_line(size = 1.5) + 
+    labs(y = y.label, x = "") +
+    theme(axis.text.x = element_text(
+        face = 'bold', 
+        size = 10
+      )
+    ) +
+    theme(axis.text.y = element_text(
+        face = 'bold', 
+        size = 10
+      )
+    ) +
+    theme(axis.title.y = element_text(
+        size = 10
+      )
+    ) +
+    scale_y_continuous(labels = scales::comma) +
+    scale_color_hue(l = 60, c = 50)
+  
+  if (point) {
+    p + 
+      geom_point() +
+      geom_label(
+        aes(label=sum_total_income_returns), 
+        hjust = 0, 
+        vjust = 0,
+        nudge_x = -.5,
+        nudge_y = .2
+      )
+  } else {
+    p
+  }
+}
+p1 <- ggplot_num_returns(irs_2011_2015, 20000, y.label = "Num of Tax Payers Per Year")
+
+ggplotly(p1)
+
+```
+<bold><italics><p> All the counties of TN have a steady increase in the number od Tax Payers. Davidson County leads all the 5 years.
+</p></italics> </bold>
+
+
+Row
+
+---------------------------------
+### core
+
+``` {r}
+grad_rate <- sum(education_df_plus_3$Graduation)/100
+valueBox(grad_rate, icon = "grad_icon.ico")
+```
+
+Column
+
+---------------------------------
+### core 1
+
+``` {r}
+grad_rate <- sum(education_df_plus_3$Graduation)/100
+valueBox(grad_rate, icon = "grad_icon.ico")

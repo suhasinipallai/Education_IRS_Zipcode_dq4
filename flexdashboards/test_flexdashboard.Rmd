@@ -1,0 +1,98 @@
+---
+title: "Correletaion btw Tennesse Education,IRS ,Income datasets- "
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+ 
+```{r setup, include=FALSE}
+library(flexdashboard)
+library("MASS")
+library("dplyr")
+library("ggplot2")
+library("grid")
+library("stringr")
+library("reshape2")
+library("plotly")
+library("dygraphs")
+library("metricsgraphics")
+
+```
+
+
+# Introduction {.sidebar}
+
+<p>We notice that the medium and high income groups rank highest across all three variables. One thing that is consistent about all three is Williamson and Shelby. Shelby is an outlier in each case regarding Dropout and Graduation, whereas Williamson is the outlier in ACT scores, as well as Shelby.
+
+</p>
+
+#IRS
+
+### Chart A 
+
+```{r, echo=FALSE, fig.height=5, fig.width=4}
+irs_2011_2015 <- readRDS('./r-objects/irs_2011_2015.rds')
+
+df_sort <- irs_2011_2015 %>% 
+  filter(income_per_tax_return >= 8) %>% 
+  select(county, year, income_per_tax_return)
+
+h <- hist(df_sort$income_per_tax_return, breaks=10, plot=FALSE)
+cuts <- cut(h$breaks, c(-Inf, 9, 19, 23, 25, Inf))
+plot(
+  h, 
+  col=c('#062F4F', '#6D7993', '#B82601', '#6D7993', '#B82601')[cuts],
+  main = '',
+  xlab = 'Avg Income Per Tax Return * 1000',
+  ylab = 'County Frequency'
+)
+```
+
+
+<p>We notice that the medium and high income groups rank highest across all three variables. One thing that is consistent about all three is Williamson and Shelby. Shelby is an outlier in each case regarding Dropout and Graduation, whereas Williamson is the outlier in ACT scores, as well as Shelby.
+</p>
+#zip codes
+
+### Chart B
+
+```{r}
+zip_codes_df <- readRDS('./r-objects/zip_irs_education_df.rds')
+
+
+p1 <-zip_codes_df %>% 
+  ggplot(aes(
+    income_category,
+    ACT_Composite
+  )) +
+   geom_boxplot(
+    color = c("#062F4F", "#6D7993", "#6D7993", "#B82601")
+  ) 
+
+
+ggplotly(p1)
+```
+
+# Education
+
+
+### Education
+
+```{r echo=FALSE}
+
+mjs_plot(zip_codes_df, x=Dropout, y=sum_total_population) %>%
+  mjs_point(color_accessor=ACT_Composite, size_accessor=Dropout) %>%
+  mjs_labs(y="total population", x="drop out")
+
+mjs_plot(zip_codes_df, x=Graduation, y=sum_total_population) %>%
+  mjs_point(color_accessor=ACT_Composite, size_accessor=Graduation) %>%
+  mjs_labs(y="total population", x="Graduation")
+
+```
+### Education
+``` {r echo=FALSE, fig.height=5, fig.width=4}
+
+mjs_plot(irs_2011_2015,x=year,y=income_per_tax_return) %>% 
+  mjs_point(zip_codes_df$ACT_Composite)
+
+```
